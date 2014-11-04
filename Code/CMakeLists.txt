@@ -1,19 +1,25 @@
-cmake_minimum_required (VERSION 2.6)
-project (Tutorial)
-# The version number.
-set (Tutorial_VERSION_MAJOR 1)
-set (Tutorial_VERSION_MINOR 0)
- 
-# configure a header file to pass some of the CMake settings
-# to the source code
-configure_file (
-  "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
-  "${PROJECT_BINARY_DIR}/TutorialConfig.h"
-  )
- 
-# add the binary tree to the search path for include files
-# so that we will find TutorialConfig.h
-include_directories("${PROJECT_BINARY_DIR}")
- 
-# add the executable
-add_executable(Tutorial tutorial.cxx)
+cmake_minimum_required (VERSION 2.6.0)
+set(_ECLIPSE_VERSION "8.5.0" )
+
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Test/Source/macro.cmake")
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Test/Source/Toolchain-avr-gcc2.cmake")
+
+project (Source)
+MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
+
+IF( NOT CMAKE_BUILD_TYPE )
+   SET( CMAKE_BUILD_TYPE Release ... FORCE )
+ENDIF()
+
+SET(MAIN_FILE
+        test.c)
+
+set(CMAKE_VERBOSE_MAKEFILE true)
+set(CMAKE_C_OUTPUT_EXTENSION ".o")
+ENABLE_LANGUAGE(ASM)
+
+add_executable(test.o test.c) #noetig? ->ja
+
+AVR_CREATE_HEX(test.o)
+
+

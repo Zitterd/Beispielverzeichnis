@@ -37,7 +37,7 @@
 /*****************************************************************************/
 // Includes:
 
-#include "RP6RobotBaseLib.h" 	// The RP6 Robot Base Library.
+//#include "RP6RobotBaseLib.h" 	// The RP6 Robot Base Library.
 								// Always needs to be included!
 								
 /*****************************************************************************/
@@ -45,15 +45,15 @@
 
 int main(void)
 {
-	initRobotBase(); // Always call this first! The Processor will not work
+	//initRobotBase(); // Always call this first! The Processor will not work
 					 // correctly otherwise.
 
 	// ---------------------------------------
 	// Write messages to the Serial Interface
 	// (here it is a RP6 text logo):
-	writeString_P("\n\n   _______________________\n");
-	writeString_P("   \\| RP6  ROBOT SYSTEM |/\n");
-	writeString_P("    \\_-_-_-_-_-_-_-_-_-_/\n\n");
+	//writeString_P("\n\n   _______________________\n");
+	//writeString_P("   \\| RP6  ROBOT SYSTEM |/\n");
+	//writeString_P("    \\_-_-_-_-_-_-_-_-_-_/\n\n");
 
 	// Explanation of special chars:
 	// '\n' = new line
@@ -62,12 +62,12 @@ int main(void)
 	// use directly within strings.
 
 	// Write "Hello World" to the Serial Interface:
-	writeString_P("Hello World! My name is Robby!\n");
-	writeString_P("Let's go! :)\n");
+	//writeString_P("Hello World! My name is Robby!\n");
+	//writeString_P("Let's go! :)\n");
 
 	// ---------------------------------------
 	// LEDs:
-	setLEDs(0b111111); // Turn all LEDs on!
+	//setLEDs(0b111111); // Turn all LEDs on!
 
 	// 0b111111 is a binary value and is the same as
 	// 63 in the decimal system.
@@ -79,23 +79,23 @@ int main(void)
 	// setLEDs(0b000100); LED3
 	// setLEDs(0b101001); LED6, LED4, LED1 - and so on!
 
-	mSleep(1000); // delay 1000ms = 1s
-	setLEDs(0b000000); // All LEDs off!
-	mSleep(500); // delay 500ms = 0.5s
+	//mSleep(1000); // delay 1000ms = 1s
+	//setLEDs(0b000000); // All LEDs off!
+	//mSleep(500); // delay 500ms = 0.5s
 
 
 	// ---------------------------------------
 
-	uint8_t runningLight = 1; // This defines the local unsigned 8 bit variable "runningLight".
+	//uint8_t runningLight = 1; // This defines the local unsigned 8 bit variable "runningLight".
 						      // It can be accessed everywhere _below_ in this function.
 						      // And ONLY within this function!
 							  
-	uint8_t counter = 0;
+	//uint8_t counter = 0;
 
 	// ---------------------------------------
 	// Main loop - the program will loop here forever!
 	// In this program, it only runs a small LED chaselight.
-	while(true)
+	/*while(true)
 	{
 		// Here we do a small LED test:
 		// ---------------------------------------
@@ -167,6 +167,6 @@ int main(void)
 	// The Program will NEVER get here!
 	// (at least if you don't perform a "break" in the main loop, which
 	// you should not do usually!)
-
+	*/
 	return 0; 
 }
