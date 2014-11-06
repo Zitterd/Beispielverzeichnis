@@ -82,13 +82,13 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Internal/FeatureTesting.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/Platform/WindowsPaths.cmake"
   "C:/Program Files (x86)/CMake/share/cmake-3.1/Modules/ProcessorCount.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/CMakeLists.txt"
   "CMakeFiles/3.1.0-rc1/CMakeASMCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeSystem.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Test/Source/Toolchain-avr-gcc2.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Test/Source/macro.cmake"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/CMakeLists.txt"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake"
   )
 
 # The corresponding makefile is:

@@ -1,8 +1,8 @@
 cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Test/Source/macro.cmake")
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Test/Source/Toolchain-avr-gcc2.cmake")
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
 project (Source)
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")

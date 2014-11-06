@@ -169,14 +169,14 @@
 </target>
 <target name="Build" path="[Targets]/[exe] test.o" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments>-C "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Skript" </buildArguments>
+<buildArguments>-C "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" </buildArguments>
 <buildTarget>test.o</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
 <target name="Clean" path="[Targets]/[exe] test.o" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Skript" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/test.o.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/test.o.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>

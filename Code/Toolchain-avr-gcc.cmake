@@ -11,6 +11,26 @@ set(CMAKE_SYSTEM_NAME Arduino)
 set(CMAKE_C_COMPILER   avr-gcc)
 set(CMAKE_CXX_COMPILER avr-g++)
 
+#Compiler konfigurieren wie AVR Studio
+SET(CSTANDARD "-std=gnu99")
+SET(CDEBUG "-gstabs")
+SET(CWARN "-Wall -Wstrict-prototypes")
+SET(CTUNING "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
+
+SET(COPT "-Os")
+
+#Modell des Mikrocontrollers
+SET(CMCU "-mmcu=atmega32u4")
+
+#Takfrequenz mit welcher der Mikrocontroller arbeitet
+SET(CDEFS "-DF_CPU=12000000UL")
+
+#Compiler Optionen
+SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${CINCS} ${COPT} ${CWARN} ${CSTANDARD} ${CEXTRA}")
+SET(CXXFLAGS "${CMCU} ${CDEFS} ${CINCS} ${COPT}")
+SET(CMAKE_C_FLAGS  ${CFLAGS})
+SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
+
 # Add current directory to CMake Module path automatically
 if(EXISTS  ${CMAKE_CURRENT_LIST_DIR}/Platform/Arduino.cmake)
     set(CMAKE_MODULE_PATH  ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_LIST_DIR})

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Source-Release@Skript</name>
+	<name>Source-Release@Build</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -47,7 +47,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.buildLocation</key>
-					<value>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Skript</value>
+					<value>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.useDefaultBuildCmd</key>
@@ -83,7 +83,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.build.location</key>
-					<value>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Skript</value>
+					<value>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build</value>
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.make.core.autoBuildTarget</key>
