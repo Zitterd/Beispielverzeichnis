@@ -129,10 +129,6 @@
 <pathentry kind="mac" name="AVR" path="" value="1"/>
 <pathentry kind="mac" name="__AVR_ARCH__" path="" value="2"/>
 <pathentry kind="mac" name="__AVR_2_BYTE_PC__" path="" value="1"/>
-<pathentry kind="mac" name="__cplusplus" path="" value="1"/>
-<pathentry kind="mac" name="__GNUG__" path="" value="4"/>
-<pathentry kind="mac" name="__GXX_WEAK__" path="" value=" "/>
-<pathentry kind="mac" name="__DEPRECATED" path="" value="1"/>
 <pathentry include="c:/WinAVR-20100110/lib/gcc/avr/4.3.3/include" kind="inc" path="" system="true"/>
 <pathentry include="c:/WinAVR-20100110/lib/gcc/avr/4.3.3/include-fixed" kind="inc" path="" system="true"/>
 <pathentry include="c:/WinAVR-20100110/avr/include" kind="inc" path="" system="true"/>
@@ -195,10 +191,10 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[obj] test.c.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[obj] Test2.cpp.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>test.c.obj</buildTarget>
+<buildTarget>Test2.cpp.obj</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
