@@ -14,7 +14,7 @@ set(CMAKE_CXX_COMPILER avr32-g++)  #avr32 statt avr?
 
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")   
-#SET(CSTANDARD2 "-std=c++0x")     # komplett neu
+SET(CSTANDARD2 "-std=c++0x")     # komplett neu
 #SET(CDEBUG "-gstabs")
 #SET(CWARN "-Wall -Wstrict-prototypes")
 #SET(CTUNING "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
@@ -22,7 +22,7 @@ SET(CSTANDARD "-std=gnu99")
 SET(COPT "-Os")
 
 #Modell des Mikrocontrollers
-SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
+#SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
 
 #Takfrequenz mit welcher der Mikrocontroller arbeitet
 SET(CDEFS "-DF_CPU=16000000L")  #neu (SET(CDEFS "-DF_CPU=12000000UL"))
@@ -33,7 +33,7 @@ SET(CDEFS "-DF_CPU=16000000L")  #neu (SET(CDEFS "-DF_CPU=12000000UL"))
 
 #Compiler Optionen
 SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${CINCS} ${COPT} ${CWARN} ${CSTANDARD} ${CEXTRA}")
-SET(CXXFLAGS "${CMCU} ${CDEFS} ${COPT} ")   #extra neu dazu
+SET(CXXFLAGS "${CSTANDARD2} ${CDEFS} ${COPT} ")   #extra neu dazu
 SET(CMAKE_C_FLAGS  ${CFLAGS})
 SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
