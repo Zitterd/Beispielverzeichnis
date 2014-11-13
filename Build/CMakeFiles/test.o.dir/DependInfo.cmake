@@ -6,7 +6,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Test2.cpp" "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/test.o.dir/Test2.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
