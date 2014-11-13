@@ -9,6 +9,6 @@
 
 int main(void)
 {
-	printf("Test erfolgreich bestanden");
+	printf("Test erfolgreich bestanden! =)");
 	return 0; 
 }
