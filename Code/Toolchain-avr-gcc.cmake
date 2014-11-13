@@ -1,5 +1,6 @@
 #=============================================================================#
-# Author: Tomasz Bogdal (QueezyTheGreat)
+#Vorlage 
+#Author: Tomasz Bogdal (QueezyTheGreat)
 # Home:   https://github.com/queezythegreat/arduino-cmake
 #
 # This Source Code Form is subject to the terms of the Mozilla Public
@@ -9,7 +10,7 @@
 set(CMAKE_SYSTEM_NAME Arduino)
 
 set(CMAKE_C_COMPILER   avr-gcc)
-set(CMAKE_CXX_COMPILER avr-g++)
+set(CMAKE_CXX_COMPILER avr32-g++)  #neu
 
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")
@@ -20,10 +21,10 @@ SET(CTUNING "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
 SET(COPT "-Os")
 
 #Modell des Mikrocontrollers
-SET(CMCU "-mmcu=atmega32u4")
+SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
 
 #Takfrequenz mit welcher der Mikrocontroller arbeitet
-SET(CDEFS "-DF_CPU=12000000UL")
+SET(CDEFS "-DF_CPU=16000000L")  #neu
 
 #Compiler Optionen
 SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${CINCS} ${COPT} ${CWARN} ${CSTANDARD} ${CEXTRA}")
