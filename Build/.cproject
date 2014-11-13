@@ -191,10 +191,10 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[obj] Test2.cpp.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[obj] test.c.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>Test2.cpp.obj</buildTarget>
+<buildTarget>test.c.obj</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
