@@ -1,21 +1,23 @@
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
 Compiler: C:/WinAVR-20100110/bin/avr32-g++.exe 
-Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;;-Os
+Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;;-Os;-std=c99
 Id flags: 
 
 The output was:
 1
 cc1plus.exe: error: unrecognized command line option "-mmcu=atmega32u4"
+cc1plus.exe: warning: command line option "-std=c99" is valid for C/ObjC but not for C++
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
 Compiler: C:/WinAVR-20100110/bin/avr32-g++.exe 
-Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;;-Os
+Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;;-Os;-std=c99
 Id flags: -c
 
 The output was:
 1
 cc1plus.exe: error: unrecognized command line option "-mmcu=atmega32u4"
+cc1plus.exe: warning: command line option "-std=c99" is valid for C/ObjC but not for C++
 
 
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":

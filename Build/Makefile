@@ -117,29 +117,29 @@ test.o/fast:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
 .PHONY : test.o/fast
 
-test.obj: test.c.obj
-.PHONY : test.obj
+Test2.obj: Test2.cpp.obj
+.PHONY : Test2.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
-.PHONY : test.c.obj
+Test2.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/Test2.cpp.obj
+.PHONY : Test2.cpp.obj
 
-test.i: test.c.i
-.PHONY : test.i
+Test2.i: Test2.cpp.i
+.PHONY : Test2.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
-.PHONY : test.c.i
+Test2.cpp.i:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/Test2.cpp.i
+.PHONY : Test2.cpp.i
 
-test.s: test.c.s
-.PHONY : test.s
+Test2.s: Test2.cpp.s
+.PHONY : Test2.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
-.PHONY : test.c.s
+Test2.cpp.s:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/Test2.cpp.s
+.PHONY : Test2.cpp.s
 
 # Help Target
 help:
@@ -150,9 +150,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test.o
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... Test2.obj
+	@echo ... Test2.i
+	@echo ... Test2.s
 .PHONY : help
 
 
