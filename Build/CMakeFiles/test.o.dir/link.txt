@@ -1,1 +1,1 @@
-C:\WinAVR-20100110\bin\avr32-g++.exe      CMakeFiles/test.o.dir/Test2.cpp.obj  -o test.o  
+C:\WinAVR-20100110\bin\avr32-g++.exe   -O3 -DNDEBUG   CMakeFiles/test.o.dir/Test2.cpp.obj  -o test.o  

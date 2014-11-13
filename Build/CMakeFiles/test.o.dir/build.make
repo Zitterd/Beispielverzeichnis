@@ -59,11 +59,11 @@ CMakeFiles/test.o.dir/Test2.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverz
 
 CMakeFiles/test.o.dir/Test2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.o.dir/Test2.cpp.i"
-	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_PREPROCESSED_SOURCE
+	C:\WinAVR-20100110\bin\avr32-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\Test2.cpp" > CMakeFiles\test.o.dir\Test2.cpp.i
 
 CMakeFiles/test.o.dir/Test2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.o.dir/Test2.cpp.s"
-	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CXX_CREATE_ASSEMBLY_SOURCE
+	C:\WinAVR-20100110\bin\avr32-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\Test2.cpp" -o CMakeFiles\test.o.dir\Test2.cpp.s
 
 CMakeFiles/test.o.dir/Test2.cpp.obj.requires:
 .PHONY : CMakeFiles/test.o.dir/Test2.cpp.obj.requires

@@ -129,9 +129,34 @@
 <pathentry kind="mac" name="AVR" path="" value="1"/>
 <pathentry kind="mac" name="__AVR_ARCH__" path="" value="2"/>
 <pathentry kind="mac" name="__AVR_2_BYTE_PC__" path="" value="1"/>
+<pathentry kind="mac" name="__cplusplus" path="" value="1"/>
+<pathentry kind="mac" name="__GNUG__" path="" value="4"/>
+<pathentry kind="mac" name="__GXX_WEAK__" path="" value="1"/>
+<pathentry kind="mac" name="__DEPRECATED" path="" value="1"/>
+<pathentry kind="mac" name="__GXX_RTTI" path="" value="1"/>
+<pathentry kind="mac" name="__EXCEPTIONS" path="" value="1"/>
+<pathentry kind="mac" name="__CHAR_UNSIGNED__" path="" value="1"/>
+<pathentry kind="mac" name="__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4" path="" value="1"/>
+<pathentry kind="mac" name="__avr32__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_ELF__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_AP__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_AVR32B__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_HAS_UNALIGNED_WORD__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_HAS_SIMD__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_HAS_DSP__" path="" value="1"/>
+<pathentry kind="mac" name="__AVR32_HAS_BRANCH_PRED__" path="" value="1"/>
+<pathentry kind="mac" name="__ELF__" path="" value="1"/>
 <pathentry include="c:/WinAVR-20100110/lib/gcc/avr/4.3.3/include" kind="inc" path="" system="true"/>
 <pathentry include="c:/WinAVR-20100110/lib/gcc/avr/4.3.3/include-fixed" kind="inc" path="" system="true"/>
 <pathentry include="c:/WinAVR-20100110/avr/include" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/lib/gcc/avr32/4.3.2/include/c++" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/lib/gcc/avr32/4.3.2/include/c++/avr32" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/lib/gcc/avr32/4.3.2/include/c++/backward" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/lib/gcc/avr32/4.3.2/include" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/lib/gcc/avr32/4.3.2/include-fixed" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/avr32/sys-include" kind="inc" path="" system="true"/>
+<pathentry include="c:/WinAVR-20100110/avr32/include" kind="inc" path="" system="true"/>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
 <buildTargets>
