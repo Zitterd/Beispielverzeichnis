@@ -12,13 +12,13 @@ IF( NOT CMAKE_BUILD_TYPE )
 ENDIF()
 
 SET(MAIN_FILE
-        test2.cpp)
+        test.c)
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 ENABLE_LANGUAGE(ASM)
 
-add_executable(test.o test2.cpp) #noetig? ->ja
+add_executable(test.o test.c) #noetig? ->ja
 
 AVR_CREATE_HEX(test.o)
 
