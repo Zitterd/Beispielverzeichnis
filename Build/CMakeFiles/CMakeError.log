@@ -1,6 +1,6 @@
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
 Compiler: C:/WinAVR-20100110/bin/avr32-g++.exe 
-Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;-Os;;-std=c++0x;-g;-w;-fno-exceptions;-ffunction-sections;-fdata-sections;-DARDUINO=158
+Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;-Os;;-std=c++0x;-g;-w;-fno-exceptions;-ffunction-sections;-fdata-sections;-DARDUINO=158;-DUSB_VID=0x2341;-DUSB_PID=0x8041
 Id flags: 
 
 The output was:
@@ -10,7 +10,7 @@ cc1plus.exe: error: unrecognized command line option "-mmcu=atmega32u4"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
 Compiler: C:/WinAVR-20100110/bin/avr32-g++.exe 
-Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;-Os;;-std=c++0x;-g;-w;-fno-exceptions;-ffunction-sections;-fdata-sections;-DARDUINO=158
+Build flags: -mmcu=atmega32u4;-DF_CPU=16000000L;-Os;;-std=c++0x;-g;-w;-fno-exceptions;-ffunction-sections;-fdata-sections;-DARDUINO=158;-DUSB_VID=0x2341;-DUSB_PID=0x8041
 Id flags: -c
 
 The output was:
