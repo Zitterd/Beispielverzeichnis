@@ -10,7 +10,7 @@
 set(CMAKE_SYSTEM_NAME Arduino)
 
 set(CMAKE_C_COMPILER   avr-gcc)
-set(CMAKE_CXX_COMPILER avr32-g++)  #neu
+set(CMAKE_CXX_COMPILER avr-g++)  #neu
 
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")   
