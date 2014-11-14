@@ -1,5 +1,5 @@
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\bin\gcc.exe 
+Compiler: C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\bin\\gcc.exe 
 Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;
 Id flags: 
 
@@ -9,7 +9,7 @@ gcc.exe: CreateProcess: No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\bin\gcc.exe 
+Compiler: C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\bin\\gcc.exe 
 Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;
 Id flags: -c
 
@@ -19,7 +19,7 @@ gcc.exe: CreateProcess: No such file or directory
 
 
 Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
-Compiler: C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\bin\gcc.exe 
+Compiler: C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\bin\\gcc.exe 
 Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;
 Id flags: -Aa
 
@@ -31,7 +31,7 @@ gcc.exe: CreateProcess: No such file or directory
 Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
 gcc.exe: no input files
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\bin\g++.exe 
+Compiler: C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\bin\\g++.exe 
 Build flags: -std=c++0x;-DF_CPU=16000000L;-Os;
 Id flags: 
 
@@ -41,7 +41,7 @@ g++.exe: CreateProcess: No such file or directory
 
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
-Compiler: C:\Program Files (x86)\Arduino\hardware\tools\avr\avr\bin\g++.exe 
+Compiler: C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr\\avr\\bin\\g++.exe 
 Build flags: -std=c++0x;-DF_CPU=16000000L;-Os;
 Id flags: -c
 
@@ -52,3 +52,20 @@ g++.exe: CreateProcess: No such file or directory
 
 Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
 g++.exe: no input files
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec2960438735/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2960438735.dir\build.make CMakeFiles/cmTryCompileExec2960438735.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
+Building C object CMakeFiles/cmTryCompileExec2960438735.dir/testCCompiler.c.obj
+C:\PROGRA~2\Arduino\hardware\tools\avr\avr\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec2960438735.dir\testCCompiler.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCCompiler.c"
+gcc.exe: CreateProcess: No such file or directory
+CMakeFiles\cmTryCompileExec2960438735.dir\build.make:56: recipe for target 'CMakeFiles/cmTryCompileExec2960438735.dir/testCCompiler.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTryCompileExec2960438735.dir/testCCompiler.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec2960438735/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec2960438735/fast] Error 2
+
+
