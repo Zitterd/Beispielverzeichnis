@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Test2.cpp
-iostream
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c
+stdio.h
 -
 
