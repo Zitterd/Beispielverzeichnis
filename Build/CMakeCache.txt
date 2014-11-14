@@ -227,7 +227,7 @@ ProcessorCount_cmd_sysctl:FILEPATH=ProcessorCount_cmd_sysctl-NOTFOUND
 ProcessorCount_cmd_sysinfo:FILEPATH=ProcessorCount_cmd_sysinfo-NOTFOUND
 
 //Path to a program.
-ProcessorCount_cmd_uname:FILEPATH=C:/WinAVR-20100110/utils/bin/uname.exe
+ProcessorCount_cmd_uname:FILEPATH=C:/Program Files (x86)/Git/bin/uname.exe
 
 //Value Computed by CMake
 Source_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build

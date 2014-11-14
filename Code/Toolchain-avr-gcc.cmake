@@ -15,14 +15,14 @@ set(CMAKE_CXX_COMPILER avr32-g++)  #avr32 statt avr?
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")   
 SET(CSTANDARD2 "-std=c++0x")     # komplett neu
-#SET(CDEBUG "-gstabs")
-#SET(CWARN "-Wall -Wstrict-prototypes")
-#SET(CTUNING "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
+SET(CDEBUG "-gstabs")
+SET(CWARN "-Wall -Wstrict-prototypes")
+SET(CTUNING "-funsigned-char -funsigned-bitfields -fpack-struct -fshort-enums")
 
 SET(COPT "-Os")
 
 #Modell des Mikrocontrollers
-#SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
+SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
 
 #Takfrequenz mit welcher der Mikrocontroller arbeitet
 SET(CDEFS "-DF_CPU=16000000L")  #neu (SET(CDEFS "-DF_CPU=12000000UL"))

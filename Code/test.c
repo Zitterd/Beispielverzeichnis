@@ -7,8 +7,12 @@
 
 #include <stdio.h>
 
-int main(void)
-{
-	printf("Test erfolgreich bestanden! =)");
-	return 0; 
+void setup() {
+  // put your setup code here, to run once:
+  printf("Test erfolgreich bestanden! =)");
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+   printf("Test erfolgreich bestanden!2 =)");
 }
