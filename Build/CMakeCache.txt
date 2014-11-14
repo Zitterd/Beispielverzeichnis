@@ -224,6 +224,8 @@ CMAKE_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/cmake.exe
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/cpack.exe
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/ctest.exe
+//Result of TRY_COMPILE
+CMAKE_C_COMPILER_WORKS:INTERNAL=FALSE
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
