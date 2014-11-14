@@ -6,7 +6,7 @@
  */ 
 
 #include <stdio.h>
-#include "Arduino.h"
+//#include "Arduino.h"
 
 
 void setup() {
@@ -21,7 +21,7 @@ void loop() {
 
 int main(void)
 {
-	init();  //welche?
+	//init();  //welche?
 	setup();
 	int i=0;
 	for(i=0;i<10;i++)
