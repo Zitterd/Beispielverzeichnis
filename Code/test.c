@@ -21,7 +21,7 @@ void loop() {
 
 int main(void)
 {
-	init();  //welche?
+	//init();  //welche?
 	setup();
 	int i=0;
 	for(;;)
