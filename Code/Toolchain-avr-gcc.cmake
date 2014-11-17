@@ -14,7 +14,7 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/st
 
 set(CMAKE_SYSTEM_NAME Arduino)
 
-set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_C_COMPILER   avr-gcc)
 
 set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
 
