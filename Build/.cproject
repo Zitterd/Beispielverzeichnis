@@ -135,7 +135,7 @@
 <pathentry kind="mac" name="__DEPRECATED" path="" value="1"/>
 <pathentry include="C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino" kind="inc" path="" system="true"/>
 <pathentry include="C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include" kind="inc" path="" system="true"/>
-<pathentry include="C:/Program Files (x86)/Arduino" kind="inc" path="" system="true"/>
+<pathentry include="C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard" kind="inc" path="" system="true"/>
 <pathentry include="c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include" kind="inc" path="" system="true"/>
 <pathentry include="c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include-fixed" kind="inc" path="" system="true"/>
 <pathentry include="c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include" kind="inc" path="" system="true"/>

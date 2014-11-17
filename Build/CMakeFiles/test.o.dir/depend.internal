@@ -12,6 +12,7 @@ CMakeFiles/test.o.dir/test.c.obj
  C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.h
  C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/binary.h
  C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/new.h
+ C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard/pins_arduino.h
  C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr/common.h
  C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr/fuse.h
  C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr/interrupt.h

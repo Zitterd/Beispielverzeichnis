@@ -80,6 +80,10 @@ C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/new.h
 stdlib.h
 -
 
+C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard/pins_arduino.h
+avr/pgmspace.h
+-
+
 C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr/common.h
 avr/sfr_defs.h
 -
