@@ -6,7 +6,12 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gc
 
 project (Source)
 
-
+SET(CDEFS "-DF_CPU=16000000L")
+SET(CMCU "-mmcu=atmega32u4") 
+SET(COPT "-Os")
+SET(CSTANDARD "-std=gnu99")
+SET(CFLAGS "${CMCU} ${CDEFS} ${COPT}  ${CSTANDARD} ")
+SET(CMAKE_C_FLAGS  ${CFLAGS})
 
 
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
