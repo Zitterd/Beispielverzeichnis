@@ -4,11 +4,6 @@ set(_ECLIPSE_VERSION "8.5.0" )
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
-
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
-
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
 
 project (Source)
 
