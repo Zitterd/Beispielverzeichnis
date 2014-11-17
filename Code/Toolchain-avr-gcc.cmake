@@ -15,16 +15,17 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/st
 set(CMAKE_SYSTEM_NAME Arduino)
 
 set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+
 set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
 
 
 #Compiler konfigurieren wie AVR Studio
 SET(CSTANDARD "-std=gnu99")   
-SET(CSTANDARD2 "-std=c++0x")     # komplett neu
+#SET(CSTANDARD2 "-std=c++0x")     # komplett neu
 SET(CDEBUG "-gstabs")
 SET(CWARN "-Wall -Wstrict-prototypes")
 
-SET(CTUNING " -g  -w -ffunction-sections -fdata-sections -MMD   -DARDUINO=158 -DARDUINO_AVR_YUN -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x8041 -DUSB_MANUFACTURER= -DUSB_PRODUCT="Arduino Yun" -IC:\Ard\Arduino\hardware\arduino\avr\cores\arduino -IC:\Ard\Arduino\hardware\arduino\avr\variants\yun")
+#SET(CTUNING " -g  -w -ffunction-sections -fdata-sections -MMD   -DARDUINO=158 -DARDUINO_AVR_YUN -DARDUINO_ARCH_AVR -DUSB_VID=0x2341 -DUSB_PID=0x8041 -DUSB_MANUFACTURER= -DUSB_PRODUCT="Arduino Yun" -IC:\Ard\Arduino\hardware\arduino\avr\cores\arduino -IC:\Ard\Arduino\hardware\arduino\avr\variants\yun")
 
 SET(COPT "-Os")
 
@@ -37,8 +38,8 @@ SET(CDEFS "-DF_CPU=16000000L")  #neu (SET(CDEFS "-DF_CPU=12000000UL"))
 
 
 #Compiler Optionen
-SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA} ${CTUNING}") #${CTUNING}
-SET(CXXFLAGS "${CMCU} ${CSTANDARD2} ${CDEFS} ${COPT} ")  
+SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}") #${CTUNING}
+SET(CXXFLAGS "${CMCU} ${CSTANDARD} ${CDEFS} ${COPT} ")  
 SET(CMAKE_C_FLAGS  ${CFLAGS})
 SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
