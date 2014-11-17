@@ -44,9 +44,9 @@ SET(CMAKE_C_FLAGS  ${CFLAGS})
 SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 # Add current directory to CMake Module path automatically
-if(EXISTS  ${CMAKE_CURRENT_LIST_DIR}/Platform/Arduino.cmake)
-    set(CMAKE_MODULE_PATH  ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_LIST_DIR})
-endif()
+#if(EXISTS  ${CMAKE_CURRENT_LIST_DIR}/Platform/Arduino.cmake)
+#    set(CMAKE_MODULE_PATH  ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_LIST_DIR})
+#endif()
 
 #=============================================================================#
 #                         System Paths                                        #

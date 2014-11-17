@@ -5,8 +5,8 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 project (Source)
 
-
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+
 
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
 
@@ -18,7 +18,7 @@ SET(MAIN_FILE
         test.c)
 
 set(CMAKE_VERBOSE_MAKEFILE true)
-#set(CMAKE_C_OUTPUT_EXTENSION ".o")
+set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 #ENABLE_LANGUAGE(ASM)
 
