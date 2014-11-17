@@ -1,10 +1,12 @@
 cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
+project (Source)
+
+
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
-project (Source)
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
 
 IF( NOT CMAKE_BUILD_TYPE )
@@ -16,7 +18,7 @@ SET(MAIN_FILE
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
-ENABLE_LANGUAGE(ASM)
+#ENABLE_LANGUAGE(ASM)
 
 add_executable(test.o test.c) #noetig? ->ja
 
