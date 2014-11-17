@@ -14,7 +14,7 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/st
 
 set(CMAKE_SYSTEM_NAME Arduino)
 
-set(CMAKE_C_COMPILER   avr-gcc)
+set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
 set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
 
 #Compiler konfigurieren wie AVR Studio
@@ -33,9 +33,6 @@ SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
 #Takfrequenz mit welcher der Mikrocontroller arbeitet
 SET(CDEFS "-DF_CPU=16000000L")  #neu (SET(CDEFS "-DF_CPU=12000000UL"))
 
-
-#SET(CEXTRA2 "-g -w -fno-exceptions -ffunction-sections -fdata-sections -DARDUINO=158") #neu
-#SET(ADDITIONAL_DEFINES "-DUSB_VID=0x2341 -DUSB_PID=0x8041") #neu
 
 #Compiler Optionen
 SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}") #${CINCS} ${CEXTRA}
