@@ -1,7 +1,7 @@
 set(CMAKE_CXX_COMPILER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
-set(CMAKE_CXX_COMPILER_ID "")
-set(CMAKE_CXX_COMPILER_VERSION "")
+set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_VERSION "4.3.2")
 set(CMAKE_CXX_COMPILE_FEATURES "")
 set(CMAKE_CXX98_COMPILE_FEATURES "")
 set(CMAKE_CXX11_COMPILE_FEATURES "")
@@ -11,10 +11,10 @@ set(CMAKE_CXX_PLATFORM_ID "")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_AR "C:/TDM-GCC-64/bin/ar.exe")
-set(CMAKE_RANLIB "C:/TDM-GCC-64/bin/ranlib.exe")
-set(CMAKE_LINKER "C:/TDM-GCC-64/bin/ld.exe")
-set(CMAKE_COMPILER_IS_GNUCXX )
+set(CMAKE_AR "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-ar.exe")
+set(CMAKE_RANLIB "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-ranlib.exe")
+set(CMAKE_LINKER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-ld.exe")
+set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
 set(CMAKE_CXX_ABI_COMPILED TRUE)
@@ -56,8 +56,8 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "m;c")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2;c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc;c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 
