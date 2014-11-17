@@ -7,8 +7,8 @@
 # License, v. 2.0. If a copy of the MPL was not distributed with this file,
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 #=============================================================================#
-INCLUDE("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
-INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
 
 
 set(CMAKE_SYSTEM_NAME Arduino)

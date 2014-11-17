@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "C:/WinAVR-20100110/bin/avr-g++.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "4.3.3")
+set(CMAKE_CXX_COMPILER_VERSION "4.3.2")
 set(CMAKE_CXX_COMPILE_FEATURES "")
 set(CMAKE_CXX98_COMPILE_FEATURES "")
 set(CMAKE_CXX11_COMPILE_FEATURES "")
@@ -57,7 +57,7 @@ endif()
 
 
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "m;c")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "c:/WinAVR-20100110/lib/gcc/avr/4.3.3;c:/WinAVR-20100110/lib/gcc;c:/WinAVR-20100110/avr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2;c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc;c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 
