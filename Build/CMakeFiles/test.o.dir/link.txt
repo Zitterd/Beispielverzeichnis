@@ -1,3 +1,0 @@
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\test.o.dir/objects.a
-C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\test.o.dir/objects.a @CMakeFiles\test.o.dir\objects1.rsp
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe  -mmcu=atmega32u4 -gstabs -DF_CPU=16000000L -Os -Wall -Wstrict-prototypes -std=gnu99   -O3 -DNDEBUG   -Wl,--whole-archive CMakeFiles\test.o.dir/objects.a -Wl,--no-whole-archive  -o test.o.exe -Wl,--out-implib,libtest.o.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\test.o.dir\linklibs.rsp
