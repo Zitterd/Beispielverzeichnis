@@ -7,7 +7,7 @@
 <storageModule buildSystemId="org.eclipse.cdt.core.defaultConfigDataProvider" id="org.eclipse.cdt.core.default.config.1" moduleId="org.eclipse.cdt.core.settings" name="Configuration">
 <externalSettings/>
 <extensions>
-<error_toolchain_type/>
+<extension id="org.eclipse.cdt.core.PE" point="org.eclipse.cdt.core.BinaryParser"/>
 </extensions>
 </storageModule>
 <storageModule moduleId="org.eclipse.cdt.core.language.mapping">
@@ -276,10 +276,6 @@
 <pathentry kind="mac" name="__GXX_RTTI" path="" value="1"/>
 <pathentry kind="mac" name="__EXCEPTIONS" path="" value="1"/>
 <pathentry kind="mac" name="__WCHAR_UNSIGNED__" path="" value="1"/>
-<pathentry include="C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard" kind="inc" path="" system="true"/>
-<pathentry include="C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino" kind="inc" path="" system="true"/>
-<pathentry include="C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include" kind="inc" path="" system="true"/>
-<pathentry include="C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr" kind="inc" path="" system="true"/>
 <pathentry include="c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1/include" kind="inc" path="" system="true"/>
 <pathentry include="c:/TDM-GCC-64/include" kind="inc" path="" system="true"/>
 <pathentry include="c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1/include-fixed" kind="inc" path="" system="true"/>
@@ -304,30 +300,30 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[exe] test.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[exe] test.elf" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>test.o</buildTarget>
+<buildTarget>test.elf</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[exe] test.o/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[exe] test.elf/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>test.o/fast</buildTarget>
+<buildTarget>test.elf/fast</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="Build" path="[Targets]/[exe] test.o" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="Build" path="[Targets]/[exe] test.elf" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments>-C "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" </buildArguments>
-<buildTarget>test.o</buildTarget>
+<buildTarget>test.elf</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="Clean" path="[Targets]/[exe] test.o" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="Clean" path="[Targets]/[exe] test.elf" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/test.o.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/test.elf.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
@@ -363,7 +359,7 @@
 <parser enabled="true"/>
 </buildOutputProvider>
 <scannerInfoProvider id="specsFile">
-<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="avr-gcc" useDefault="true"/>
+<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="C:/TDM-GCC-64/bin/gcc.exe" useDefault="true"/>
 <parser enabled="true"/>
 </scannerInfoProvider>
 </profile>
@@ -381,6 +377,6 @@
 </cconfiguration>
 </storageModule>
 <storageModule moduleId="cdtBuildSystem" version="4.0.0">
-<project id="Source.null.1" name="Source"/>
+<project id="Project.null.1" name="Project"/>
 </storageModule>
 </cproject>

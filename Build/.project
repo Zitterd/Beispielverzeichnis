@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Source-Debug@Build</name>
+	<name>Project-Debug@Build</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -91,7 +91,7 @@
 				</dictionary>
 				<dictionary>
 					<key>org.eclipse.cdt.core.errorOutputParser</key>
-					<value>org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
+					<value>org.eclipse.cdt.core.MakeErrorParser;org.eclipse.cdt.core.GCCErrorParser;org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GLDErrorParser;</value>
 				</dictionary>
 			</arguments>
 		</buildCommand>
@@ -119,7 +119,7 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Subprojects]/Source</name>
+			<name>[Subprojects]/Project</name>
 			<type>2</type>
 			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code</location>
 		</link>
@@ -129,42 +129,42 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o</name>
+			<name>[Targets]/[exe] test.elf</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/</name>
+			<name>[Targets]/[exe] test.elf/</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/Source Files</name>
+			<name>[Targets]/[exe] test.elf/Source Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/Source Files/test.c</name>
+			<name>[Targets]/[exe] test.elf/Source Files/test.c</name>
 			<type>1</type>
 			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c</location>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/Header Files</name>
+			<name>[Targets]/[exe] test.elf/Header Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/CMake Rules</name>
+			<name>[Targets]/[exe] test.elf/CMake Rules</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/Resources</name>
+			<name>[Targets]/[exe] test.elf/Resources</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/Object Files</name>
+			<name>[Targets]/[exe] test.elf/Object Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
