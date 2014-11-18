@@ -1,0 +1,28 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/bin/avr-gcc.exe 
+Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;;
+Id flags: 
+
+The output was:
+Das System kann die angegebene Datei nicht finden
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/bin/avr-gcc.exe 
+Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;;
+Id flags: -c
+
+The output was:
+Das System kann die angegebene Datei nicht finden
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/bin/avr-gcc.exe 
+Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;;
+Id flags: -Aa
+
+The output was:
+Das System kann die angegebene Datei nicht finden
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":

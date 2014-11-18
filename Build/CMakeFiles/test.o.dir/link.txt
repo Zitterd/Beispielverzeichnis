@@ -1,1 +1,0 @@
-avr-gcc  -g -Wall -Os -mmcu=atmega32u4 -g   CMakeFiles/test.o.dir/test.c.obj  -o test.o  
