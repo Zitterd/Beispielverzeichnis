@@ -19,7 +19,7 @@ SET(CSTANDARD "-std=gnu99")
 
 SET(CDEBUG "-gstabs")
 
-SET(CWARN "-Wall -Wstrict-prototypes")
+SET(CWARN "-Wall -Wstrict-prototypes -ffunction-sections -fdata-sections -DARDUINO=100")
 
 
 SET(COPT "-Os")
