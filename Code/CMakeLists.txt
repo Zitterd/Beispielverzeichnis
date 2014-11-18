@@ -2,7 +2,11 @@ cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
 
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
 
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
 
 set(CMAKE_C_COMPILER   avr-gcc)
 SET(CSTANDARD "-std=gnu99")
