@@ -9,23 +9,23 @@
 #=============================================================================#
 
 
-#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
-#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
-#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
-#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr")
-#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
-INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/variants/standard")
-INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/cores/arduino")
-INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5")
+#INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/variants/standard")
+#INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/cores/arduino")
+#INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/include")
+#INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5")
 
 
 set(CMAKE_SYSTEM_NAME Arduino)
 
 #set(CMAKE_C_COMPILER   avr-gcc)
 #set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
-set(CMAKE_C_COMPILER   "C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/bin/gcc.exe")
+set(CMAKE_C_COMPILER   avr-gcc)
 set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
 
 #Compiler konfigurieren wie AVR Studio
@@ -100,8 +100,8 @@ if(NOT ARDUINO_SDK_PATH)
             /usr/local/share/arduino*)
     elseif(WIN32)
         set(SDK_PATH_HINTS #"C:\\Program Files\\Arduino"
-           # "C:\\Program Files (x86)\\Arduino"
-		   "C:\\Users\\Jonas Hamers\\Documents\\arduino-1.5.7-windows\\arduino-1.5.7"
+            "C:\\Program Files (x86)\\Arduino"
+		  # "C:\\Users\\Jonas Hamers\\Documents\\arduino-1.5.7-windows\\arduino-1.5.7"
             )
     endif()
     list(SORT SDK_PATH_HINTS)
