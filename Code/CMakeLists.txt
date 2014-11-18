@@ -1,15 +1,15 @@
-cmake_minimum_required (VERSION 2.6.0)
+#cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
 
 
 
-project (Source)
+#project (Source)
 
 
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
+#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 
 #SET(CDEFS "-DF_CPU=16000000L")
@@ -22,20 +22,59 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
 
-IF( NOT CMAKE_BUILD_TYPE )
-   SET( CMAKE_BUILD_TYPE Release ... FORCE )
-ENDIF()
+#IF( NOT CMAKE_BUILD_TYPE )
+#   SET( CMAKE_BUILD_TYPE Release ... FORCE )
+#ENDIF()
 
-SET(MAIN_FILE
-        test.c)
+#SET(MAIN_FILE
+ #       test.c)
+
+#set(CMAKE_VERBOSE_MAKEFILE true)
+#set(CMAKE_C_OUTPUT_EXTENSION ".o")
+
+##ENABLE_LANGUAGE(ASM)
+
+#add_executable(test.o test.c)
+
+#AVR_CREATE_HEX(test.o)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Cross-compiling can only be done with v2.6 or later
+
+cmake_minimum_required(VERSION 2.6)
+
+
+# Set the target AVR device
+
+set(AVR_TARGET_DEVICE atmega32u4)
+
+
+# Set the GCC flags required
+
+set(CMAKE_C_FLAGS "-g -Wall -Os -mmcu=${AVR_TARGET_DEVICE}")
 
 set(CMAKE_VERBOSE_MAKEFILE true)
+
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
-#ENABLE_LANGUAGE(ASM)
 
-add_executable(test.o test.c)
+# Allow assembly files to be built
 
-AVR_CREATE_HEX(test.o)
+# ENABLE_LANGUAGE(ASM)
 
 
+# Make the executable
+
+add_executable(test.elf test.c)
