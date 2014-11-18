@@ -65,6 +65,9 @@ INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/ardui
 
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5")
 
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
+
 
 project (Source)
 
@@ -95,3 +98,4 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 # Make the executable
 
 add_executable(test.elf test.c)
+AVR_CREATE_HEX(test.o)
