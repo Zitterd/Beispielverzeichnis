@@ -97,5 +97,5 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 # Make the executable
 
-add_executable(test.elf test.c)
+add_executable(test.o test.c)
 AVR_CREATE_HEX(test.o)
