@@ -1,11 +1,14 @@
 cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
+project (Source)
+
+
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 
-project (Source)
+
 
 
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
