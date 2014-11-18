@@ -57,8 +57,6 @@ cmake_minimum_required(VERSION 2.6)
 
 set(_ECLIPSE_VERSION "8.5.0" )
 
-project (Source)
-
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/variants/standard")
 
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/cores/arduino")
@@ -66,6 +64,11 @@ INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/ardui
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/include")
 
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5")
+
+
+project (Source)
+
+
 
 
 set(CMAKE_SYSTEM_NAME Arduino)
