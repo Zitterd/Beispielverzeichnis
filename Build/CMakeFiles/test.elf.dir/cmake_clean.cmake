@@ -1,9 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test.elf.dir/test.c.obj"
   "test.elf.pdb"
-  "test.elf.exe"
-  "test.elf.exe.manifest"
-  "libtest.elf.dll.a"
+  "test.elf"
+  "test.elf.manifest"
 )
 
 # Per-language clean rules from dependency scanning.

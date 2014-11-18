@@ -8,7 +8,7 @@ set(_ECLIPSE_VERSION "8.5.0" )
 
 
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 #INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 project (Source)
 
@@ -56,8 +56,17 @@ MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt..
 cmake_minimum_required(VERSION 2.6)
 
 
-# Set the target AVR device
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
+
+set(CMAKE_SYSTEM_NAME Arduino)
+set(CMAKE_C_COMPILER   avr-gcc)
+
+# Set the target AVR device
 set(AVR_TARGET_DEVICE atmega32u4)
 
 
