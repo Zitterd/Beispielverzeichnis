@@ -1,6 +1,7 @@
 cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
+set(CMAKE_C_COMPILER   avr-gcc)
 
 project (Source)
 

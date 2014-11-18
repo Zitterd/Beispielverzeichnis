@@ -1,208 +1,273 @@
-The target system is: Arduino -  - 
-The host system is: Windows - 6.1 - AMD64
+The system is: Windows - 6.1 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe 
-Build flags: -mmcu=atmega32u4;-gstabs;-DF_CPU=16000000L;-Os;-Wall;-Wstrict-prototypes;-std=gnu99;;
+Compiler: C:/TDM-GCC-64/bin/gcc.exe 
+Build flags: 
 Id flags: 
 
 The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/3.1.0-rc1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/3.1.0-rc1/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe 
-Build flags: -mmcu=atmega32u4;-std=gnu99;-DF_CPU=16000000L;-Os;
+Compiler: C:/TDM-GCC-64/bin/g++.exe 
+Build flags: 
 Id flags: 
 
 The output was:
 0
-cc1plus.exe: warning: command line option "-std=gnu99" is valid for C/ObjC but not for C++
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is GNU, found in "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/3.1.0-rc1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/3.1.0-rc1/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec239907006/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec239907006.dir\build.make CMakeFiles/cmTryCompileExec239907006.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec898308302/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec898308302.dir\build.make CMakeFiles/cmTryCompileExec898308302.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec239907006.dir/testCCompiler.c.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec239907006.dir\testCCompiler.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCCompiler.c"
-Linking C executable cmTryCompileExec239907006
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec239907006.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe      CMakeFiles/cmTryCompileExec239907006.dir/testCCompiler.c.obj  -o cmTryCompileExec239907006  
+Building C object CMakeFiles/cmTryCompileExec898308302.dir/testCCompiler.c.obj
+C:\TDM-GCC-64\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec898308302.dir\testCCompiler.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCCompiler.c"
+Linking C executable cmTryCompileExec898308302.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec898308302.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec898308302.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTryCompileExec898308302.dir/objects.a @CMakeFiles\cmTryCompileExec898308302.dir\objects1.rsp
+C:\TDM-GCC-64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTryCompileExec898308302.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec898308302.exe -Wl,--out-implib,libcmTryCompileExec898308302.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec898308302.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec778709655/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec778709655.dir\build.make CMakeFiles/cmTryCompileExec778709655.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec262648071/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec262648071.dir\build.make CMakeFiles/cmTryCompileExec262648071.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec778709655.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTryCompileExec778709655
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec778709655.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe     -v CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec778709655   
+Building C object CMakeFiles/cmTryCompileExec262648071.dir/CMakeCCompilerABI.c.obj
+C:\TDM-GCC-64\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec262648071.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec262648071.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec262648071.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec262648071.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTryCompileExec262648071.dir/objects.a @CMakeFiles\cmTryCompileExec262648071.dir\objects1.rsp
+C:\TDM-GCC-64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec262648071.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec262648071.exe -Wl,--out-implib,libcmTryCompileExec262648071.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec262648071.dir\linklibs.rsp
 Using built-in specs.
-Target: avr
-Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse'
-Thread model: single
-gcc version 4.3.2 (WinAVR 20081205) 
-COMPILER_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/
-LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec778709655'
- c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec778709655 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc
+COLLECT_GCC=C:\TDM-GCC-64\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.8.1/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-2 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 4.8.1 (tdm64-2) 
+COMPILER_PATH=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/;c:/tdm-gcc-64/bin/../libexec/gcc/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/;c:/tdm-gcc-64/bin/../lib/gcc/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec262648071.exe' '-mtune=generic' '-march=x86-64'
+ c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTryCompileExec262648071.exe c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Lc:/tdm-gcc-64/bin/../lib/gcc -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. @C:\Windows\TEMP\ccYs4GBW -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(avr-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec778709655/fast"]
-  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec778709655.dir\build.make CMakeFiles/cmTryCompileExec778709655.dir/build]
+  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec262648071/fast"]
+  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec262648071.dir\build.make CMakeFiles/cmTryCompileExec262648071.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp']
   ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec778709655.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTryCompileExec778709655]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec778709655.dir\link.txt --verbose=1]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe     -v CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec778709655   ]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec262648071.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\TDM-GCC-64\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec262648071.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTryCompileExec262648071.exe]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec262648071.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec262648071.dir/objects.a]
+  ignore line: [C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTryCompileExec262648071.dir/objects.a @CMakeFiles\cmTryCompileExec262648071.dir\objects1.rsp]
+  ignore line: [C:\TDM-GCC-64\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec262648071.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec262648071.exe -Wl,--out-implib,libcmTryCompileExec262648071.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec262648071.dir\linklibs.rsp]
   ignore line: [Using built-in specs.]
-  ignore line: [Target: avr]
-  ignore line: [Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse']
-  ignore line: [Thread model: single]
-  ignore line: [gcc version 4.3.2 (WinAVR 20081205) ]
-  ignore line: [COMPILER_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/avr/4.3.2/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/]
-  ignore line: [LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec778709655']
-  link line: [ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec778709655 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc]
-    arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe] ==> ignore
+  ignore line: [COLLECT_GCC=C:\TDM-GCC-64\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.8.1/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-2 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.1 (tdm64-2) ]
+  ignore line: [COMPILER_PATH=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/]
+  ignore line: [c:/tdm-gcc-64/bin/../libexec/gcc/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec262648071.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTryCompileExec262648071.exe c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Lc:/tdm-gcc-64/bin/../lib/gcc -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. @C:\Windows\TEMP\ccYs4GBW -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+    arg [c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe] ==> ignore
     arg [-m] ==> ignore
-    arg [avr2] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [--exclude-libs=libpthread.a] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec778709655] ==> ignore
-    arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o] ==> ignore
-    arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2]
-    arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc]
-    arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib]
-    arg [CMakeFiles/cmTryCompileExec778709655.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [cmTryCompileExec262648071.exe] ==> ignore
+    arg [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..]
+    arg [@C:\Windows\TEMP\ccYs4GBW] ==> ignore
+    arg [-lmingw32] ==> lib []
     arg [-lgcc] ==> lib []
-    arg [-lc] ==> lib []
+    arg [-lmoldname] ==> lib []
+    arg [-lmingwex] ==> lib []
+    arg [-lmsvcrt] ==> lib []
+    arg [-lpthread] ==> lib []
+    arg [-ladvapi32] ==> lib []
+    arg [-lshell32] ==> lib []
+    arg [-luser32] ==> lib []
+    arg [-lkernel32] ==> lib []
+    arg [-lmingw32] ==> lib []
     arg [-lgcc] ==> lib []
+    arg [-lmoldname] ==> lib []
+    arg [-lmingwex] ==> lib []
+    arg [-lmsvcrt] ==> lib []
+    arg [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  collapse library dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2] ==> [c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2]
-  collapse library dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc] ==> [c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc]
-  collapse library dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib] ==> [c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/lib]
-  implicit libs: [c]
-  implicit dirs: [c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2;c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc;c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1] ==> [c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc] ==> [c:/TDM-GCC-64/lib/gcc]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> [c:/TDM-GCC-64/x86_64-w64-mingw32/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib] ==> [c:/TDM-GCC-64/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib] ==> [c:/TDM-GCC-64/x86_64-w64-mingw32/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..] ==> [c:/TDM-GCC-64/lib]
+  implicit libs: [mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1;c:/TDM-GCC-64/lib/gcc;c:/TDM-GCC-64/x86_64-w64-mingw32/lib;c:/TDM-GCC-64/lib]
   implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec2279554651/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2279554651.dir\build.make CMakeFiles/cmTryCompileExec2279554651.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec49393492/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec49393492.dir\build.make CMakeFiles/cmTryCompileExec49393492.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec2279554651.dir/testCXXCompiler.cxx.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec2279554651.dir\testCXXCompiler.cxx.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
-Linking CXX executable cmTryCompileExec2279554651
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2279554651.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE       CMakeFiles/cmTryCompileExec2279554651.dir/testCXXCompiler.cxx.obj  -o cmTryCompileExec2279554651  
+Building CXX object CMakeFiles/cmTryCompileExec49393492.dir/testCXXCompiler.cxx.obj
+C:\TDM-GCC-64\bin\g++.exe     -o CMakeFiles\cmTryCompileExec49393492.dir\testCXXCompiler.cxx.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+Linking CXX executable cmTryCompileExec49393492.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec49393492.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec49393492.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTryCompileExec49393492.dir/objects.a @CMakeFiles\cmTryCompileExec49393492.dir\objects1.rsp
+C:\TDM-GCC-64\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTryCompileExec49393492.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec49393492.exe -Wl,--out-implib,libcmTryCompileExec49393492.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec49393492.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec1411039496/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1411039496.dir\build.make CMakeFiles/cmTryCompileExec1411039496.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec4192947897/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec4192947897.dir\build.make CMakeFiles/cmTryCompileExec4192947897.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec1411039496.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTryCompileExec1411039496
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1411039496.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE      -v CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec1411039496   
+Building CXX object CMakeFiles/cmTryCompileExec4192947897.dir/CMakeCXXCompilerABI.cpp.obj
+C:\TDM-GCC-64\bin\g++.exe     -o CMakeFiles\cmTryCompileExec4192947897.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec4192947897.exe
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec4192947897.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec4192947897.dir/objects.a
+C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTryCompileExec4192947897.dir/objects.a @CMakeFiles\cmTryCompileExec4192947897.dir\objects1.rsp
+C:\TDM-GCC-64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec4192947897.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec4192947897.exe -Wl,--out-implib,libcmTryCompileExec4192947897.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec4192947897.dir\linklibs.rsp
 Using built-in specs.
-Target: avr
-Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse'
-Thread model: single
-gcc version 4.3.2 (WinAVR 20081205) 
-COMPILER_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/
-LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1411039496'
- c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec1411039496 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm -lgcc -lc -lgcc
+COLLECT_GCC=C:\TDM-GCC-64\bin\g++.exe
+COLLECT_LTO_WRAPPER=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe
+Target: x86_64-w64-mingw32
+Configured with: ../../../src/gcc-4.8.1/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-2 --with-bugurl=http://tdm-gcc.tdragon.net/bugs
+Thread model: posix
+gcc version 4.8.1 (tdm64-2) 
+COMPILER_PATH=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/;c:/tdm-gcc-64/bin/../libexec/gcc/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/bin/
+LIBRARY_PATH=c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/;c:/tdm-gcc-64/bin/../lib/gcc/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/;c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec4192947897.exe' '-mtune=generic' '-march=x86-64'
+ c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTryCompileExec4192947897.exe c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Lc:/tdm-gcc-64/bin/../lib/gcc -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. @C:\Windows\TEMP\ccfDbubX -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(avr-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec1411039496/fast"]
-  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1411039496.dir\build.make CMakeFiles/cmTryCompileExec1411039496.dir/build]
+  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec4192947897/fast"]
+  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec4192947897.dir\build.make CMakeFiles/cmTryCompileExec4192947897.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp']
   ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec1411039496.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTryCompileExec1411039496]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1411039496.dir\link.txt --verbose=1]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE      -v CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec1411039496   ]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec4192947897.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\TDM-GCC-64\bin\g++.exe     -o CMakeFiles\cmTryCompileExec4192947897.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTryCompileExec4192947897.exe]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec4192947897.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec4192947897.dir/objects.a]
+  ignore line: [C:\TDM-GCC-64\bin\ar.exe cr CMakeFiles\cmTryCompileExec4192947897.dir/objects.a @CMakeFiles\cmTryCompileExec4192947897.dir\objects1.rsp]
+  ignore line: [C:\TDM-GCC-64\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec4192947897.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec4192947897.exe -Wl,--out-implib,libcmTryCompileExec4192947897.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTryCompileExec4192947897.dir\linklibs.rsp]
   ignore line: [Using built-in specs.]
-  ignore line: [Target: avr]
-  ignore line: [Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse']
-  ignore line: [Thread model: single]
-  ignore line: [gcc version 4.3.2 (WinAVR 20081205) ]
-  ignore line: [COMPILER_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/avr/4.3.2/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/]
-  ignore line: [LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/]
-  ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1411039496']
-  link line: [ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec1411039496 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm -lgcc -lc -lgcc]
-    arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe] ==> ignore
+  ignore line: [COLLECT_GCC=C:\TDM-GCC-64\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/lto-wrapper.exe]
+  ignore line: [Target: x86_64-w64-mingw32]
+  ignore line: [Configured with: ../../../src/gcc-4.8.1/configure --build=x86_64-w64-mingw32 --enable-targets=all --enable-languages=ada,c,c++,fortran,lto,objc,obj-c++ --enable-libgomp --enable-lto --enable-graphite --enable-cxx-flags=-DWINPTHREAD_STATIC --enable-libstdcxx-debug --enable-threads=posix --enable-version-specific-runtime-libs --enable-fully-dynamic-string --enable-libstdcxx-threads --enable-libstdcxx-time --with-gnu-ld --disable-werror --disable-nls --disable-win32-registry --prefix=/mingw64tdm --with-local-prefix=/mingw64tdm --with-pkgversion=tdm64-2 --with-bugurl=http://tdm-gcc.tdragon.net/bugs]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.1 (tdm64-2) ]
+  ignore line: [COMPILER_PATH=c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/]
+  ignore line: [c:/tdm-gcc-64/bin/../libexec/gcc/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/]
+  ignore line: [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec4192947897.exe' '-mtune=generic' '-march=x86-64']
+  link line: [ c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe -m i386pep --exclude-libs=libpthread.a -Bdynamic -o cmTryCompileExec4192947897.exe c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1 -Lc:/tdm-gcc-64/bin/../lib/gcc -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib -Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../.. @C:\Windows\TEMP\ccfDbubX -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc -lmoldname -lmingwex -lmsvcrt c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o]
+    arg [c:/tdm-gcc-64/bin/../libexec/gcc/x86_64-w64-mingw32/4.8.1/collect2.exe] ==> ignore
     arg [-m] ==> ignore
-    arg [avr2] ==> ignore
+    arg [i386pep] ==> ignore
+    arg [--exclude-libs=libpthread.a] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec1411039496] ==> ignore
-    arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o] ==> ignore
-    arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2]
-    arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc]
-    arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib]
-    arg [CMakeFiles/cmTryCompileExec1411039496.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [cmTryCompileExec4192947897.exe] ==> ignore
+    arg [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crt2.o] ==> ignore
+    arg [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtbegin.o] ==> ignore
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib]
+    arg [-Lc:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..] ==> dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..]
+    arg [@C:\Windows\TEMP\ccfDbubX] ==> ignore
+    arg [-lmingw32] ==> lib []
     arg [-lgcc] ==> lib []
-    arg [-lm] ==> lib []
+    arg [-lmoldname] ==> lib []
+    arg [-lmingwex] ==> lib []
+    arg [-lmsvcrt] ==> lib []
+    arg [-lpthread] ==> lib []
+    arg [-ladvapi32] ==> lib []
+    arg [-lshell32] ==> lib []
+    arg [-luser32] ==> lib []
+    arg [-lkernel32] ==> lib []
+    arg [-lmingw32] ==> lib []
     arg [-lgcc] ==> lib []
-    arg [-lc] ==> lib []
-    arg [-lgcc] ==> lib []
+    arg [-lmoldname] ==> lib []
+    arg [-lmingwex] ==> lib []
+    arg [-lmsvcrt] ==> lib []
+    arg [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib/crtend.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc]
-  remove lib [gcc]
-  collapse library dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2] ==> [c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2]
-  collapse library dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc] ==> [c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc]
-  collapse library dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib] ==> [c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/lib]
-  implicit libs: [m;c]
-  implicit dirs: [c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2;c:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc;c:/Program Files (x86)/Arduino/hardware/tools/avr/avr/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1] ==> [c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc] ==> [c:/TDM-GCC-64/lib/gcc]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib/../lib] ==> [c:/TDM-GCC-64/x86_64-w64-mingw32/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../lib] ==> [c:/TDM-GCC-64/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../../../x86_64-w64-mingw32/lib] ==> [c:/TDM-GCC-64/x86_64-w64-mingw32/lib]
+  collapse library dir [c:/tdm-gcc-64/bin/../lib/gcc/x86_64-w64-mingw32/4.8.1/../../..] ==> [c:/TDM-GCC-64/lib]
+  implicit libs: [mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1;c:/TDM-GCC-64/lib/gcc;c:/TDM-GCC-64/x86_64-w64-mingw32/lib;c:/TDM-GCC-64/lib]
   implicit fwks: []
 
 
