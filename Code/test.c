@@ -16,7 +16,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-   printf("Test erfolgreich bestanden!");
+  // printf("Test erfolgreich bestanden!");
 }
 
 int main(void)
