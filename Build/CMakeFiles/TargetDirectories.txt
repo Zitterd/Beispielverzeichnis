@@ -1,1 +1,1 @@
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/test.elf.dir
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/test.o.dir

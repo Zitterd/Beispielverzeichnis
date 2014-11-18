@@ -105,24 +105,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test.elf
+# Target rules for targets named test.o
 
 # Build rule for target.
-test.elf: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 test.elf
-.PHONY : test.elf
+test.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test.o
+.PHONY : test.o
 
 # fast build rule for target.
-test.elf/fast:
-	$(MAKE) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/build
-.PHONY : test.elf/fast
+test.o/fast:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
+.PHONY : test.o/fast
 
 test.obj: test.c.obj
 .PHONY : test.obj
 
 # target to build an object file
 test.c.obj:
-	$(MAKE) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/test.c.obj
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
 .PHONY : test.c.obj
 
 test.i: test.c.i
@@ -130,7 +130,7 @@ test.i: test.c.i
 
 # target to preprocess a source file
 test.c.i:
-	$(MAKE) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/test.c.i
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
 .PHONY : test.c.i
 
 test.s: test.c.s
@@ -138,7 +138,7 @@ test.s: test.c.s
 
 # target to generate assembly for a file
 test.c.s:
-	$(MAKE) -f CMakeFiles\test.elf.dir\build.make CMakeFiles/test.elf.dir/test.c.s
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
 .PHONY : test.c.s
 
 # Help Target
@@ -149,7 +149,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... test.elf
+	@echo ... test.o
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

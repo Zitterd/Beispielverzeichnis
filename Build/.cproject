@@ -304,30 +304,30 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[exe] test.elf" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[exe] test.o" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>test.elf</buildTarget>
+<buildTarget>test.o</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[exe] test.elf/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[exe] test.o/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>test.elf/fast</buildTarget>
+<buildTarget>test.o/fast</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="Build" path="[Targets]/[exe] test.elf" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="Build" path="[Targets]/[exe] test.o" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments>-C "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" </buildArguments>
-<buildTarget>test.elf</buildTarget>
+<buildTarget>test.o</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="Clean" path="[Targets]/[exe] test.elf" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="Clean" path="[Targets]/[exe] test.o" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/test.elf.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/test.o.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>

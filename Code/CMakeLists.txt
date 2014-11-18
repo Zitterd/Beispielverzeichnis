@@ -65,17 +65,17 @@ INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/ardui
 
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5")
 
-project (Source)
+
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
-
-
-
+project (Source)
 
 
 set(CMAKE_SYSTEM_NAME Arduino)
+
 set(CMAKE_C_COMPILER   avr-gcc)
+
 
 # Set the target AVR device
 set(AVR_TARGET_DEVICE atmega32u4)
@@ -85,17 +85,12 @@ set(AVR_TARGET_DEVICE atmega32u4)
 
 set(CMAKE_C_FLAGS "-g -Wall -Os -mmcu=${AVR_TARGET_DEVICE}")
 
+
+
 set(CMAKE_VERBOSE_MAKEFILE true)
 
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
-
-# Allow assembly files to be built
-
 # ENABLE_LANGUAGE(ASM)
-
-
-# Make the executable
-
 add_executable(test.o test.c)
 AVR_CREATE_HEX(test.o)
