@@ -65,11 +65,11 @@ INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/ardui
 
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5")
 
-
+project (Source)
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
-project (Source)
+
 
 
 
