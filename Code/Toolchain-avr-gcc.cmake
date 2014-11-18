@@ -8,9 +8,11 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 #=============================================================================#
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+
 
 
 set(CMAKE_SYSTEM_NAME Arduino)

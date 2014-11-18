@@ -6,6 +6,30 @@
 
 #IncludeRegexTransform: 
 
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/Arduino.h
+stdlib.h
+-
+string.h
+-
+math.h
+-
+avr/pgmspace.h
+-
+avr/io.h
+-
+avr/interrupt.h
+-
+binary.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/binary.h
+WCharacter.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WCharacter.h
+WString.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/WString.h
+HardwareSerial.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
+pins_arduino.h
+C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/pins_arduino.h
+
 C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
 inttypes.h
 -
@@ -689,34 +713,6 @@ stddef.h
 C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/string.h
 stddef.h
 -
-
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino.h
-stdlib.h
--
-stdbool.h
--
-string.h
--
-math.h
--
-avr/pgmspace.h
--
-avr/io.h
--
-avr/interrupt.h
--
-binary.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/binary.h
-WCharacter.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/WCharacter.h
-WString.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/WString.h
-HardwareSerial.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/HardwareSerial.h
-USBAPI.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/USBAPI.h
-pins_arduino.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/pins_arduino.h
 
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c
 stdio.h
