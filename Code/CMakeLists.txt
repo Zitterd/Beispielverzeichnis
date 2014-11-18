@@ -5,6 +5,24 @@ set(_ECLIPSE_VERSION "8.5.0" )
 
 
 set(CMAKE_C_COMPILER   avr-gcc)
+SET(CSTANDARD "-std=gnu99")
+
+SET(CDEBUG "-gstabs")
+
+SET(CWARN "-Wall -Wstrict-prototypes -ffunction-sections -fdata-sections -DARDUINO=100")
+
+
+SET(COPT "-Os")
+
+
+
+SET(CMCU "-mmcu=atmega32u4")  
+
+SET(CDEFS "-DF_CPU=16000000L")  
+
+SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}")   
+
+SET(CMAKE_C_FLAGS  ${CFLAGS})
 
 
 
