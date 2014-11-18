@@ -56,15 +56,15 @@ CMakeFiles/test.elf.dir/test.c.obj: CMakeFiles/test.elf.dir/includes_C.rsp
 CMakeFiles/test.elf.dir/test.c.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test.c
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/test.elf.dir/test.c.obj"
-	avr-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\test.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c"
+	C:\TDM-GCC-64\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\test.elf.dir\test.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c"
 
 CMakeFiles/test.elf.dir/test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.elf.dir/test.c.i"
-	avr-gcc  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c" > CMakeFiles\test.elf.dir\test.c.i
+	C:\TDM-GCC-64\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c" > CMakeFiles\test.elf.dir\test.c.i
 
 CMakeFiles/test.elf.dir/test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.elf.dir/test.c.s"
-	avr-gcc  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c" -o CMakeFiles\test.elf.dir\test.c.s
+	C:\TDM-GCC-64\bin\gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c" -o CMakeFiles\test.elf.dir\test.c.s
 
 CMakeFiles/test.elf.dir/test.c.obj.requires:
 .PHONY : CMakeFiles/test.elf.dir/test.c.obj.requires

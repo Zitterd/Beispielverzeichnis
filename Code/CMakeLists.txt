@@ -64,7 +64,7 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/a
 project (Source)
 
 set(CMAKE_SYSTEM_NAME Arduino)
-#set(CMAKE_C_COMPILER   avr-gcc)
+set(CMAKE_C_COMPILER   avr-gcc)
 
 # Set the target AVR device
 set(AVR_TARGET_DEVICE atmega32u4)
@@ -74,7 +74,7 @@ set(AVR_TARGET_DEVICE atmega32u4)
 
 set(CMAKE_C_FLAGS "-g -Wall -Os -mmcu=${AVR_TARGET_DEVICE}")
 
-set(CMAKE_VERBOSE_MAKEFILE true)
+#set(CMAKE_VERBOSE_MAKEFILE true)
 
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
