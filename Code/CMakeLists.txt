@@ -2,22 +2,22 @@ cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 
 project (Source)
 
 
 
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 
-SET(CDEFS "-DF_CPU=16000000L")
-SET(CMCU "-mmcu=atmega32u4") 
-SET(COPT "-Os")
-SET(CSTANDARD "-std=gnu99")
-SET(CFLAGS "${CMCU} ${CDEFS} ${COPT}  ${CSTANDARD} ")
-SET(CMAKE_C_FLAGS  ${CFLAGS})
+#SET(CDEFS "-DF_CPU=16000000L")
+#SET(CMCU "-mmcu=atmega32u4") 
+#SET(COPT "-Os")
+#SET(CSTANDARD "-std=gnu99")
+#SET(CFLAGS "${CMCU} ${CDEFS} ${COPT}  ${CSTANDARD} ")
+#SET(CMAKE_C_FLAGS  ${CFLAGS})
 
 
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
