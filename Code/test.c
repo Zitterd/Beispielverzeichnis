@@ -21,7 +21,7 @@ void loop() {
 
 int main(void)
 {
-	init();  //reference undefined?!?
+	//init();  //reference undefined?!?
 	setup();
 	for(;;)
 	{

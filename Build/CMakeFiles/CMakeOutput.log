@@ -30,30 +30,30 @@ The CXX compiler identification is GNU, found in "C:/Users/Jonas Hamers/Desktop/
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec995340609/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec995340609.dir\build.make CMakeFiles/cmTryCompileExec995340609.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec2337794231/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2337794231.dir\build.make CMakeFiles/cmTryCompileExec2337794231.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec995340609.dir/testCCompiler.c.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec995340609.dir\testCCompiler.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCCompiler.c"
-Linking C executable cmTryCompileExec995340609
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec995340609.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe      CMakeFiles/cmTryCompileExec995340609.dir/testCCompiler.c.obj  -o cmTryCompileExec995340609  
+Building C object CMakeFiles/cmTryCompileExec2337794231.dir/testCCompiler.c.obj
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec2337794231.dir\testCCompiler.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCCompiler.c"
+Linking C executable cmTryCompileExec2337794231
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2337794231.dir\link.txt --verbose=1
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe      CMakeFiles/cmTryCompileExec2337794231.dir/testCCompiler.c.obj  -o cmTryCompileExec2337794231  
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec3898976312/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3898976312.dir\build.make CMakeFiles/cmTryCompileExec3898976312.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec1477210499/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1477210499.dir\build.make CMakeFiles/cmTryCompileExec1477210499.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec3898976312.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"
-Linking C executable cmTryCompileExec3898976312
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3898976312.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe     -v CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec3898976312   
+Building C object CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec1477210499.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec1477210499
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1477210499.dir\link.txt --verbose=1
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe     -v CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec1477210499   
 Using built-in specs.
 Target: avr
 Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse'
@@ -61,8 +61,8 @@ Thread model: single
 gcc version 4.3.2 (WinAVR 20081205) 
 COMPILER_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/
 LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3898976312'
- c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec3898976312 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1477210499'
+ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec1477210499 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
@@ -70,15 +70,15 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(avr-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec3898976312/fast"]
-  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3898976312.dir\build.make CMakeFiles/cmTryCompileExec3898976312.dir/build]
+  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec1477210499/fast"]
+  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1477210499.dir\build.make CMakeFiles/cmTryCompileExec1477210499.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp']
   ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec3898976312.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"]
-  ignore line: [Linking C executable cmTryCompileExec3898976312]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3898976312.dir\link.txt --verbose=1]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe     -v CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec3898976312   ]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe    -o CMakeFiles\cmTryCompileExec1477210499.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTryCompileExec1477210499]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1477210499.dir\link.txt --verbose=1]
+  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe     -v CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj  -o cmTryCompileExec1477210499   ]
   ignore line: [Using built-in specs.]
   ignore line: [Target: avr]
   ignore line: [Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse']
@@ -90,18 +90,18 @@ Parsed C implicit link information from above output:
   ignore line: [LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/]
   ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/]
   ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3898976312']
-  link line: [ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec3898976312 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1477210499']
+  link line: [ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec1477210499 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lgcc]
     arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe] ==> ignore
     arg [-m] ==> ignore
     arg [avr2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3898976312] ==> ignore
+    arg [cmTryCompileExec1477210499] ==> ignore
     arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o] ==> ignore
     arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2]
     arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc]
     arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib]
-    arg [CMakeFiles/cmTryCompileExec3898976312.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec1477210499.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [-lgcc] ==> lib []
     arg [-lc] ==> lib []
     arg [-lgcc] ==> lib []
@@ -118,30 +118,30 @@ Parsed C implicit link information from above output:
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec3745505892/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3745505892.dir\build.make CMakeFiles/cmTryCompileExec3745505892.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec1814719842/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1814719842.dir\build.make CMakeFiles/cmTryCompileExec1814719842.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec3745505892.dir/testCXXCompiler.cxx.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec3745505892.dir\testCXXCompiler.cxx.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
-Linking CXX executable cmTryCompileExec3745505892
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3745505892.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE       CMakeFiles/cmTryCompileExec3745505892.dir/testCXXCompiler.cxx.obj  -o cmTryCompileExec3745505892  
+Building CXX object CMakeFiles/cmTryCompileExec1814719842.dir/testCXXCompiler.cxx.obj
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec1814719842.dir\testCXXCompiler.cxx.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+Linking CXX executable cmTryCompileExec1814719842
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1814719842.dir\link.txt --verbose=1
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE       CMakeFiles/cmTryCompileExec1814719842.dir/testCXXCompiler.cxx.obj  -o cmTryCompileExec1814719842  
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec2506386273/fast"
-C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2506386273.dir\build.make CMakeFiles/cmTryCompileExec2506386273.dir/build
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec6570084/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec6570084.dir\build.make CMakeFiles/cmTryCompileExec6570084.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec2506386273.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"
-Linking CXX executable cmTryCompileExec2506386273
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2506386273.dir\link.txt --verbose=1
-C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE      -v CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec2506386273   
+Building CXX object CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec6570084.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec6570084
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec6570084.dir\link.txt --verbose=1
+C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE      -v CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec6570084   
 Using built-in specs.
 Target: avr
 Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse'
@@ -149,8 +149,8 @@ Thread model: single
 gcc version 4.3.2 (WinAVR 20081205) 
 COMPILER_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../libexec/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/
 LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/;c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2506386273'
- c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec2506386273 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm -lgcc -lc -lgcc
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec6570084'
+ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec6570084 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm -lgcc -lc -lgcc
 mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
 
 
@@ -158,15 +158,15 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(avr-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec2506386273/fast"]
-  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2506386273.dir\build.make CMakeFiles/cmTryCompileExec2506386273.dir/build]
+  ignore line: [Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec6570084/fast"]
+  ignore line: [C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec6570084.dir\build.make CMakeFiles/cmTryCompileExec6570084.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp']
   ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec2506386273.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"]
-  ignore line: [Linking CXX executable cmTryCompileExec2506386273]
-  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2506386273.dir\link.txt --verbose=1]
-  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE      -v CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec2506386273   ]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE     -o CMakeFiles\cmTryCompileExec6570084.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTryCompileExec6570084]
+  ignore line: ["C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec6570084.dir\link.txt --verbose=1]
+  ignore line: [C:\PROGRA~2\Arduino\hardware\tools\avr\bin\AVR-G_~1.EXE      -v CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTryCompileExec6570084   ]
   ignore line: [Using built-in specs.]
   ignore line: [Target: avr]
   ignore line: [Configured with: ../gcc-4.3.2/configure --enable-win32-registry=WinAVR-20081205 --with-gmp=/usr/local --with-mpfr=/usr/local --prefix=/c/WinAVR --target=avr --enable-languages=c,c++,objc --with-dwarf2 --enable-doc --disable-shared --disable-libada --disable-libssp --disable-nls --with-pkgversion='WinAVR 20081205' --with-bugurl='URL:http://sourceforge.net/tracker/?atid=520074&group_id=68108&func=browse']
@@ -178,18 +178,18 @@ Parsed CXX implicit link information from above output:
   ignore line: [LIBRARY_PATH=c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/]
   ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/]
   ignore line: [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2506386273']
-  link line: [ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec2506386273 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm -lgcc -lc -lgcc]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec6570084']
+  link line: [ c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe -m avr2 -o cmTryCompileExec6570084 c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2 -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc -Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm -lgcc -lc -lgcc]
     arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/bin/ld.exe] ==> ignore
     arg [-m] ==> ignore
     arg [avr2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2506386273] ==> ignore
+    arg [cmTryCompileExec6570084] ==> ignore
     arg [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib/crts8515.o] ==> ignore
     arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2]
     arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc]
     arg [-Lc:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib] ==> dir [c:/progra~2/arduino/hardware/tools/avr/bin/../lib/gcc/avr/4.3.2/../../../../avr/lib]
-    arg [CMakeFiles/cmTryCompileExec2506386273.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec6570084.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
     arg [-lgcc] ==> lib []
     arg [-lm] ==> lib []
     arg [-lgcc] ==> lib []
