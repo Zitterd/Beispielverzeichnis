@@ -7,7 +7,8 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/ardui
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
 
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
-
+set(CMAKE_SYSTEM_NAME Arduino)
+set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
 set(CMAKE_C_COMPILER   avr-gcc)
 SET(CSTANDARD "-std=gnu99")
 
