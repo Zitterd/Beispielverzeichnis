@@ -41,24 +41,24 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 
 
-SET(CSTANDARD "-std=gnu99")
+#SET(CSTANDARD "-std=gnu99")
 
-SET(CDEBUG "-gstabs")
+#SET(CDEBUG "-gstabs")
 
-SET(CWARN "-Wall -Wstrict-prototypes -ffunction-sections -fdata-sections -DARDUINO=100")
-
-
-SET(COPT "-Os")
+#SET(CWARN "-Wall -Wstrict-prototypes -ffunction-sections -fdata-sections -DARDUINO=100")
 
 
+#SET(COPT "-Os")
 
-SET(CMCU "-mmcu=atmega32u4")  
 
-SET(CDEFS "-DF_CPU=16000000L")  
 
-SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}")   
+#SET(CMCU "-mmcu=atmega32u4")  
 
-SET(CMAKE_C_FLAGS  ${CFLAGS})
+#SET(CDEFS "-DF_CPU=16000000L")  
+
+#SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}")   
+
+#SET(CMAKE_C_FLAGS  ${CFLAGS})
 
 
 
