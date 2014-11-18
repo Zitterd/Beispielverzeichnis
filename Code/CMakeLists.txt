@@ -81,7 +81,7 @@ set(AVR_TARGET_DEVICE atmega32u4)
 
 set(CMAKE_C_FLAGS "-g -Wall -Os -mmcu=${AVR_TARGET_DEVICE}")
 
-#set(CMAKE_VERBOSE_MAKEFILE true)
+set(CMAKE_VERBOSE_MAKEFILE true)
 
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
