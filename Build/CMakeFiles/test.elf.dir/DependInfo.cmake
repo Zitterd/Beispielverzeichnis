@@ -14,11 +14,10 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard"
-  "C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino"
-  "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include"
-  "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include/avr"
-  "C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5"
+  "C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/variants/standard"
+  "C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/arduino/avr/cores/arduino"
+  "C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/avr/include"
+  "C:/Users/Jonas Hamers/Documents/arduino-1.5.7-windows/arduino-1.5.7/hardware/tools/avr/lib/gcc/avr/4.8.1/avr5"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
