@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Arduino SDK path.
+ARDUINO_SDK_PATH:PATH=C:/Program Files (x86)/Arduino
+
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/TDM-GCC-64/bin/ar.exe
 

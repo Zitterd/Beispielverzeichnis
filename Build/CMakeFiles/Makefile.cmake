@@ -94,6 +94,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.1.0-rc1/CMakeRCCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeSystem.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/CMakeLists.txt"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake"
   )
 
 # The corresponding makefile is:
