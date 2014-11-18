@@ -2,13 +2,26 @@ cmake_minimum_required (VERSION 2.6.0)
 set(_ECLIPSE_VERSION "8.5.0" )
 
 
+
+
+
+
+
+
+
+
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
 
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
 
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
+
 set(CMAKE_SYSTEM_NAME Arduino)
+set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
 set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
+
+
+
 set(CMAKE_C_COMPILER   avr-gcc)
 SET(CSTANDARD "-std=gnu99")
 
@@ -33,33 +46,13 @@ SET(CMAKE_C_FLAGS  ${CFLAGS})
 
 
 
+
+
+
 project (Source)
 
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
-
-
-
-
-#SET(CSTANDARD "-std=gnu99")
-
-#SET(CDEBUG "-gstabs")
-
-#SET(CWARN "-Wall -Wstrict-prototypes -ffunction-sections -fdata-sections -DARDUINO=100")
-
-
-#SET(COPT "-Os")
-
-
-
-#SET(CMCU "-mmcu=atmega32u4")  
-
-#SET(CDEFS "-DF_CPU=16000000L")  
-
-#SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}")   
-
-#SET(CMAKE_C_FLAGS  ${CFLAGS})
-
 
 
 
