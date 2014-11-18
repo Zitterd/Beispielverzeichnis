@@ -10,8 +10,7 @@
 
 
 void setup() {
-  // put your setup code here, to run once:
-  pinMode(13, OUTPUT);
+  // put your setup code here, to run once: 
   printf("Test erfolgreich bestanden! =)");
 }
 
@@ -22,7 +21,7 @@ void loop() {
 
 int main(void)
 {
-	//init();  //reference undefined?!?
+	init();  //reference undefined?!?
 	setup();
 	for(;;)
 	{
