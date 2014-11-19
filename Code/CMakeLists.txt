@@ -5,16 +5,16 @@ set(_ECLIPSE_VERSION "8.5.0" )
 
 
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2")
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/bin")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/bin")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
 
 
