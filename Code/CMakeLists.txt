@@ -23,6 +23,8 @@ set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
 set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
 
 set(CMAKE_C_COMPILER   avr-gcc)
+set(CMAKE_CXX_COMPILER avr-g++)
+
 SET(CSTANDARD "-std=gnu99")
 
 SET(CDEBUG "-gstabs")
@@ -38,11 +40,14 @@ SET(CMCU "-mmcu=atmega32u4")
 
 SET(CDEFS "-DF_CPU=16000000L")  
 
-SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}")   
+
+SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${CEXTRA}")  
+SET(CXXFLAGS "${CMCU} ${CSTANDARD} ${CDEFS} ${COPT} ") 
+ 
 
 SET(CMAKE_C_FLAGS  ${CFLAGS})
 
-
+SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 
 
@@ -61,7 +66,7 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 #ENABLE_LANGUAGE(ASM)
 
-add_executable(test.o test.c)
+add_executable(test.o Test2.cpp)
 
 AVR_CREATE_HEX(test.o)
 
