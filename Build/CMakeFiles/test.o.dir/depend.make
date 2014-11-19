@@ -145,6 +145,5 @@ CMakeFiles/test.o.dir/test.c.obj: C:/Program\ Files\ (x86)/Arduino/hardware/tool
 CMakeFiles/test.o.dir/test.c.obj: C:/Program\ Files\ (x86)/Arduino/hardware/tools/avr/avr/include/stdio.h
 CMakeFiles/test.o.dir/test.c.obj: C:/Program\ Files\ (x86)/Arduino/hardware/tools/avr/avr/include/stdlib.h
 CMakeFiles/test.o.dir/test.c.obj: C:/Program\ Files\ (x86)/Arduino/hardware/tools/avr/avr/include/string.h
-CMakeFiles/test.o.dir/test.c.obj: C:/Program\ Files\ (x86)/Arduino/rxtxSerial.dll
 CMakeFiles/test.o.dir/test.c.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test.c
 
