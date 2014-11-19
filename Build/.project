@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Source-Debug@Build</name>
+	<name>Code-Debug@Build</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -119,7 +119,7 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Subprojects]/Source</name>
+			<name>[Subprojects]/Code</name>
 			<type>2</type>
 			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code</location>
 		</link>
