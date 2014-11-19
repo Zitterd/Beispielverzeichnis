@@ -52,7 +52,7 @@ SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 
 
-project (Source)
+project (Code)
 
 
 
