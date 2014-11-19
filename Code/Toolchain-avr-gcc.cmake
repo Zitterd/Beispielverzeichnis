@@ -14,6 +14,7 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/le
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/gcc")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/libgcc.a")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2")
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/bin")
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/libraries/LiquidCrystal/examples/HelloWorld")
