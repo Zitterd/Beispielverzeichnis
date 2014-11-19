@@ -20,8 +20,6 @@ set(CMAKE_SYSTEM_NAME Arduino)
 set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
 set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
 
-
-
 set(CMAKE_C_COMPILER   avr-gcc)
 SET(CSTANDARD "-std=gnu99")
 
@@ -54,10 +52,7 @@ project (Source)
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
-
-
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
-
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
