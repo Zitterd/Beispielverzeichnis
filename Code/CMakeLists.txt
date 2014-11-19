@@ -14,7 +14,7 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/a
 
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/bin")
-
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
 
 
@@ -22,8 +22,8 @@ set(CMAKE_SYSTEM_NAME Arduino)
 set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
 set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
 
-set(CMAKE_C_COMPILER   avr-gcc)
-set(CMAKE_CXX_COMPILER avr-g++)
+set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 
 SET(CSTANDARD "-std=gnu99")
 
