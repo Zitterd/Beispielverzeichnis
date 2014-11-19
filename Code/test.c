@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #include  "Arduino.h"
-#include "rxtxSerial.dll"
+//#include "rxtxSerial.dll"
 
 void setup() {
   // put your setup code here, to run once: 
