@@ -38,14 +38,14 @@ SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 
 LINK_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
+#INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
 
 
 
 project (Code)
 
-LINK_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
+LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
@@ -59,7 +59,7 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 #ENABLE_LANGUAGE(ASM)
 
 add_executable(test.o test.c)
-TARGET_LINK_LIBRARIES(test.o gcc)
+TARGET_LINK_LIBRARIES(test.o uart.c)
 
 AVR_CREATE_HEX(test.o)
 
