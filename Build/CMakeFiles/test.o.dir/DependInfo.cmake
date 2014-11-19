@@ -18,7 +18,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include"
   "C:/Program Files (x86)/Arduino/hardware/arduino/variants/leonardo"
   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin"
-  "C:/Program Files (x86)/Arduino/libraries/LiquidCrystal"
+  "C:/Program Files (x86)/Arduino/libraries/LiquidCrystal/examples/HelloWorld"
   "C:/Program Files (x86)/Arduino/hardware/tools/avr/lib"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
