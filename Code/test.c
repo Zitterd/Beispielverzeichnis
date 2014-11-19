@@ -28,7 +28,6 @@ void loop() {
 int main(void)
 {
 	//init();  //reference undefined?!?
-	inittest(2);
 	setup();
 	for(;;)
 	{
