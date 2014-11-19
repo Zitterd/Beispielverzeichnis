@@ -18,6 +18,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include"
   "C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard"
   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin"
+  "C:/Program Files (x86)/Arduino/libraries"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
