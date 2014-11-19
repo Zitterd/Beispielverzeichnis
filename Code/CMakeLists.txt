@@ -15,6 +15,13 @@ INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/ardui
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
 
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/standard")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2")
+
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
+
+
+
+
 
 set(CMAKE_SYSTEM_NAME Arduino)
 set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
