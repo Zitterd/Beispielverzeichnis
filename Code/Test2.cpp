@@ -1,21 +1,23 @@
 
 
-#include <iostream>
+//#include <iostream>
+#include  "Arduino.h"
 
 void setup() {
-  cout << "Test bestanden2" << endl;
+  //cout << "Test bestanden2" << endl;
 }
 
 void loop() {
-  cout << "Test bestanden3" << endl;
+  //cout << "Test bestanden3" << endl;
 }
 
 
 
 int main()
 {
-	using namespace std;
-	cout << "Test bestanden" << endl;
+    init();
+	//using namespace std;
+	//cout << "Test bestanden" << endl;
 	setup();
 	for(;;)
 	{
