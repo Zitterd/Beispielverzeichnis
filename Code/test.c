@@ -7,7 +7,6 @@
 
 #include <stdio.h>
 #include  "Arduino.h"
-
 //#include "rxtxSerial.dll"
 
 void setup() {
@@ -29,6 +28,7 @@ void loop() {
 int main(void)
 {
 	init();  //reference undefined?!?
+	init(2);
 	setup();
 	for(;;)
 	{
