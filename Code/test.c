@@ -8,8 +8,6 @@
 #include <stdio.h>
 #include  "Arduino.h"
 
-void setup();
-void loop();
 
 void setup() {
   // put your setup code here, to run once: 
