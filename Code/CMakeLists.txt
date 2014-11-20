@@ -58,7 +58,7 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 #ENABLE_LANGUAGE(ASM)
 
-add_executable(test.o test.c uart.c uart.h)
+add_executable(test.o test2.c)
 
 
 #TARGET_LINK_LIBRARIES(test.o uart.c)

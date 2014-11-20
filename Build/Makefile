@@ -117,53 +117,29 @@ test.o/fast:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
 .PHONY : test.o/fast
 
-test.obj: test.c.obj
-.PHONY : test.obj
+test2.obj: test2.c.obj
+.PHONY : test2.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
-.PHONY : test.c.obj
+test2.c.obj:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test2.c.obj
+.PHONY : test2.c.obj
 
-test.i: test.c.i
-.PHONY : test.i
-
-# target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
-.PHONY : test.c.i
-
-test.s: test.c.s
-.PHONY : test.s
-
-# target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
-.PHONY : test.c.s
-
-uart.obj: uart.c.obj
-.PHONY : uart.obj
-
-# target to build an object file
-uart.c.obj:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.obj
-.PHONY : uart.c.obj
-
-uart.i: uart.c.i
-.PHONY : uart.i
+test2.i: test2.c.i
+.PHONY : test2.i
 
 # target to preprocess a source file
-uart.c.i:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.i
-.PHONY : uart.c.i
+test2.c.i:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test2.c.i
+.PHONY : test2.c.i
 
-uart.s: uart.c.s
-.PHONY : uart.s
+test2.s: test2.c.s
+.PHONY : test2.s
 
 # target to generate assembly for a file
-uart.c.s:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.s
-.PHONY : uart.c.s
+test2.c.s:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test2.c.s
+.PHONY : test2.c.s
 
 # Help Target
 help:
@@ -174,12 +150,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test.o
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
-	@echo ... uart.obj
-	@echo ... uart.i
-	@echo ... uart.s
+	@echo ... test2.obj
+	@echo ... test2.i
+	@echo ... test2.s
 .PHONY : help
 
 
