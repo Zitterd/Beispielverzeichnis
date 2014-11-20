@@ -47,18 +47,20 @@ project (Code)
 
 LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino_Library")
 #INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
-
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
+
+TARGET_LINK_LIBRARIES(test.c core.a)
+
 
 set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 #ENABLE_LANGUAGE(ASM)
 
-TARGET_LINK_LIBRARIES(core.a)
+
 add_executable(test.o test.c)
 
 
