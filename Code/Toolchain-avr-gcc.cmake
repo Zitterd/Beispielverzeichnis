@@ -27,7 +27,7 @@ INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
 
 
 
-set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino") #neu
+set(CMAKE_ARDUINO_PATH "C:Arduino") #neu
 set(CMAKE_SYSTEM_NAME Arduino)
 
 #set(CMAKE_C_COMPILER   avr-gcc)
