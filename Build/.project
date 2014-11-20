@@ -159,6 +159,11 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
+			<name>[Targets]/[exe] test.o/Header Files/uart.h</name>
+			<type>1</type>
+			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h</location>
+		</link>
+		<link>
 			<name>[Targets]/[exe] test.o/CMake Rules</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
