@@ -55,15 +55,15 @@ CMakeFiles/test.o.dir/test2.c.obj: CMakeFiles/test.o.dir/flags.make
 CMakeFiles/test.o.dir/test2.c.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test2.c
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/test.o.dir/test2.c.obj"
-	C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\test.o.dir\test2.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test2.c"
+	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\test.o.dir\test2.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test2.c"
 
 CMakeFiles/test.o.dir/test2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.o.dir/test2.c.i"
-	C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test2.c" > CMakeFiles\test.o.dir\test2.c.i
+	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test2.c" > CMakeFiles\test.o.dir\test2.c.i
 
 CMakeFiles/test.o.dir/test2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.o.dir/test2.c.s"
-	C:\PROGRA~2\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test2.c" -o CMakeFiles\test.o.dir\test2.c.s
+	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test2.c" -o CMakeFiles\test.o.dir\test2.c.s
 
 CMakeFiles/test.o.dir/test2.c.obj.requires:
 .PHONY : CMakeFiles/test.o.dir/test2.c.obj.requires

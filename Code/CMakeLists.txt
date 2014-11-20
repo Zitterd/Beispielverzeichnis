@@ -4,11 +4,11 @@ set(_ECLIPSE_VERSION "8.5.0" )
 
 
 set(CMAKE_SYSTEM_NAME Arduino)
-set(CMAKE_ARDUINO_PATH "C:/Arduino")
-set(ARDUINO_SDK_PATH "C:/Arduino")
+set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
+set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
 
-set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
+set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 
 SET(CSTANDARD "-std=gnu99")
 
@@ -37,7 +37,7 @@ SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 
 
-#LINK_DIRECTORIES("C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
+#LINK_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
 
 
@@ -46,7 +46,7 @@ INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
 project (Code)
 
 LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")

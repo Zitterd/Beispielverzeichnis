@@ -8,9 +8,9 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 #=============================================================================#
 
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/cores/arduino")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/leonardo")
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/gcc")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/libgcc.a")
@@ -27,13 +27,13 @@ INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
 
 
 
-set(CMAKE_ARDUINO_PATH "C:Arduino") #neu
+set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino") #neu
 set(CMAKE_SYSTEM_NAME Arduino)
 
 #set(CMAKE_C_COMPILER   avr-gcc)
 #set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
-set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
+set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 
 
 #Compiler konfigurieren wie AVR Studio
@@ -108,7 +108,7 @@ if(NOT ARDUINO_SDK_PATH)
             /usr/local/share/arduino*)
     elseif(WIN32)
         set(SDK_PATH_HINTS #"C:\\Program Files\\Arduino"
-            "C:\\Arduino"
+            "C:\\Program Files (x86)\\Arduino"
 		  # "C:\\Users\\Jonas Hamers\\Documents\\arduino-1.5.7-windows\\arduino-1.5.7"
             )
     endif()
