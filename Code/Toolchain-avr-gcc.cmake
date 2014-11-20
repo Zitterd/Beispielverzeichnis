@@ -1,16 +1,7 @@
-#=============================================================================#
-#Vorlage 
-#Author: Tomasz Bogdal (QueezyTheGreat)
-# Home:   https://github.com/queezythegreat/arduino-cmake
-#
-# This Source Code Form is subject to the terms of the Mozilla Public
-# License, v. 2.0. If a copy of the MPL was not distributed with this file,
-# You can obtain one at http://mozilla.org/MPL/2.0/.
-#=============================================================================#
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino")
 INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/leonardo")
+INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/leonardo")
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/gcc")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/libgcc.a")
