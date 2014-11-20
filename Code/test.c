@@ -58,7 +58,9 @@ int main(){
 		PORTC ^= 0xff;
 		
 		_delay_ms(500);
-        /*
+		
+
+	   /*
          * Get received character from ringbuffer
          * uart_getc() returns in the lower byte the received character and 
          * in the higher byte (bitmask) the last receive error
@@ -106,12 +108,12 @@ int main(){
             uart_putc( (unsigned char)c );
         }
     }
-	while(1){
+	/*while(1){
 		//PORTA ^= 0xff;
 		PORTB ^= 0xff;
 		PORTC ^= 0xff;
 		
 		_delay_ms(500);
-	}
+	}*/
 	return 0;
 }
