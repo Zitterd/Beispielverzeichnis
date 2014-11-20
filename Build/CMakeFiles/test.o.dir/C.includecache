@@ -646,5 +646,15 @@ stdlib.h
 uart.h
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
 
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.c
+avr/io.h
+-
+avr/interrupt.h
+-
+avr/pgmspace.h
+-
+uart.h
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
+
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
 
