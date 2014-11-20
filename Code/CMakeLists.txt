@@ -58,9 +58,10 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 #ENABLE_LANGUAGE(ASM)
 
-add_executable(test.o test.c core.a)
-
-
 TARGET_LINK_LIBRARIES(core.a)
+add_executable(test.o test.c)
+
+
+
 
 AVR_CREATE_HEX(test.o)

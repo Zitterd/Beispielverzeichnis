@@ -198,13 +198,6 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[obj] test.c.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>test.c.obj</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
 </buildTargets>
 </storageModule>
 <storageModule moduleId="scannerConfiguration">
