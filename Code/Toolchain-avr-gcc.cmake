@@ -32,8 +32,8 @@ set(CMAKE_SYSTEM_NAME Arduino)
 
 #set(CMAKE_C_COMPILER   avr-gcc)
 #set(CMAKE_CXX_COMPILER avr-g++)  #avr32 statt avr?
-set(CMAKE_C_COMPILER   "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
-set(CMAKE_CXX_COMPILER "C:/Program Files (x86)/Arduino/hardware/tools/avr/bin/avr-g++.exe")
+set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 
 
 #Compiler konfigurieren wie AVR Studio
