@@ -14,8 +14,6 @@ set(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code"
-  "C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5"
   "C:/Arduino/hardware/arduino/cores/arduino"
   "C:/Arduino/hardware/tools/avr/avr/include"
   "C:/Arduino/hardware/arduino/variants/leonardo"
