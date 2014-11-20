@@ -52,7 +52,7 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt...")
 
-TARGET_LINK_LIBRARIES(test.c core.a)
+TARGET_LINK_LIBRARIES(test.o core.a)
 
 
 set(CMAKE_VERBOSE_MAKEFILE true)
