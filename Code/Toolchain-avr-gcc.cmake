@@ -8,9 +8,9 @@
 # You can obtain one at http://mozilla.org/MPL/2.0/.
 #=============================================================================#
 
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/cores/arduino")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino/hardware/arduino/variants/leonardo")
+INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/cores/arduino")
+INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/avr/include")
+INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
 #INCLUDE_DIRECTORIES("C:/Program Files (x86)/Arduino")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/gcc")
 #INCLUDE("C:/Program Files (x86)/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/libgcc.a")
@@ -108,7 +108,7 @@ if(NOT ARDUINO_SDK_PATH)
             /usr/local/share/arduino*)
     elseif(WIN32)
         set(SDK_PATH_HINTS #"C:\\Program Files\\Arduino"
-            "C:\\Program Files (x86)\\Arduino"
+            "C:\\Arduino"
 		  # "C:\\Users\\Jonas Hamers\\Documents\\arduino-1.5.7-windows\\arduino-1.5.7"
             )
     endif()
