@@ -117,6 +117,30 @@ test.o/fast:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
 .PHONY : test.o/fast
 
+test.obj: test.c.obj
+.PHONY : test.obj
+
+# target to build an object file
+test.c.obj:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
+.PHONY : test.c.obj
+
+test.i: test.c.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.c.i:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
+.PHONY : test.c.i
+
+test.s: test.c.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.c.s:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
+.PHONY : test.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -126,6 +150,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test.o
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 
