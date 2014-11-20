@@ -4,8 +4,8 @@ set(_ECLIPSE_VERSION "8.5.0" )
 
 
 set(CMAKE_SYSTEM_NAME Arduino)
-set(CMAKE_ARDUINO_PATH "C:/Program Files (x86)/Arduino")
-set(ARDUINO_SDK_PATH "C:/Program Files (x86)/Arduino")
+set(CMAKE_ARDUINO_PATH "C:/Arduino")
+set(ARDUINO_SDK_PATH "C:/Arduino")
 
 set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
 set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
