@@ -58,13 +58,13 @@ MESSAGE(STATUS "\n ----------JONAS---------------------->Creating Test-Projekt..
 set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
-TARGET_LINK_LIBRARIES(test.o core)
+
 
 #ENABLE_LANGUAGE(ASM)
 
 
-add_executable(test test.c)
-
+add_executable(test.o test.c)
+TARGET_LINK_LIBRARIES(test.o core)
 
 
 
