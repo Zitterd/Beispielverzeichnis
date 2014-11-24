@@ -63,7 +63,7 @@ TARGET_LINK_LIBRARIES(test.o core)
 #ENABLE_LANGUAGE(ASM)
 
 
-add_executable(test.o test.c)
+add_executable(test test.c)
 
 
 
