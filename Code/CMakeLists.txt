@@ -64,7 +64,7 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 
 add_executable(test.o test.c)
-TARGET_LINK_LIBRARIES(test.o core)
+TARGET_LINK_LIBRARIES(test.o core.a)
 
 
 
