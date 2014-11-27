@@ -63,7 +63,7 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 #ENABLE_LANGUAGE(ASM)
 
 
-add_executable(test.o test.cpp)
+add_executable(test.o test.c)
 #TARGET_LINK_LIBRARIES(test.o core.a)
 
 

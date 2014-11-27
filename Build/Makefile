@@ -117,29 +117,29 @@ test.o/fast:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
 .PHONY : test.o/fast
 
-test.obj: test.c.obj
+test.obj: test.cpp.obj
 .PHONY : test.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
-.PHONY : test.c.obj
+test.cpp.obj:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.cpp.obj
+.PHONY : test.cpp.obj
 
-test.i: test.c.i
+test.i: test.cpp.i
 .PHONY : test.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
-.PHONY : test.c.i
+test.cpp.i:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-test.s: test.c.s
+test.s: test.cpp.s
 .PHONY : test.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
-.PHONY : test.c.s
+test.cpp.s:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
