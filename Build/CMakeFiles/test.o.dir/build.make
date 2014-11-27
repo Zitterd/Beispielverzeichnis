@@ -51,40 +51,40 @@ include CMakeFiles/test.o.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.o.dir/flags.make
 
-CMakeFiles/test.o.dir/test.cpp.obj: CMakeFiles/test.o.dir/flags.make
-CMakeFiles/test.o.dir/test.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test.cpp
+CMakeFiles/test.o.dir/test.c.obj: CMakeFiles/test.o.dir/flags.make
+CMakeFiles/test.o.dir/test.c.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test.c
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.o.dir/test.cpp.obj"
-	C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\test.o.dir\test.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/test.o.dir/test.c.obj"
+	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\test.o.dir\test.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c"
 
-CMakeFiles/test.o.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.o.dir/test.cpp.i"
-	C:\Arduino\hardware\tools\avr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.cpp" > CMakeFiles\test.o.dir\test.cpp.i
+CMakeFiles/test.o.dir/test.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.o.dir/test.c.i"
+	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c" > CMakeFiles\test.o.dir\test.c.i
 
-CMakeFiles/test.o.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.o.dir/test.cpp.s"
-	C:\Arduino\hardware\tools\avr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.cpp" -o CMakeFiles\test.o.dir\test.cpp.s
+CMakeFiles/test.o.dir/test.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.o.dir/test.c.s"
+	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test.c" -o CMakeFiles\test.o.dir\test.c.s
 
-CMakeFiles/test.o.dir/test.cpp.obj.requires:
-.PHONY : CMakeFiles/test.o.dir/test.cpp.obj.requires
+CMakeFiles/test.o.dir/test.c.obj.requires:
+.PHONY : CMakeFiles/test.o.dir/test.c.obj.requires
 
-CMakeFiles/test.o.dir/test.cpp.obj.provides: CMakeFiles/test.o.dir/test.cpp.obj.requires
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.cpp.obj.provides.build
-.PHONY : CMakeFiles/test.o.dir/test.cpp.obj.provides
+CMakeFiles/test.o.dir/test.c.obj.provides: CMakeFiles/test.o.dir/test.c.obj.requires
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj.provides.build
+.PHONY : CMakeFiles/test.o.dir/test.c.obj.provides
 
-CMakeFiles/test.o.dir/test.cpp.obj.provides.build: CMakeFiles/test.o.dir/test.cpp.obj
+CMakeFiles/test.o.dir/test.c.obj.provides.build: CMakeFiles/test.o.dir/test.c.obj
 
 # Object files for target test.o
 test_o_OBJECTS = \
-"CMakeFiles/test.o.dir/test.cpp.obj"
+"CMakeFiles/test.o.dir/test.c.obj"
 
 # External object files for target test.o
 test_o_EXTERNAL_OBJECTS =
 
-test.o: CMakeFiles/test.o.dir/test.cpp.obj
+test.o: CMakeFiles/test.o.dir/test.c.obj
 test.o: CMakeFiles/test.o.dir/build.make
 test.o: CMakeFiles/test.o.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable test.o"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\test.o.dir\link.txt --verbose=$(VERBOSE)
 	avr-objcopy -O ihex -R.eeprom test.o "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test.hex"
 
@@ -92,7 +92,7 @@ test.o: CMakeFiles/test.o.dir/link.txt
 CMakeFiles/test.o.dir/build: test.o
 .PHONY : CMakeFiles/test.o.dir/build
 
-CMakeFiles/test.o.dir/requires: CMakeFiles/test.o.dir/test.cpp.obj.requires
+CMakeFiles/test.o.dir/requires: CMakeFiles/test.o.dir/test.c.obj.requires
 .PHONY : CMakeFiles/test.o.dir/requires
 
 CMakeFiles/test.o.dir/clean:

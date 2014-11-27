@@ -1,1 +1,1 @@
-C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   -mmcu=atmega32u4 -std=gnu99 -DF_CPU=16000000L -Os  -g   CMakeFiles/test.o.dir/test.cpp.obj  -o test.o  
+C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  -mmcu=atmega32u4 -gstabs -DF_CPU=16000000L -Os -Wall -Wstrict-prototypes -std=gnu99   -g   CMakeFiles/test.o.dir/test.c.obj  -o test.o  
