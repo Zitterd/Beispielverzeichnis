@@ -25,7 +25,7 @@ void setup() {
 void loop() {
 	//Serial.println("HALLO TEST");
 	LED1_ON;
-	_delay_ms(50);
+	_delay_ms(500);
 	LED1_OFF;
 }
 
