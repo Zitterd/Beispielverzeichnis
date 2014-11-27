@@ -714,9 +714,29 @@ C:/Arduino/hardware/tools/avr/avr/include/string.h
 stddef.h
 -
 
+C:/Arduino/hardware/tools/avr/avr/include/util/delay.h
+inttypes.h
+-
+util/delay_basic.h
+-
+util/delay.h
+-
+
+C:/Arduino/hardware/tools/avr/avr/include/util/delay_basic.h
+inttypes.h
+-
+util/delay_basic.h
+-
+
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c
 stdio.h
 -
 Arduino.h
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino.h
+avr/io.h
+-
+util/delay.h
+-
+string.h
+-
 

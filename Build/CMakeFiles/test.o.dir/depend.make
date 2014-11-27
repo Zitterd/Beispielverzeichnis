@@ -145,5 +145,7 @@ CMakeFiles/test.o.dir/test.c.obj: C:/Arduino/hardware/tools/avr/avr/include/stdi
 CMakeFiles/test.o.dir/test.c.obj: C:/Arduino/hardware/tools/avr/avr/include/stdio.h
 CMakeFiles/test.o.dir/test.c.obj: C:/Arduino/hardware/tools/avr/avr/include/stdlib.h
 CMakeFiles/test.o.dir/test.c.obj: C:/Arduino/hardware/tools/avr/avr/include/string.h
+CMakeFiles/test.o.dir/test.c.obj: C:/Arduino/hardware/tools/avr/avr/include/util/delay.h
+CMakeFiles/test.o.dir/test.c.obj: C:/Arduino/hardware/tools/avr/avr/include/util/delay_basic.h
 CMakeFiles/test.o.dir/test.c.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test.c
 

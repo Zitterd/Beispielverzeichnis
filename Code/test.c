@@ -98,7 +98,7 @@ int main(void)
     
     unsigned char receivedChar = '0';
     
-    uart_print( "\n\rWelcome :)\n\r" );
+    uart_print( "\n\r Test bestanden!! \n\r" );
     
     while (1)
     {

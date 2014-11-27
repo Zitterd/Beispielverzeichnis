@@ -146,4 +146,6 @@ CMakeFiles/test.o.dir/test.c.obj
  C:/Arduino/hardware/tools/avr/avr/include/stdio.h
  C:/Arduino/hardware/tools/avr/avr/include/stdlib.h
  C:/Arduino/hardware/tools/avr/avr/include/string.h
+ C:/Arduino/hardware/tools/avr/avr/include/util/delay.h
+ C:/Arduino/hardware/tools/avr/avr/include/util/delay_basic.h
  C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c
