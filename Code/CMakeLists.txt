@@ -37,7 +37,7 @@ SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 
 
-LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino_Library")
+#LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino_Library")
 #INCLUDE_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code")
 
 
@@ -45,7 +45,7 @@ LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino
 
 project (Code)
 
-LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino_Library")
+#LINK_DIRECTORIES("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino_Library")
 #INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/avr5")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
@@ -63,8 +63,8 @@ set(CMAKE_C_OUTPUT_EXTENSION ".o")
 #ENABLE_LANGUAGE(ASM)
 
 
-add_executable(test.o test.c)
-TARGET_LINK_LIBRARIES(test.o core.a)
+add_executable(test.o test.cpp)
+#TARGET_LINK_LIBRARIES(test.o core.a)
 
 
 
