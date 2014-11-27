@@ -27,6 +27,7 @@ void loop() {
 	LED1_ON;
 	_delay_ms(500);
 	LED1_OFF;
+	_delay_ms(500);
 }
 
 int main(void)
