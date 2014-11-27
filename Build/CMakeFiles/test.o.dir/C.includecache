@@ -733,6 +733,16 @@ stdio.h
 -
 Arduino.h
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino.h
+util/delay.h
+-
+avr/io.h
+-
+avr/io.h
+-
+util/delay.h
+-
+string.h
+-
 avr/io.h
 -
 util/delay.h

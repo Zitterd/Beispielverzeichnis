@@ -11,6 +11,8 @@
 #include <util/delay.h>
 #include <avr/io.h>
 
+#define PF7	7
+
 #define LED1_OFF (PORTF&=~(1<<PF7))        
 #define LED1_ON  (PORTF|=(1<<PF7))
 
