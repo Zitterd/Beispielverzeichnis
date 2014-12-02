@@ -14,8 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
+//Arduino SDK path.
+ARDUINO_SDK_PATH:PATH=C:/Arduino
+
 //Path to a program.
-CMAKE_AR:FILEPATH=C:/TDM-GCC-64/bin/ar.exe
+CMAKE_AR:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-ar.exe
 
 //Choose the type of build, options are: None(CMAKE_CXX_FLAGS or
 // CMAKE_C_FLAGS used) Debug Release RelWithDebInfo MinSizeRel.
@@ -23,6 +26,22 @@ CMAKE_BUILD_TYPE:STRING=Debug
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
+
+//Flags used by the compiler during all build types.
+CMAKE_CXX_FLAGS:STRING=
+
+//Flags used by the compiler during debug builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the compiler during release builds for minimum
+// size.
+CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the compiler during release builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the compiler during release builds with debug info.
+CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Flags used by the compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -78,7 +97,7 @@ CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 CMAKE_INSTALL_PREFIX:PATH=C:/Program
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=C:/TDM-GCC-64/bin/ld.exe
+CMAKE_LINKER:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-ld.exe
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=C:/TDM-GCC-64/bin/mingw32-make.exe
@@ -99,25 +118,19 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=C:/TDM-GCC-64/bin/nm.exe
+CMAKE_NM:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-nm.exe
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=C:/TDM-GCC-64/bin/objcopy.exe
+CMAKE_OBJCOPY:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-objcopy.exe
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=C:/TDM-GCC-64/bin/objdump.exe
+CMAKE_OBJDUMP:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-objdump.exe
 
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=Code
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=C:/TDM-GCC-64/bin/ranlib.exe
-
-//RC compiler
-CMAKE_RC_COMPILER:FILEPATH=C:/TDM-GCC-64/bin/windres.exe
-
-//Flags for Windows Resource Compiler.
-CMAKE_RC_FLAGS:STRING=' '
+CMAKE_RANLIB:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-ranlib.exe
 
 //Path to a program.
 CMAKE_SH:FILEPATH=CMAKE_SH-NOTFOUND
@@ -160,7 +173,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=C:/TDM-GCC-64/bin/strip.exe
+CMAKE_STRIP:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-strip.exe
 
 //If true, cmake will use relative paths in makefiles and projects.
 CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
@@ -176,6 +189,33 @@ Code_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build
 
 //Value Computed by CMake
 Code_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code
+
+//Path to a program.
+ProcessorCount_cmd_getconf:FILEPATH=ProcessorCount_cmd_getconf-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_hinv:FILEPATH=ProcessorCount_cmd_hinv-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_lsconf:FILEPATH=ProcessorCount_cmd_lsconf-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_machinfo:FILEPATH=ProcessorCount_cmd_machinfo-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_mpsched:FILEPATH=ProcessorCount_cmd_mpsched-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_pidin:FILEPATH=ProcessorCount_cmd_pidin-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_sysctl:FILEPATH=ProcessorCount_cmd_sysctl-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_sysinfo:FILEPATH=ProcessorCount_cmd_sysinfo-NOTFOUND
+
+//Path to a program.
+ProcessorCount_cmd_uname:FILEPATH=C:/Program Files (x86)/Git/bin/uname.exe
 
 
 ########################
@@ -200,6 +240,16 @@ CMAKE_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/cmake.exe
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/cpack.exe
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Program Files (x86)/CMake/bin/ctest.exe
+//ADVANCED property for variable: CMAKE_CXX_FLAGS
+CMAKE_CXX_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_DEBUG
+CMAKE_CXX_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_MINSIZEREL
+CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELEASE
+CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
+CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS
 CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
@@ -269,11 +319,6 @@ CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 CMAKE_OBJDUMP-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_RANLIB
 CMAKE_RANLIB-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_COMPILER
-CMAKE_RC_COMPILER-ADVANCED:INTERNAL=1
-CMAKE_RC_COMPILER_WORKS:INTERNAL=1
-//ADVANCED property for variable: CMAKE_RC_FLAGS
-CMAKE_RC_FLAGS-ADVANCED:INTERNAL=1
 //Path to CMake installation.
 CMAKE_ROOT:INTERNAL=C:/Program Files (x86)/CMake/share/cmake-3.1
 //ADVANCED property for variable: CMAKE_SH
@@ -308,4 +353,20 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_getconf
+ProcessorCount_cmd_getconf-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_hinv
+ProcessorCount_cmd_hinv-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_lsconf
+ProcessorCount_cmd_lsconf-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_machinfo
+ProcessorCount_cmd_machinfo-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_mpsched
+ProcessorCount_cmd_mpsched-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_pidin
+ProcessorCount_cmd_pidin-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_sysctl
+ProcessorCount_cmd_sysctl-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: ProcessorCount_cmd_uname
+ProcessorCount_cmd_uname-ADVANCED:INTERNAL=1
 
