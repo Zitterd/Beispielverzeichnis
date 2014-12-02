@@ -20,16 +20,15 @@ SET(CXXFLAGS "${CMCU} ${CSTANDARD} ${CDEFS} ${COPT} ")
 SET(CMAKE_C_FLAGS  ${CFLAGS})
 SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
-
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
 project (Code)
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
 
-#set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 add_executable(test.o test.c)
