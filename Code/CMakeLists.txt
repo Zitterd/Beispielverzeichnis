@@ -23,12 +23,12 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gc
 
 project (hexFileErstellung) #CMake Projekt Namen vergeben
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
-
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
-set(CMAKE_VERBOSE_MAKEFILE true)
+
+set(CMAKE_VERBOSE_MAKEFILE true) #Make Output in der Konsole sichtbar 
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 add_executable(test.o test.c)
