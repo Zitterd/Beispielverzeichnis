@@ -28,7 +28,7 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
-
+set(CMAKE_VERBOSE_MAKEFILE true)
 set(CMAKE_C_OUTPUT_EXTENSION ".o")
 
 add_executable(test.o test.c)
