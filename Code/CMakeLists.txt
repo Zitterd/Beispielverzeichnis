@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6.0)
-
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 set(_ECLIPSE_VERSION "8.5.0" )
 
 
@@ -19,11 +19,11 @@ set(_ECLIPSE_VERSION "8.5.0" )
 #SET(CXXFLAGS "${CMCU} ${CSTANDARD} ${CDEFS} ${COPT} ") 
 #SET(CMAKE_C_FLAGS  ${CFLAGS})
 #SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
-project (Code)
 
-INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+project (hexFileErstellung) #CMake Projekt Namen vergeben
+
+#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
