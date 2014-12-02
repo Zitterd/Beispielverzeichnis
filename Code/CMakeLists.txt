@@ -25,9 +25,8 @@ project (hexFileErstellung) #CMake Projekt Namen vergeben
 
 #INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/cores/arduino")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/tools/avr/avr/include")
-INCLUDE_DIRECTORIES("C:/Arduino/hardware/arduino/variants/leonardo")
+set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
+set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
 
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
 
