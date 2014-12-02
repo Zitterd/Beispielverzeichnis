@@ -88,7 +88,7 @@ CMAKE_ECLIPSE_MAKE_ARGUMENTS:STRING=
 
 //The version of Eclipse. If Eclipse has not been found, 3.6 (Helios)
 // is assumed.
-CMAKE_ECLIPSE_VERSION:STRING=3.6 (Helios)
+CMAKE_ECLIPSE_VERSION:STRING=8.5.0 ()
 
 //Flags used by the linker.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -142,7 +142,7 @@ CMAKE_OBJCOPY:FILEPATH=C:/TDM-GCC-64/bin/objcopy.exe
 CMAKE_OBJDUMP:FILEPATH=C:/TDM-GCC-64/bin/objdump.exe
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project
+CMAKE_PROJECT_NAME:STATIC=Code
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/TDM-GCC-64/bin/ranlib.exe
@@ -206,10 +206,10 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-Project_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build
+Code_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build
 
 //Value Computed by CMake
-Project_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code
+Code_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code
 
 
 ########################

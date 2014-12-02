@@ -19,7 +19,7 @@ set(_ECLIPSE_VERSION "8.5.0" )
 #SET(CXXFLAGS "${CMCU} ${CSTANDARD} ${CDEFS} ${COPT} ") 
 #SET(CMAKE_C_FLAGS  ${CFLAGS})
 #SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
-#INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
 project (Code)
 
