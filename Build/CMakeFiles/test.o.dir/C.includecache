@@ -6,84 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Arduino/hardware/arduino/cores/arduino/Arduino.h
-stdlib.h
--
-string.h
--
-math.h
--
-avr/pgmspace.h
--
-avr/io.h
--
-avr/interrupt.h
--
-binary.h
-C:/Arduino/hardware/arduino/cores/arduino/binary.h
-WCharacter.h
-C:/Arduino/hardware/arduino/cores/arduino/WCharacter.h
-WString.h
-C:/Arduino/hardware/arduino/cores/arduino/WString.h
-HardwareSerial.h
-C:/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
-pins_arduino.h
-C:/Arduino/hardware/arduino/cores/arduino/pins_arduino.h
-
-C:/Arduino/hardware/arduino/cores/arduino/HardwareSerial.h
-inttypes.h
--
-Stream.h
-C:/Arduino/hardware/arduino/cores/arduino/Stream.h
-USBAPI.h
-C:/Arduino/hardware/arduino/cores/arduino/USBAPI.h
-
-C:/Arduino/hardware/arduino/cores/arduino/Print.h
-inttypes.h
--
-stdio.h
--
-WString.h
-C:/Arduino/hardware/arduino/cores/arduino/WString.h
-Printable.h
-C:/Arduino/hardware/arduino/cores/arduino/Printable.h
-
-C:/Arduino/hardware/arduino/cores/arduino/Printable.h
-new.h
--
-
-C:/Arduino/hardware/arduino/cores/arduino/Stream.h
-inttypes.h
--
-Print.h
-C:/Arduino/hardware/arduino/cores/arduino/Print.h
-
-C:/Arduino/hardware/arduino/cores/arduino/USBAPI.h
-
-C:/Arduino/hardware/arduino/cores/arduino/WCharacter.h
-ctype.h
--
-
-C:/Arduino/hardware/arduino/cores/arduino/WString.h
-stdlib.h
--
-string.h
--
-ctype.h
--
-avr/pgmspace.h
--
-
-C:/Arduino/hardware/arduino/cores/arduino/binary.h
-
-C:/Arduino/hardware/arduino/cores/arduino/new.h
-stdlib.h
--
-
-C:/Arduino/hardware/arduino/variants/leonardo/pins_arduino.h
-avr/pgmspace.h
--
-
 C:/Arduino/hardware/tools/avr/avr/include/avr/common.h
 avr/sfr_defs.h
 -
@@ -93,10 +15,6 @@ avr/io.h
 -
 avr/io.h
 -
-avr/io.h
--
-
-C:/Arduino/hardware/tools/avr/avr/include/avr/interrupt.h
 avr/io.h
 -
 
@@ -664,18 +582,6 @@ avr/io.h
 avr/io.h
 -
 
-C:/Arduino/hardware/tools/avr/avr/include/avr/pgmspace.h
-avr/io.h
--
-avr/pgmspace.h
--
-inttypes.h
--
-stddef.h
--
-avr/io.h
--
-
 C:/Arduino/hardware/tools/avr/avr/include/avr/portpins.h
 
 C:/Arduino/hardware/tools/avr/avr/include/avr/sfr_defs.h
@@ -684,15 +590,11 @@ inttypes.h
 
 C:/Arduino/hardware/tools/avr/avr/include/avr/version.h
 
-C:/Arduino/hardware/tools/avr/avr/include/ctype.h
-
 C:/Arduino/hardware/tools/avr/avr/include/inttypes.h
 stdint.h
 -
 inttypes.h
 -
-
-C:/Arduino/hardware/tools/avr/avr/include/math.h
 
 C:/Arduino/hardware/tools/avr/avr/include/stdint.h
 
@@ -704,14 +606,6 @@ stdarg.h
 stddef.h
 -
 stdio.h
--
-
-C:/Arduino/hardware/tools/avr/avr/include/stdlib.h
-stddef.h
--
-
-C:/Arduino/hardware/tools/avr/avr/include/string.h
-stddef.h
 -
 
 C:/Arduino/hardware/tools/avr/avr/include/util/delay.h
@@ -731,22 +625,8 @@ util/delay_basic.h
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c
 stdio.h
 -
-Arduino.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Arduino.h
 util/delay.h
 -
 avr/io.h
--
-avr/io.h
--
-util/delay.h
--
-string.h
--
-avr/io.h
--
-util/delay.h
--
-string.h
 -
 
