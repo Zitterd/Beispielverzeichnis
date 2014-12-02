@@ -19,7 +19,7 @@ SET(CFLAGS "${CMCU} ${CDEBUG} ${CDEFS} ${COPT} ${CWARN} ${CSTANDARD} ${CINCS} ${
 SET(CXXFLAGS "${CMCU} ${CSTANDARD} ${CDEFS} ${COPT} ") 
 SET(CMAKE_C_FLAGS  ${CFLAGS})
 SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
-
+INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
 project (hexFileErstellung) #CMake Projekt Namen vergeben
 
