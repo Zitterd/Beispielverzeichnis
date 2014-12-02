@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 2.6.0)
 
 set(_ECLIPSE_VERSION "8.5.0" )
 
-
+project (Code)
 
 set(CMAKE_SYSTEM_NAME Arduino)
 set(CMAKE_ARDUINO_PATH "C:/Arduino")
@@ -22,7 +22,7 @@ SET(CMAKE_CXX_FLAGS ${CXXFLAGS})
 
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
-project (Code)
+
 
 #INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
