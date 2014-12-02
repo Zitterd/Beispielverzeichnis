@@ -13,6 +13,9 @@
 #define LED1_OFF (PORTF&=~(1<<PF7))        
 #define LED1_ON  (PORTF|=(1<<PF7))
 
+void setup();
+void loop();
+
 void setup() 
 {
 		DDRF = (1 << DDF7);        //PORTF BIT 7 (A0) als Ausgang
