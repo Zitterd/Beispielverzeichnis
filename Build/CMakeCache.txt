@@ -14,6 +14,9 @@
 # EXTERNAL cache entries
 ########################
 
+//Arduino SDK path.
+ARDUINO_SDK_PATH:PATH=C:/Arduino
+
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Arduino/hardware/tools/avr/bin/avr-ar.exe
 
