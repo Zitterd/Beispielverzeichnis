@@ -35,8 +35,8 @@ _delay_ms(500);
 void uart_init( unsigned int baud )
 {
 	/* Set baud rate */
-	UBRRH1 = (unsigned char)(baud>>8);
-	UBRRL1 = (unsigned char)baud;
+	UBRR1H = (unsigned char)(baud>>8);
+	UBRR1L = (unsigned char)baud;
 	/* Enable receiver and transmitter */
 	UCSR1B = (1<<RXEN1)|(1<<TXEN1);
 	/* Set frame format: 8data, 2stop bit */
@@ -78,7 +78,7 @@ uart_init(BAUD_PRESCALE);
 
 uart_puts("Test bestanden");
 //LED blinken lassen
-setup();
+//setup();
 for(;;)
 {
 loop();
