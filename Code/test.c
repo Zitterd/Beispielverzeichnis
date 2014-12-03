@@ -61,7 +61,7 @@ unsigned char uart_getc( void )
 	return UDR1;
 }
 
-uart_puts(char *s)
+void uart_puts(char *s)
 {
     while (*s)
     {   /* so lange *s != '\0' also ungleich dem
