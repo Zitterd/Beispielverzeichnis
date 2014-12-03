@@ -6,8 +6,36 @@
 
 #IncludeRegexTransform: 
 
+C:/Arduino/hardware/tools/avr/avr/include/avr/boot.h
+avr/io.h
+-
+avr/boot.h
+-
+inttypes.h
+-
+avr/interrupt.h
+-
+avr/pgmspace.h
+-
+avr/eeprom.h
+-
+avr/io.h
+-
+inttypes.h
+-
+limits.h
+-
+
 C:/Arduino/hardware/tools/avr/avr/include/avr/common.h
 avr/sfr_defs.h
+-
+
+C:/Arduino/hardware/tools/avr/avr/include/avr/eeprom.h
+avr/io.h
+-
+stddef.h
+-
+stdint.h
 -
 
 C:/Arduino/hardware/tools/avr/avr/include/avr/fuse.h
@@ -15,6 +43,10 @@ avr/io.h
 -
 avr/io.h
 -
+avr/io.h
+-
+
+C:/Arduino/hardware/tools/avr/avr/include/avr/interrupt.h
 avr/io.h
 -
 
@@ -582,6 +614,18 @@ avr/io.h
 avr/io.h
 -
 
+C:/Arduino/hardware/tools/avr/avr/include/avr/pgmspace.h
+avr/io.h
+-
+avr/pgmspace.h
+-
+inttypes.h
+-
+stddef.h
+-
+avr/io.h
+-
+
 C:/Arduino/hardware/tools/avr/avr/include/avr/portpins.h
 
 C:/Arduino/hardware/tools/avr/avr/include/avr/sfr_defs.h
@@ -598,14 +642,8 @@ inttypes.h
 
 C:/Arduino/hardware/tools/avr/avr/include/stdint.h
 
-C:/Arduino/hardware/tools/avr/avr/include/stdio.h
-inttypes.h
--
-stdarg.h
--
+C:/Arduino/hardware/tools/avr/avr/include/string.h
 stddef.h
--
-stdio.h
 -
 
 C:/Arduino/hardware/tools/avr/avr/include/util/delay.h
@@ -623,10 +661,18 @@ util/delay_basic.h
 -
 
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c
-stdio.h
--
-util/delay.h
+string.h
 -
 avr/io.h
 -
+avr/interrupt.h
+-
+avr/boot.h
+-
+util/delay.h
+-
+uart.h
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
+
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
 
