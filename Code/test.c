@@ -89,6 +89,7 @@ int main(void)
 	setup();
 	for(;;)
 	{
+	    uart_puts("Test");
 		loop();
 	}
 	return 0;
