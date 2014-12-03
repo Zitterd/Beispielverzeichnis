@@ -40,7 +40,7 @@ uint8_t uart_getc(void)				//nicht zwingend notwendig für die Rückmeldung ins 
 
 
 
-uart_putc(unsigned char c)
+void uart_putc(unsigned char c)
 {
     while (!(UCSR1A & (1<<UDRE1)))  /* warten bis Senden moeglich */
     {
@@ -52,7 +52,7 @@ uart_putc(unsigned char c)
 
 
 
-uart_puts(char *s)
+void uart_puts(char *s)
 {
     while (*s)
     {   /* so lange *s != '\0' also ungleich dem "String-Endezeichen(Terminator)" */
@@ -62,7 +62,7 @@ uart_puts(char *s)
 }
 
 
-uart_init(void)
+void uart_init(void)
 {
 	// set baud rate   
     unsigned int baud = BAUD_PRESCALE;
