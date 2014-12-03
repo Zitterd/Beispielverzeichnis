@@ -10,6 +10,7 @@
 #include <avr/io.h>
 
 # define USART_BAUDRATE 9600
+
 # define BAUD_PRESCALE ((( F_CPU / ( USART_BAUDRATE * 16UL))) - 1)
 
 #define PF7 7
@@ -39,7 +40,7 @@ void uart_init( unsigned int baud )
 	/* Enable receiver and transmitter */
 	UCSR1B = (1<<RXEN1)|(1<<TXEN1);
 	/* Set frame format: 8data, 2stop bit */
-	UCSR1C = (1<<USBS1)|(3<<UCSZ10);
+	UCSR1C = (1<<USBS1)|(1<<UCSZ10)|(1<<UCSZ11);
 }
 
 void uart_putc( unsigned char data )
