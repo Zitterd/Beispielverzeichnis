@@ -15,7 +15,7 @@ SET(CWARN "-Wall -Wstrict-prototypes")
 SET(COPT "-Os")
 
 #Modell des Mikrocontrollers
-SET(CMCU "-mmcu=atmega32u4")   #neu-richtig
+SET(CMCU "-mmcu=atmega32")   #neu-richtig
 
 #Takfrequenz mit welcher der Mikrocontroller arbeitet
 SET(CDEFS "-DF_CPU=16000000L")  
