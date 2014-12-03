@@ -40,7 +40,7 @@ uint8_t uart_getc(void)				//nicht zwingend notwendig für die Rückmeldung ins 
 
 
 
-void uart_putc(unsigned char c)
+int uart_putc(unsigned char c)
 {
     while (!(UCSR1A & (1<<UDRE1)))  /* warten bis Senden moeglich */
     {
