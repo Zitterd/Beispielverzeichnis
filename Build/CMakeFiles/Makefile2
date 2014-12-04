@@ -61,7 +61,7 @@ CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
 CMakeFiles/test.o.dir/all:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/depend
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  1
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  1 2
 	@echo Built target test.o
 .PHONY : CMakeFiles/test.o.dir/all
 
@@ -71,7 +71,7 @@ all: CMakeFiles/test.o.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/test.o.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 2
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/test.o.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
 .PHONY : CMakeFiles/test.o.dir/rule

@@ -141,6 +141,30 @@ test.c.s:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
 .PHONY : test.c.s
 
+uart.obj: uart.c.obj
+.PHONY : uart.obj
+
+# target to build an object file
+uart.c.obj:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.obj
+.PHONY : uart.c.obj
+
+uart.i: uart.c.i
+.PHONY : uart.i
+
+# target to preprocess a source file
+uart.c.i:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.i
+.PHONY : uart.c.i
+
+uart.s: uart.c.s
+.PHONY : uart.s
+
+# target to generate assembly for a file
+uart.c.s:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.s
+.PHONY : uart.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -153,6 +177,9 @@ help:
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s
+	@echo ... uart.obj
+	@echo ... uart.i
+	@echo ... uart.s
 .PHONY : help
 
 

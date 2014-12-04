@@ -1,333 +1,96 @@
-#include <string.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <avr/boot.h>
+/*
+ * test.c
+ *
+ * Created: 08.10.2014 09:53:26
+ *  Author: Jonas Hamers
+ */ 
+ 
+#include <stdio.h>
 #include <util/delay.h>
-#include "uart.h"
- 
-#define BOOT_UART_BAUD_RATE     9600     /* Baudrate */
-#define XON                     17       /* XON Zeichen */
-#define XOFF                    19       /* XOFF Zeichen */
-#define START_SIGN              ':'      /* Hex-Datei Zeilenstartzeichen */
- 
-/* Zustände des Bootloader-Programms */
-#define BOOT_STATE_EXIT	        0        
-#define BOOT_STATE_PARSER       1
-#define BOOT_STATE_IDLE	        2
- 
-/* Zustände des Hex-File-Parsers */
-#define PARSER_STATE_START      0
-#define PARSER_STATE_SIZE       1
-#define PARSER_STATE_ADDRESS    2
-#define PARSER_STATE_TYPE       3
-#define PARSER_STATE_DATA       4
-#define PARSER_STATE_CHECKSUM   5
-#define PARSER_STATE_ERROR      6
+#include <avr/io.h>
 
-#define COM_HEX_ESC				0x07
-#define COM_HEX_BOOT			0x17
-#define COM_HEX_BOOTIDLE		0x18
-#define COM_HEX_PROGMEM 		0x19
+# define USART_BAUDRATE 9600
+# define BAUD_PRESCALE ((( F_CPU / ( USART_BAUDRATE * 16UL))) - 1)
 
-#define COM_HEX_CMDACK 			0x02
+#define PF7	7
+#define LED1_OFF (PORTF&=~(1<<PF7))        
+#define LED1_ON  (PORTF|=(1<<PF7))
 
-#define COM_HEX_BYTE_CHAR		0x2E //.
-//#define COM_HEX_BYTE_CHAR		0xFA
-#define COM_HEX_PAGE_CHAR		0xFE
-#define COM_HEX_ERROR_CHAR		0x65 //e
-
- 
-void program_page (uint32_t page, uint8_t *buf)
+void setup(void) 
 {
-    uint16_t i;
-    uint8_t sreg;
- 
-    /* Disable interrupts */
-    sreg = SREG;
-    cli();
- 
-    eeprom_busy_wait ();
- 
-    boot_page_erase (page);
-    boot_spm_busy_wait ();      /* Wait until the memory is erased. */
- 
-    for (i=0; i<SPM_PAGESIZE; i+=2)
-    {
-        /* Set up little-endian word. */
-        uint16_t w = *buf++;
-        w += (*buf++) << 8;
- 
-        boot_page_fill (page + i, w);
-    }
- 
-    boot_page_write (page);     /* Store buffer in flash page.		*/
-    boot_spm_busy_wait();       /* Wait until the memory is written.*/
- 
-    /* Reenable RWW-section again. We need this if we want to jump back */
-    /* to the application after bootloading. */
-    boot_rww_enable ();
- 
-    /* Re-enable interrupts (if they were ever enabled). */
-    SREG = sreg;
+		DDRF = (1 << DDF7);        //PORTF BIT 7 (A0) als Ausgang
 }
- 
-static uint16_t hex2num (const uint8_t * ascii, uint8_t num)
+
+void loop(void) 
 {
-    uint8_t  i;
-    uint16_t val = 0;
- 
-    for (i=0; i<num; i++)
-    {
-        uint8_t c = ascii[i];
- 
-        /* Hex-Ziffer auf ihren Wert abbilden */
-        if (c >= '0' && c <= '9')            c -= '0';  
-        else if (c >= 'A' && c <= 'F')       c -= 'A' - 10;
-        else if (c >= 'a' && c <= 'f')       c -= 'a' - 10;
- 
-        val = 16 * val + c;
-    }
- 
-    return val;  
+	LED1_ON;
+	_delay_ms(500);
+	LED1_OFF;
+	_delay_ms(500);
 }
+
+
+//uart-Implementierung
+uint8_t uart_getc(void)				//nicht zwingend notwendig für die Rückmeldung ins System
+{
+    while (!(UCSR1A & (1<<RXC1)))     // warten bis Zeichen verfuegbar
+        ;
+    return UDR1;                     // Zeichen aus UDR an Aufrufer zurueckgeben
+}
+
+
+
+int uart_putc(unsigned char c)
+{
+    while (!(UCSR1A & (1<<UDRE1)))  /* warten bis Senden moeglich */
+    {
+    }                             
  
+    UDR1 = c;                      /* sende Zeichen */
+    return 0;
+}
+
+
+
+void uart_puts(char *s)
+{
+    while (*s)
+    {   /* so lange *s != '\0' also ungleich dem "String-Endezeichen(Terminator)" */
+        uart_putc(*s);
+        s++;
+    }
+}
+
+
+void uart_init(void)
+{
+	// set baud rate   
+    unsigned int baud = BAUD_PRESCALE;
+    
+    UBRR1H = (unsigned char) (baud >> 8 );
+    UBRR1L = (unsigned char)baud;
+    
+    // enable received and transmitter
+    UCSR1B = ( 1 << RXEN1 ) | ( 1 << TXEN1 );
+    
+    // set frame format ( 8data, 2stop )
+    UCSR1C = ( 1 << USBS1 ) | ( 3 << UCSZ10 );
+}
+
+
+
+
 int main(void)
 {
-                    /* Empfangenes Zeichen + Statuscode */
-    uint16_t        c = 0, 
-                    /* Intel-HEX Zieladresse */
-           	    hex_addr = 0,
-                    /* Zu schreibende Flash-Page */
-                    flash_page = 0,                    
-                    /* Intel-HEX Checksumme zum Überprüfen des Daten */
-                    hex_check = 0,
-                    /* Positions zum Schreiben in der Datenpuffer */
-                    flash_cnt = 0;
-                    /* temporäre Variable */
-    uint8_t         temp,
-                    /* Flag zum steuern des Programmiermodus */
-                    boot_state = BOOT_STATE_EXIT,
-                    /* Empfangszustandssteuerung */
-                    parser_state = PARSER_STATE_START,
-                    /* Flag zum ermitteln einer neuen Flash-Page */
-                    flash_page_flag = 1,
-                    /* Datenpuffer für die Hexdaten*/
-                    flash_data[SPM_PAGESIZE], 
-                    /* Position zum Schreiben in den HEX-Puffer */
-                    hex_cnt = 0, 
-                    /* Puffer für die Umwandlung der ASCII in Binärdaten */
-                    hex_buffer[5], 
-                    /* Intel-HEX Datenlänge */
-                    hex_size = 0,
-                    /* Zähler für die empfangenen HEX-Daten einer Zeile */
-                    hex_data_cnt = 0, 
-                    /* Intel-HEX Recordtype */
-                    hex_type = 0, 
-                    /* empfangene HEX-Checksumme */
-                    hex_checksum=0,
-					FncErrorCode=0;
-                    /* Funktionspointer auf 0x0000 */
-    void            (*start)( void ) = 0x0000; 
- 
-    /* Füllen der Puffer mit definierten Werten */
-    memset(hex_buffer, 0x00, sizeof(hex_buffer));
-    memset(flash_data, 0xFF, sizeof(flash_data));
- 
-    /* Interrupt Vektoren verbiegen */
-    temp = GICR;
-    GICR = temp | (1<<IVCE);
-    GICR = temp | (1<<IVSEL);
- 
-    /* Einstellen der Baudrate und aktivieren der Interrupts */
-    uart_init( UART_BAUD_SELECT(BOOT_UART_BAUD_RATE,F_CPU) ); 
-    sei();
-	uart_putc(COM_HEX_BOOT);
-	_delay_ms(50);
-	uart_puts(": DropCtrl booting...\n");
-	uart_puts(": Bootloader 1.0\n");
+	uart_init();
+	uart_puts("Test bestanden");
 	
-	_delay_ms(500);
- 
-    do
-    {
-        c = uart_getc();
-        if( !(c & UART_NO_DATA) )
-        {
-             /* Programmzustand: Parser */
-             if(boot_state == BOOT_STATE_PARSER)
-             {
-                  switch(parser_state)
-                  {
-                      /* Warte auf Zeilen-Startzeichen */
-                      case PARSER_STATE_START:			
-                          if((uint8_t)c == START_SIGN) 
-                          {
-                              uart_putc(XOFF);
-                              parser_state = PARSER_STATE_SIZE;
-                              hex_cnt = 0;
-                              hex_check = 0;
-                              uart_putc(XON);
-                          }
-                          break;
-                      /* Parse Datengröße */
-                      case PARSER_STATE_SIZE:	
-                          hex_buffer[hex_cnt++] = (uint8_t)c;
-                          if(hex_cnt == 2)
-                          {
-                              uart_putc(XOFF);
-                              parser_state = PARSER_STATE_ADDRESS;
-                              hex_cnt = 0;
-                              hex_size = (uint8_t)hex2num(hex_buffer, 2);
-                              hex_check += hex_size;
-                              uart_putc(XON);
-                           }
-                           break;
-                      /* Parse Zieladresse */
-                      case PARSER_STATE_ADDRESS:
-                          hex_buffer[hex_cnt++] = (uint8_t)c;
-                          if(hex_cnt == 4)
-                          {
-                              uart_putc(XOFF);
-                              parser_state = PARSER_STATE_TYPE;
-                              hex_cnt = 0;
-                              hex_addr = hex2num(hex_buffer, 4);
-                              hex_check += (uint8_t) hex_addr;
-                              hex_check += (uint8_t) (hex_addr >> 8);
-                              if(flash_page_flag) 
-                              {
-                                  flash_page = hex_addr - hex_addr % SPM_PAGESIZE;
-                                  flash_page_flag = 0;
-                              }
-                              uart_putc(XON);
-                           }
-                           break;
-                      /* Parse Zeilentyp */
-                      case PARSER_STATE_TYPE:	
-                           hex_buffer[hex_cnt++] = (uint8_t)c;
-                           if(hex_cnt == 2)
-                           {
-                               uart_putc(XOFF);
-                               hex_cnt = 0;
-                               hex_data_cnt = 0;
-                               hex_type = (uint8_t)hex2num(hex_buffer, 2);
-                               hex_check += hex_type;
-                               switch(hex_type)
-                               {
-                                   case 0: parser_state = PARSER_STATE_DATA; break;
-                                   case 1: parser_state = PARSER_STATE_CHECKSUM; break;
-                                   default: parser_state = PARSER_STATE_DATA; break;
-                               }
-                               uart_putc(XON);
-                           }
-                           break;
-                      /* Parse Flash-Daten */
-                      case PARSER_STATE_DATA:
-                          hex_buffer[hex_cnt++] = (uint8_t)c;
-                          if(hex_cnt == 2)
-                          {
-                              uart_putc(XOFF);
-                              //uart_putc(COM_HEX_BYTE_CHAR);
-                              hex_cnt = 0;
-                              flash_data[flash_cnt] = (uint8_t)hex2num(hex_buffer, 2);
-                              hex_check += flash_data[flash_cnt];
-                              flash_cnt++;
-                              hex_data_cnt++;
-                              if(hex_data_cnt == hex_size)
-                              {
-                                  parser_state = PARSER_STATE_CHECKSUM;
-                                  hex_data_cnt=0;
-                                  hex_cnt = 0;
-                              }
-                              /* Puffer voll -> schreibe Page */
-                              if(flash_cnt == SPM_PAGESIZE)
-                              {
-                                  //uart_puts("P\n");
-                                  uart_putc(COM_HEX_PAGE_CHAR);
-								  //uart_putc('\n');
-								  _delay_ms(100);
-                                  program_page((uint16_t)flash_page, flash_data);
-                                  memset(flash_data, 0xFF, sizeof(flash_data));
-                                  flash_cnt = 0;
-                                  flash_page_flag = 1;
-                              }
-                              uart_putc(XON);
-                          }
-                          break;
-                      /* Parse Checksumme */                             
-                      case PARSER_STATE_CHECKSUM:
-                          hex_buffer[hex_cnt++] = (uint8_t)c;
-                          if(hex_cnt == 2)
-                          {
-                              uart_putc(XOFF);
-                              hex_checksum = (uint8_t)hex2num(hex_buffer, 2);
-                              hex_check += hex_checksum;
-                              hex_check &= 0x00FF;
-                              /* Dateiende -> schreibe Restdaten */ 
-                              if(hex_type == 1)
-                              {
-                                  //uart_puts("P\n");
-                                  uart_putc(COM_HEX_PAGE_CHAR);
-								  //uart_putc('\n');
-                                  _delay_ms(100);
-                                  program_page((uint16_t)flash_page, flash_data);
-                                  boot_state = BOOT_STATE_EXIT;
-                              }
-                              /* Überprüfe Checksumme -> muss '0' sein */
-                              if(hex_check == 0) parser_state = PARSER_STATE_START;
-                              else parser_state = PARSER_STATE_ERROR;
-                              uart_putc(XON);
-                          }
-                          break;			
-                      /* Parserfehler (falsche Checksumme) */
-                      case PARSER_STATE_ERROR:
-                          uart_putc(COM_HEX_ERROR_CHAR);
-						  FncErrorCode = 1;
-                          break;			
-                      default:
-                          break;
-                  }
-             }
-             /* Programmzustand: UART Kommunikation */               
-             else if(boot_state != BOOT_STATE_PARSER)
-             {
-                 switch((uint8_t)c)
-                 {
-                     case COM_HEX_PROGMEM : 
-                         boot_state = BOOT_STATE_PARSER;
-						 uart_putc(COM_HEX_CMDACK);
-						 _delay_ms(10);
-                         uart_puts(": Flashing...\n");
-                         break;
-                     case COM_HEX_ESC: 
-                         boot_state = BOOT_STATE_EXIT;
-                         uart_puts(": Quit bootloader...\n");
-                         break;
-					 case COM_HEX_BOOTIDLE :
-						 uart_puts(": Bootmenu active...\n");
-						 boot_state = BOOT_STATE_IDLE;
-						 break;
-						 
-                     default:
-                         uart_puts(":");
-                         uart_putc((unsigned char)c);
-                         uart_puts("\n");
-                         break;
-                 }
-             }
-        }
-    }
-    while(boot_state!=BOOT_STATE_EXIT);
-	if(FncErrorCode == 0) uart_puts("\n: Update OK. Reset...\n"); 
-    else uart_puts("\n: Error!\n");
-    _delay_ms(1000);
- 
-    /* Interrupt Vektoren wieder gerade biegen */
-    temp = GICR;
-    GICR = temp | (1<<IVCE);
-    GICR = temp & ~(1<<IVSEL);
- 
-    /* Reset */
-    start();
- 
-    return 0;
+	//LED blinken lassen
+	setup();
+	for(;;)
+	{
+	    uart_puts("Test");
+		loop();
+	}
+	return 0;
 }
