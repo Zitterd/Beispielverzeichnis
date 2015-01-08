@@ -29,7 +29,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/gtest-1.7.0/cmake_install.cmake")
   include("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/cmake_install.cmake")
 
 endif()

@@ -100,7 +100,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.1.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "gtest-1.7.0/CMakeFiles/CMakeDirectoryInformation.cmake"
   "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

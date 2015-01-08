@@ -206,20 +206,6 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": all" path="gtest-1.7.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>all</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name=": clean" path="gtest-1.7.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>clean</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
 <target name="[exe] sample_tests" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>

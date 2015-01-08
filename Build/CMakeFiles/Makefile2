@@ -90,21 +90,6 @@ clean: CMakeFiles/test.o.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory gtest-1.7.0
-
-# Convenience name for "all" pass in the directory.
-gtest-1.7.0/all:
-.PHONY : gtest-1.7.0/all
-
-# Convenience name for "clean" pass in the directory.
-gtest-1.7.0/clean:
-.PHONY : gtest-1.7.0/clean
-
-# Convenience name for "preinstall" pass in the directory.
-gtest-1.7.0/preinstall:
-.PHONY : gtest-1.7.0/preinstall
-
-#=============================================================================
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
