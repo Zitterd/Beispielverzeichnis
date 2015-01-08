@@ -18,10 +18,6 @@ avr/io.h
 avr/io.h
 -
 
-C:/Arduino/hardware/tools/avr/avr/include/avr/interrupt.h
-avr/io.h
--
-
 C:/Arduino/hardware/tools/avr/avr/include/avr/io.h
 avr/sfr_defs.h
 -
@@ -586,18 +582,6 @@ avr/io.h
 avr/io.h
 -
 
-C:/Arduino/hardware/tools/avr/avr/include/avr/pgmspace.h
-avr/io.h
--
-avr/pgmspace.h
--
-inttypes.h
--
-stddef.h
--
-avr/io.h
--
-
 C:/Arduino/hardware/tools/avr/avr/include/avr/portpins.h
 
 C:/Arduino/hardware/tools/avr/avr/include/avr/sfr_defs.h
@@ -645,16 +629,4 @@ util/delay.h
 -
 avr/io.h
 -
-
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.c
-avr/io.h
--
-avr/interrupt.h
--
-avr/pgmspace.h
--
-uart.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
-
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h
 

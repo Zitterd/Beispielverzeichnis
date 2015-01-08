@@ -8,6 +8,9 @@ project (hexFileErstellung) #CMake Projekt Namen vergeben
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
+add_subdirectory(C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/gtest-1.7.0)        ##
+add_subdirectory(test)									    ##
+
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
 
 set(CMAKE_VERBOSE_MAKEFILE true) #Make Output in der Konsole sichtbar 

@@ -149,19 +149,9 @@
 			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test.c</location>
 		</link>
 		<link>
-			<name>[Targets]/[exe] test.o/Source Files/uart.c</name>
-			<type>1</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.c</location>
-		</link>
-		<link>
 			<name>[Targets]/[exe] test.o/Header Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] test.o/Header Files/uart.h</name>
-			<type>1</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/uart.h</location>
 		</link>
 		<link>
 			<name>[Targets]/[exe] test.o/CMake Rules</name>

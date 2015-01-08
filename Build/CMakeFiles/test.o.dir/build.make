@@ -74,39 +74,14 @@ CMakeFiles/test.o.dir/test.c.obj.provides: CMakeFiles/test.o.dir/test.c.obj.requ
 
 CMakeFiles/test.o.dir/test.c.obj.provides.build: CMakeFiles/test.o.dir/test.c.obj
 
-CMakeFiles/test.o.dir/uart.c.obj: CMakeFiles/test.o.dir/flags.make
-CMakeFiles/test.o.dir/uart.c.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/uart.c
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/test.o.dir/uart.c.obj"
-	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles\test.o.dir\uart.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\uart.c"
-
-CMakeFiles/test.o.dir/uart.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.o.dir/uart.c.i"
-	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\uart.c" > CMakeFiles\test.o.dir\uart.c.i
-
-CMakeFiles/test.o.dir/uart.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.o.dir/uart.c.s"
-	C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  $(C_DEFINES) $(C_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\uart.c" -o CMakeFiles\test.o.dir\uart.c.s
-
-CMakeFiles/test.o.dir/uart.c.obj.requires:
-.PHONY : CMakeFiles/test.o.dir/uart.c.obj.requires
-
-CMakeFiles/test.o.dir/uart.c.obj.provides: CMakeFiles/test.o.dir/uart.c.obj.requires
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/uart.c.obj.provides.build
-.PHONY : CMakeFiles/test.o.dir/uart.c.obj.provides
-
-CMakeFiles/test.o.dir/uart.c.obj.provides.build: CMakeFiles/test.o.dir/uart.c.obj
-
 # Object files for target test.o
 test_o_OBJECTS = \
-"CMakeFiles/test.o.dir/test.c.obj" \
-"CMakeFiles/test.o.dir/uart.c.obj"
+"CMakeFiles/test.o.dir/test.c.obj"
 
 # External object files for target test.o
 test_o_EXTERNAL_OBJECTS =
 
 test.o: CMakeFiles/test.o.dir/test.c.obj
-test.o: CMakeFiles/test.o.dir/uart.c.obj
 test.o: CMakeFiles/test.o.dir/build.make
 test.o: CMakeFiles/test.o.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable test.o"
@@ -118,7 +93,6 @@ CMakeFiles/test.o.dir/build: test.o
 .PHONY : CMakeFiles/test.o.dir/build
 
 CMakeFiles/test.o.dir/requires: CMakeFiles/test.o.dir/test.c.obj.requires
-CMakeFiles/test.o.dir/requires: CMakeFiles/test.o.dir/uart.c.obj.requires
 .PHONY : CMakeFiles/test.o.dir/requires
 
 CMakeFiles/test.o.dir/clean:
