@@ -8,7 +8,7 @@ project (hexFileErstellung) #CMake Projekt Namen vergeben
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
-add_subdirectory(test/lib/gtest-1.6.0)        						            ##
+#add_subdirectory(test/lib/gtest-1.6.0)        						            ##
 add_subdirectory(test)									    ##
 
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
