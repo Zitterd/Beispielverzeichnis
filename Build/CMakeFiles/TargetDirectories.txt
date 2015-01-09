@@ -1,3 +1,0 @@
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/gtest-1.7.0/CMakeFiles/gtest.dir
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/test.o.dir
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/gtest-1.7.0/CMakeFiles/gtest_main.dir
