@@ -61,7 +61,7 @@ CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
 CMakeFiles/test.o.dir/all:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/depend
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  4
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  5
 	@echo Built target test.o
 .PHONY : CMakeFiles/test.o.dir/all
 
@@ -93,11 +93,13 @@ clean: CMakeFiles/test.o.dir/clean
 # Directory level rules for directory test
 
 # Convenience name for "all" pass in the directory.
+test/all: test/CMakeFiles/project_lib.dir/all
 test/all: test/CMakeFiles/runUnitTests.dir/all
 test/all: test/lib/gtest-1.6.0/all
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
+test/clean: test/CMakeFiles/project_lib.dir/clean
 test/clean: test/CMakeFiles/runUnitTests.dir/clean
 test/clean: test/lib/gtest-1.6.0/clean
 .PHONY : test/clean
@@ -107,14 +109,50 @@ test/preinstall: test/lib/gtest-1.6.0/preinstall
 .PHONY : test/preinstall
 
 #=============================================================================
+# Target rules for target test/CMakeFiles/project_lib.dir
+
+# All Build rule for target.
+test/CMakeFiles/project_lib.dir/all:
+	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/depend
+	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  3
+	@echo Built target project_lib
+.PHONY : test/CMakeFiles/project_lib.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/project_lib.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/project_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 1
+	$(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/project_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
+.PHONY : test/CMakeFiles/project_lib.dir/rule
+
+# Convenience name for target.
+project_lib: test/CMakeFiles/project_lib.dir/rule
+.PHONY : project_lib
+
+# clean rule for target.
+test/CMakeFiles/project_lib.dir/clean:
+	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/clean
+.PHONY : test/CMakeFiles/project_lib.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/project_lib.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target test/CMakeFiles/runUnitTests.dir
 
 # All Build rule for target.
+test/CMakeFiles/runUnitTests.dir/all: test/CMakeFiles/project_lib.dir/all
 test/CMakeFiles/runUnitTests.dir/all: test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
 test/CMakeFiles/runUnitTests.dir/all: test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
 	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/depend
 	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  3
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  4
 	@echo Built target runUnitTests
 .PHONY : test/CMakeFiles/runUnitTests.dir/all
 
@@ -124,7 +162,7 @@ all: test/CMakeFiles/runUnitTests.dir/all
 
 # Build rule for subdir invocation for target.
 test/CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 4
 	$(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/runUnitTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
 .PHONY : test/CMakeFiles/runUnitTests.dir/rule

@@ -102,6 +102,20 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+test/CMakeFiles/project_lib.dir/rule:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/project_lib.dir/rule
+.PHONY : test/CMakeFiles/project_lib.dir/rule
+
+# Convenience name for target.
+project_lib: test/CMakeFiles/project_lib.dir/rule
+.PHONY : project_lib
+
+# fast build rule for target.
+project_lib/fast:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
+.PHONY : project_lib/fast
+
+# Convenience name for target.
 test/CMakeFiles/runUnitTests.dir/rule:
 	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/runUnitTests.dir/rule
 .PHONY : test/CMakeFiles/runUnitTests.dir/rule
@@ -120,6 +134,7 @@ cunitTest.obj: cunitTest.cpp.obj
 
 # target to build an object file
 cunitTest.cpp.obj:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj
 	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
 .PHONY : cunitTest.cpp.obj
 
@@ -128,6 +143,7 @@ cunitTest.i: cunitTest.cpp.i
 
 # target to preprocess a source file
 cunitTest.cpp.i:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.i
 	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.i
 .PHONY : cunitTest.cpp.i
 
@@ -136,6 +152,7 @@ cunitTest.s: cunitTest.cpp.s
 
 # target to generate assembly for a file
 cunitTest.cpp.s:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.s
 	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.s
 .PHONY : cunitTest.cpp.s
 
@@ -148,6 +165,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... runUnitTests
+	@echo ... project_lib
 	@echo ... cunitTest.obj
 	@echo ... cunitTest.i
 	@echo ... cunitTest.s

@@ -254,6 +254,9 @@ hexFileErstellung_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzei
 //Value Computed by CMake
 hexFileErstellung_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code
 
+//Dependencies for target
+project_lib_LIB_DEPENDS:STATIC=
+
 
 ########################
 # INTERNAL cache entries

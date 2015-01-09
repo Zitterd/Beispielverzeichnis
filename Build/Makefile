@@ -118,6 +118,19 @@ test.o/fast:
 .PHONY : test.o/fast
 
 #=============================================================================
+# Target rules for targets named project_lib
+
+# Build rule for target.
+project_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 project_lib
+.PHONY : project_lib
+
+# fast build rule for target.
+project_lib/fast:
+	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
+.PHONY : project_lib/fast
+
+#=============================================================================
 # Target rules for targets named runUnitTests
 
 # Build rule for target.
@@ -190,6 +203,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test.o
 	@echo ... runUnitTests
+	@echo ... project_lib
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... test.obj

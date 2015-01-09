@@ -1,1 +1,1 @@
-C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   -g -Wall -g   CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj  -o runUnitTests  lib\gtest-1.6.0\libgtest.a lib\gtest-1.6.0\libgtest_main.a -lcunitTest.cpp lib\gtest-1.6.0\libgtest.a 
+C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   -g -Wall -g   CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj  -o runUnitTests  lib\gtest-1.6.0\libgtest.a lib\gtest-1.6.0\libgtest_main.a libproject_lib.a lib\gtest-1.6.0\libgtest.a 

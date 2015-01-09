@@ -82,6 +82,7 @@ test/runUnitTests: test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
 test/runUnitTests: test/CMakeFiles/runUnitTests.dir/build.make
 test/runUnitTests: test/lib/gtest-1.6.0/libgtest.a
 test/runUnitTests: test/lib/gtest-1.6.0/libgtest_main.a
+test/runUnitTests: test/libproject_lib.a
 test/runUnitTests: test/lib/gtest-1.6.0/libgtest.a
 test/runUnitTests: test/CMakeFiles/runUnitTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable runUnitTests"

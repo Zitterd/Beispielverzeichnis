@@ -118,6 +118,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test.o.dir/DependInfo.cmake"
   "test/CMakeFiles/runUnitTests.dir/DependInfo.cmake"
+  "test/CMakeFiles/project_lib.dir/DependInfo.cmake"
   "test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/DependInfo.cmake"
   "test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )
