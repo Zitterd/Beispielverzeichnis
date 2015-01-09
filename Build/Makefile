@@ -143,19 +143,6 @@ gtest_main/fast:
 	$(MAKE) -f gtest-1.7.0\CMakeFiles\gtest_main.dir\build.make gtest-1.7.0/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-#=============================================================================
-# Target rules for targets named sample_tests
-
-# Build rule for target.
-sample_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 sample_tests
-.PHONY : sample_tests
-
-# fast build rule for target.
-sample_tests/fast:
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/build
-.PHONY : sample_tests/fast
-
 test.obj: test.c.obj
 .PHONY : test.obj
 
@@ -191,7 +178,6 @@ help:
 	@echo ... test.o
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... sample_tests
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

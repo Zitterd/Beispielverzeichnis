@@ -93,7 +93,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/gtest-1.7.0/CMakeLists.txt"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/gtest-1.7.0/cmake/internal_utils.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -111,7 +110,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.1.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest-1.7.0/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -119,5 +117,4 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test.o.dir/DependInfo.cmake"
   "gtest-1.7.0/CMakeFiles/gtest.dir/DependInfo.cmake"
   "gtest-1.7.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "test/CMakeFiles/sample_tests.dir/DependInfo.cmake"
   )

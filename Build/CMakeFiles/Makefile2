@@ -61,7 +61,7 @@ CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
 CMakeFiles/test.o.dir/all:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/depend
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  4
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  3
 	@echo Built target test.o
 .PHONY : CMakeFiles/test.o.dir/all
 
@@ -174,57 +174,6 @@ gtest-1.7.0/CMakeFiles/gtest_main.dir/clean:
 
 # clean rule for target.
 clean: gtest-1.7.0/CMakeFiles/gtest_main.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory test
-
-# Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/sample_tests.dir/all
-.PHONY : test/all
-
-# Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/sample_tests.dir/clean
-.PHONY : test/clean
-
-# Convenience name for "preinstall" pass in the directory.
-test/preinstall:
-.PHONY : test/preinstall
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/sample_tests.dir
-
-# All Build rule for target.
-test/CMakeFiles/sample_tests.dir/all: gtest-1.7.0/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/sample_tests.dir/all: gtest-1.7.0/CMakeFiles/gtest.dir/all
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/depend
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  3
-	@echo Built target sample_tests
-.PHONY : test/CMakeFiles/sample_tests.dir/all
-
-# Include target in all.
-all: test/CMakeFiles/sample_tests.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-test/CMakeFiles/sample_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 3
-	$(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/sample_tests.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
-.PHONY : test/CMakeFiles/sample_tests.dir/rule
-
-# Convenience name for target.
-sample_tests: test/CMakeFiles/sample_tests.dir/rule
-.PHONY : sample_tests
-
-# clean rule for target.
-test/CMakeFiles/sample_tests.dir/clean:
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/clean
-.PHONY : test/CMakeFiles/sample_tests.dir/clean
-
-# clean rule for target.
-clean: test/CMakeFiles/sample_tests.dir/clean
 .PHONY : clean
 
 #=============================================================================
