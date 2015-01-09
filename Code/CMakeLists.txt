@@ -3,7 +3,9 @@ set(_ECLIPSE_VERSION "8.5.0" )
 
 #INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake")
 
-
+set(CMAKE_ARDUINO_PATH "C:/Arduino") 
+set(CMAKE_SYSTEM_NAME Arduino)
+set(CMAKE_C_COMPILER   "C:/Arduino/hardware/tools/avr/bin/avr-gcc.exe")
 SET(CSTANDARD "-std=gnu99")   
 SET(CDEBUG "-gstabs")
 SET(CWARN "-Wall -Wstrict-prototypes")

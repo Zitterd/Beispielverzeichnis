@@ -49,18 +49,19 @@ include test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/progress.make
 include test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/flags.make
 
 test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/flags.make
+test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/includes_CXX.rsp
 test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/src/gtest_main.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test\lib\GTEST-~1.0 && C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\lib\gtest-1.6.0\src\gtest_main.cc"
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test\lib\GTEST-~1.0 && C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\lib\gtest-1.6.0\src\gtest_main.cc"
 
 test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test\lib\GTEST-~1.0 && C:\Arduino\hardware\tools\avr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\lib\gtest-1.6.0\src\gtest_main.cc" > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test\lib\GTEST-~1.0 && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\lib\gtest-1.6.0\src\gtest_main.cc" > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test\lib\GTEST-~1.0 && C:\Arduino\hardware\tools\avr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\lib\gtest-1.6.0\src\gtest_main.cc" -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test\lib\GTEST-~1.0 && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\lib\gtest-1.6.0\src\gtest_main.cc" -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.requires:
 .PHONY : test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj.requires

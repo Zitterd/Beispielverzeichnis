@@ -49,18 +49,19 @@ include test/CMakeFiles/project_lib.dir/progress.make
 include test/CMakeFiles/project_lib.dir/flags.make
 
 test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj: test/CMakeFiles/project_lib.dir/flags.make
+test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj: test/CMakeFiles/project_lib.dir/includes_CXX.rsp
 test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\project_lib.dir\cunitTest.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp"
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\project_lib.dir\cunitTest.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp"
 
 test/CMakeFiles/project_lib.dir/cunitTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_lib.dir/cunitTest.cpp.i"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\Arduino\hardware\tools\avr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" > CMakeFiles\project_lib.dir\cunitTest.cpp.i
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" > CMakeFiles\project_lib.dir\cunitTest.cpp.i
 
 test/CMakeFiles/project_lib.dir/cunitTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_lib.dir/cunitTest.cpp.s"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\Arduino\hardware\tools\avr\bin\avr-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" -o CMakeFiles\project_lib.dir\cunitTest.cpp.s
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" -o CMakeFiles\project_lib.dir\cunitTest.cpp.s
 
 test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires:
 .PHONY : test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
