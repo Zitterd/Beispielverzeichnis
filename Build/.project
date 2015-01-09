@@ -119,14 +119,9 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Subprojects]/basic_test</name>
-			<type>2</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test</location>
-		</link>
-		<link>
 			<name>[Subprojects]/gtest</name>
 			<type>2</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0</location>
+			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0</location>
 		</link>
 		<link>
 			<name>[Subprojects]/hexFileErstellung</name>
@@ -135,6 +130,46 @@
 		</link>
 		<link>
 			<name>[Targets]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/Source Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/Source Files/cunitTest.cpp</name>
+			<type>1</type>
+			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/cunitTest.cpp</location>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/Header Files</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/CMake Rules</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/Resources</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Targets]/[exe] runUnitTests/Object Files</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
@@ -179,46 +214,6 @@
 			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>[Targets]/[exe] runUnitTests</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/Source Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/Source Files/cunitTest.cpp</name>
-			<type>1</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp</location>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/Header Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/CMake Rules</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/Resources</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>[Targets]/[exe] runUnitTests/Object Files</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>[Targets]/[lib] project_lib</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
@@ -236,7 +231,7 @@
 		<link>
 			<name>[Targets]/[lib] project_lib/Source Files/cunitTest.cpp</name>
 			<type>1</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp</location>
+			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/cunitTest.cpp</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] project_lib/Header Files</name>
@@ -276,7 +271,7 @@
 		<link>
 			<name>[Targets]/[lib] gtest/Source Files/gtest-all.cc</name>
 			<type>1</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/src/gtest-all.cc</location>
+			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/src/gtest-all.cc</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] gtest/Header Files</name>
@@ -316,7 +311,7 @@
 		<link>
 			<name>[Targets]/[lib] gtest_main/Source Files/gtest_main.cc</name>
 			<type>1</type>
-			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/src/gtest_main.cc</location>
+			<location>C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/src/gtest_main.cc</location>
 		</link>
 		<link>
 			<name>[Targets]/[lib] gtest_main/Header Files</name>

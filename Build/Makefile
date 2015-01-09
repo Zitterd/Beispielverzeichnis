@@ -73,6 +73,16 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"C:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\progress.marks"
@@ -105,6 +115,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named project_lib
+
+# Build rule for target.
+project_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 project_lib
+.PHONY : project_lib
+
+# fast build rule for target.
+project_lib/fast:
+	$(MAKE) -f CMakeFiles\project_lib.dir\build.make CMakeFiles/project_lib.dir/build
+.PHONY : project_lib/fast
+
+#=============================================================================
+# Target rules for targets named runUnitTests
+
+# Build rule for target.
+runUnitTests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 runUnitTests
+.PHONY : runUnitTests
+
+# fast build rule for target.
+runUnitTests/fast:
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/build
+.PHONY : runUnitTests/fast
+
+#=============================================================================
 # Target rules for targets named test.o
 
 # Build rule for target.
@@ -118,32 +154,6 @@ test.o/fast:
 .PHONY : test.o/fast
 
 #=============================================================================
-# Target rules for targets named project_lib
-
-# Build rule for target.
-project_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 project_lib
-.PHONY : project_lib
-
-# fast build rule for target.
-project_lib/fast:
-	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
-.PHONY : project_lib/fast
-
-#=============================================================================
-# Target rules for targets named runUnitTests
-
-# Build rule for target.
-runUnitTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 runUnitTests
-.PHONY : runUnitTests
-
-# fast build rule for target.
-runUnitTests/fast:
-	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
-.PHONY : runUnitTests/fast
-
-#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -153,7 +163,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -166,8 +176,35 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+cunitTest.obj: cunitTest.cpp.obj
+.PHONY : cunitTest.obj
+
+# target to build an object file
+cunitTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\project_lib.dir\build.make CMakeFiles/project_lib.dir/cunitTest.cpp.obj
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
+.PHONY : cunitTest.cpp.obj
+
+cunitTest.i: cunitTest.cpp.i
+.PHONY : cunitTest.i
+
+# target to preprocess a source file
+cunitTest.cpp.i:
+	$(MAKE) -f CMakeFiles\project_lib.dir\build.make CMakeFiles/project_lib.dir/cunitTest.cpp.i
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.i
+.PHONY : cunitTest.cpp.i
+
+cunitTest.s: cunitTest.cpp.s
+.PHONY : cunitTest.s
+
+# target to generate assembly for a file
+cunitTest.cpp.s:
+	$(MAKE) -f CMakeFiles\project_lib.dir\build.make CMakeFiles/project_lib.dir/cunitTest.cpp.s
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.s
+.PHONY : cunitTest.cpp.s
 
 test.obj: test.c.obj
 .PHONY : test.obj
@@ -201,11 +238,15 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... test.o
 	@echo ... runUnitTests
+	@echo ... test.o
+	@echo ... test
 	@echo ... project_lib
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... cunitTest.obj
+	@echo ... cunitTest.i
+	@echo ... cunitTest.s
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

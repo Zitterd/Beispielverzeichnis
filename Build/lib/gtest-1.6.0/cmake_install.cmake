@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test
+# Install script for directory: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -25,11 +25,5 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   else()
     set(CMAKE_INSTALL_COMPONENT)
   endif()
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/lib/gtest-1.6.0/cmake_install.cmake")
-
 endif()
 

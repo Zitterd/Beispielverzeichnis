@@ -138,6 +138,8 @@
 <pathentry include="C:/Arduino/hardware/arduino/variants/leonardo" kind="inc" path="" system="true"/>
 <pathentry include="C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/include" kind="inc" path="" system="true"/>
 <pathentry include="C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0" kind="inc" path="" system="true"/>
+<pathentry include="C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/include" kind="inc" path="" system="true"/>
+<pathentry include="C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0" kind="inc" path="" system="true"/>
 <pathentry include="c:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include" kind="inc" path="" system="true"/>
 <pathentry include="c:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2/include-fixed" kind="inc" path="" system="true"/>
 <pathentry include="c:/Arduino/hardware/tools/avr/avr/include" kind="inc" path="" system="true"/>
@@ -155,6 +157,34 @@
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>rebuild_cache</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] runUnitTests" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>runUnitTests</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[exe] runUnitTests/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>runUnitTests/fast</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Build" path="[Targets]/[exe] runUnitTests" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
+<buildArguments>-C "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" </buildArguments>
+<buildTarget>runUnitTests</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="Clean" path="[Targets]/[exe] runUnitTests" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/runUnitTests.dir/cmake_clean.cmake"</buildArguments>
+<buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
@@ -186,63 +216,21 @@
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": all" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name=": test" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
-<buildTarget>all</buildTarget>
+<buildTarget>test</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": clean" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>clean</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[obj] test.c.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>test.c.obj</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[exe] runUnitTests" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>runUnitTests</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[exe] runUnitTests/fast" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments></buildArguments>
-<buildTarget>runUnitTests/fast</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="Build" path="[Targets]/[exe] runUnitTests" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
-<buildArguments>-C "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" </buildArguments>
-<buildTarget>runUnitTests</buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="Clean" path="[Targets]/[exe] runUnitTests" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
-<buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/runUnitTests.dir/cmake_clean.cmake"</buildArguments>
-<buildTarget></buildTarget>
-<stopOnError>true</stopOnError>
-<useDefaultCommand>false</useDefaultCommand>
-</target>
-<target name="[lib] project_lib" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[lib] project_lib" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>project_lib</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[lib] project_lib/fast" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[lib] project_lib/fast" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>project_lib/fast</buildTarget>
@@ -258,40 +246,47 @@
 </target>
 <target name="Clean" path="[Targets]/[lib] project_lib" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/project_lib.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/project_lib.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": all" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name=": all" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>all</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": clean" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name=": clean" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>clean</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[obj] cunitTest.cpp.obj" path="test" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[obj] cunitTest.cpp.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>cunitTest.cpp.obj</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[lib] gtest" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[obj] test.c.obj" path="" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
+<buildArguments></buildArguments>
+<buildTarget>test.c.obj</buildTarget>
+<stopOnError>true</stopOnError>
+<useDefaultCommand>false</useDefaultCommand>
+</target>
+<target name="[lib] gtest" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>gtest</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[lib] gtest/fast" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[lib] gtest/fast" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>gtest/fast</buildTarget>
@@ -307,19 +302,19 @@
 </target>
 <target name="Clean" path="[Targets]/[lib] gtest" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/lib/gtest-1.6.0" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/gtest.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/lib/gtest-1.6.0" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/gtest.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[lib] gtest_main" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[lib] gtest_main" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>gtest_main</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[lib] gtest_main/fast" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[lib] gtest_main/fast" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>gtest_main/fast</buildTarget>
@@ -335,33 +330,33 @@
 </target>
 <target name="Clean" path="[Targets]/[lib] gtest_main" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/Program Files (x86)/CMake/bin/cmake.exe</buildCommand>
-<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/lib/gtest-1.6.0" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/gtest_main.dir/cmake_clean.cmake"</buildArguments>
+<buildArguments>-E chdir "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/lib/gtest-1.6.0" "C:/Program Files (x86)/CMake/bin/cmake.exe" -P "CMakeFiles/gtest_main.dir/cmake_clean.cmake"</buildArguments>
 <buildTarget></buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": all" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name=": all" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>all</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name=": clean" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name=": clean" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>clean</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[obj] src/gtest-all.cc.obj" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[obj] src/gtest-all.cc.obj" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>src/gtest-all.cc.obj</buildTarget>
 <stopOnError>true</stopOnError>
 <useDefaultCommand>false</useDefaultCommand>
 </target>
-<target name="[obj] src/gtest_main.cc.obj" path="test/lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
+<target name="[obj] src/gtest_main.cc.obj" path="lib/gtest-1.6.0" targetID="org.eclipse.cdt.make.MakeTargetBuilder">
 <buildCommand>C:/TDM-GCC-64/bin/mingw32-make.exe</buildCommand>
 <buildArguments></buildArguments>
 <buildTarget>src/gtest_main.cc.obj</buildTarget>
