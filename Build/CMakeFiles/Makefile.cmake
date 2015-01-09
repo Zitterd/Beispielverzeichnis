@@ -90,9 +90,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.1.0-rc1/CMakeSystem.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/CMakeLists.txt"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/CMakeLists.txt"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/cmake/internal_utils.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/CMakeLists.txt"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/CMakeLists.txt"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/cmake/internal_utils.cmake"
   )
 
 # The corresponding makefile is:
@@ -109,14 +110,15 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.1.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/gtest-1.6.0/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/lib/gtest-1.6.0/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/runUnitTests.dir/DependInfo.cmake"
   "CMakeFiles/test.o.dir/DependInfo.cmake"
-  "CMakeFiles/project_lib.dir/DependInfo.cmake"
-  "lib/gtest-1.6.0/CMakeFiles/gtest.dir/DependInfo.cmake"
-  "lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "test/CMakeFiles/runUnitTests.dir/DependInfo.cmake"
+  "test/CMakeFiles/project_lib.dir/DependInfo.cmake"
+  "test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

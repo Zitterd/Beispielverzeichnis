@@ -20,9 +20,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -75,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\progress.marks"
-	$(MAKE) -f CMakeFiles\Makefile2 all
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles\progress.marks"
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles\Makefile2 clean
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/clean
 .PHONY : clean
 
 # The main clean target
@@ -91,107 +88,73 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles\Makefile2 preinstall
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named test.o
+# Convenience name for target.
+test/CMakeFiles/project_lib.dir/rule:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/project_lib.dir/rule
+.PHONY : test/CMakeFiles/project_lib.dir/rule
 
-# Build rule for target.
-test.o: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 test.o
-.PHONY : test.o
-
-# fast build rule for target.
-test.o/fast:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
-.PHONY : test.o/fast
-
-#=============================================================================
-# Target rules for targets named project_lib
-
-# Build rule for target.
-project_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 project_lib
+# Convenience name for target.
+project_lib: test/CMakeFiles/project_lib.dir/rule
 .PHONY : project_lib
 
 # fast build rule for target.
 project_lib/fast:
-	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
 .PHONY : project_lib/fast
 
-#=============================================================================
-# Target rules for targets named runUnitTests
+# Convenience name for target.
+test/CMakeFiles/runUnitTests.dir/rule:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/runUnitTests.dir/rule
+.PHONY : test/CMakeFiles/runUnitTests.dir/rule
 
-# Build rule for target.
-runUnitTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 runUnitTests
+# Convenience name for target.
+runUnitTests: test/CMakeFiles/runUnitTests.dir/rule
 .PHONY : runUnitTests
 
 # fast build rule for target.
 runUnitTests/fast:
-	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
 .PHONY : runUnitTests/fast
 
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-test.obj: test.c.obj
-.PHONY : test.obj
+cunitTest.obj: cunitTest.cpp.obj
+.PHONY : cunitTest.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
-.PHONY : test.c.obj
+cunitTest.cpp.obj:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
+.PHONY : cunitTest.cpp.obj
 
-test.i: test.c.i
-.PHONY : test.i
+cunitTest.i: cunitTest.cpp.i
+.PHONY : cunitTest.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
-.PHONY : test.c.i
+cunitTest.cpp.i:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.i
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.i
+.PHONY : cunitTest.cpp.i
 
-test.s: test.c.s
-.PHONY : test.s
+cunitTest.s: cunitTest.cpp.s
+.PHONY : cunitTest.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
-.PHONY : test.c.s
+cunitTest.cpp.s:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.s
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.s
+.PHONY : cunitTest.cpp.s
 
 # Help Target
 help:
@@ -201,14 +164,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... test.o
 	@echo ... runUnitTests
 	@echo ... project_lib
-	@echo ... gtest
-	@echo ... gtest_main
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... cunitTest.obj
+	@echo ... cunitTest.i
+	@echo ... cunitTest.s
 .PHONY : help
 
 
@@ -220,6 +180,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

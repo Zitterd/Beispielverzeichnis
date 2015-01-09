@@ -1,1 +1,0 @@
-C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   -mmcu=atmega32u4 -std=gnu99 -DF_CPU=16000000L -Os  -g   CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj  -o runUnitTests  lib\gtest-1.6.0\libgtest.a lib\gtest-1.6.0\libgtest_main.a libproject_lib.a lib\gtest-1.6.0\libgtest.a 

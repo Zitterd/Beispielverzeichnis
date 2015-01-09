@@ -218,13 +218,19 @@ ProcessorCount_cmd_sysinfo:FILEPATH=ProcessorCount_cmd_sysinfo-NOTFOUND
 ProcessorCount_cmd_uname:FILEPATH=C:/Program Files (x86)/Git/bin/uname.exe
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/lib/gtest-1.6.0
+basic_test_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test
+
+//Value Computed by CMake
+basic_test_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/lib/gtest-1.6.0
 
 //Dependencies for target
 gtest_LIB_DEPENDS:STATIC=
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0
+gtest_SOURCE_DIR:STATIC=C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -348,7 +354,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=2
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

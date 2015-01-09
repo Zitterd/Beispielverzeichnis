@@ -4,13 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/src/gtest_main.cc" "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/src/gtest-all.cc" "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/lib/gtest-1.6.0/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
@@ -18,8 +17,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "C:/Arduino/hardware/arduino/cores/arduino"
   "C:/Arduino/hardware/tools/avr/avr/include"
   "C:/Arduino/hardware/arduino/variants/leonardo"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0/include"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/lib/gtest-1.6.0"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/include"
+  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

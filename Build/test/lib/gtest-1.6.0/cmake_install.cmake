@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code
+# Install script for directory: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -27,19 +27,3 @@ if(NOT CMAKE_INSTALL_COMPONENT)
   endif()
 endif()
 
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/cmake_install.cmake")
-
-endif()
-
-if(CMAKE_INSTALL_COMPONENT)
-  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
-else()
-  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
-endif()
-
-file(WRITE "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/${CMAKE_INSTALL_MANIFEST}" "")
-foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
-endforeach()

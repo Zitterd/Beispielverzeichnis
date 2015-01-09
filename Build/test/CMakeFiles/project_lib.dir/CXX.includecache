@@ -36,9 +36,9 @@ C:/Arduino/hardware/tools/avr/avr/include/string.h
 stddef.h
 -
 
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/cunitTest.cpp
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp
 gtest/gtest.h
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/gtest/gtest.h
+C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/gtest/gtest.h
 
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/include/gtest/gtest-death-test.h
 gtest/internal/gtest-death-test-internal.h
