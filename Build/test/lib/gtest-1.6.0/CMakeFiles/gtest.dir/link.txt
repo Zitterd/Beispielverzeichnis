@@ -1,0 +1,2 @@
+C:\Arduino\hardware\tools\avr\bin\avr-ar.exe cq libgtest.a  CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+C:\Arduino\hardware\tools\avr\bin\avr-ranlib.exe libgtest.a
