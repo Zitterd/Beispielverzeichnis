@@ -20,6 +20,9 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -42,7 +45,7 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test"
+CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
@@ -69,16 +72,6 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	"C:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -112,6 +105,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test.o
+
+# Build rule for target.
+test.o: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test.o
+.PHONY : test.o
+
+# fast build rule for target.
+test.o/fast:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
+.PHONY : test.o/fast
+
+#=============================================================================
 # Target rules for targets named runUnitTests
 
 # Build rule for target.
@@ -121,7 +127,7 @@ runUnitTests: cmake_check_build_system
 
 # fast build rule for target.
 runUnitTests/fast:
-	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/build
+	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
 .PHONY : runUnitTests/fast
 
 #=============================================================================
@@ -134,7 +140,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
+	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -147,32 +153,32 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-cunitTest.obj: cunitTest.cpp.obj
-.PHONY : cunitTest.obj
+test.obj: test.c.obj
+.PHONY : test.obj
 
 # target to build an object file
-cunitTest.cpp.obj:
-	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
-.PHONY : cunitTest.cpp.obj
+test.c.obj:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
+.PHONY : test.c.obj
 
-cunitTest.i: cunitTest.cpp.i
-.PHONY : cunitTest.i
+test.i: test.c.i
+.PHONY : test.i
 
 # target to preprocess a source file
-cunitTest.cpp.i:
-	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.i
-.PHONY : cunitTest.cpp.i
+test.c.i:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
+.PHONY : test.c.i
 
-cunitTest.s: cunitTest.cpp.s
-.PHONY : cunitTest.s
+test.s: test.c.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-cunitTest.cpp.s:
-	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.s
-.PHONY : cunitTest.cpp.s
+test.c.s:
+	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
+.PHONY : test.c.s
 
 # Help Target
 help:
@@ -182,13 +188,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test.o
 	@echo ... runUnitTests
-	@echo ... test
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... cunitTest.obj
-	@echo ... cunitTest.i
-	@echo ... cunitTest.s
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 
