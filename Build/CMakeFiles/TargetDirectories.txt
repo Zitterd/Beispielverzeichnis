@@ -1,2 +1,1 @@
-C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/CMakeFiles/sample_tests.dir
 C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/test.o.dir

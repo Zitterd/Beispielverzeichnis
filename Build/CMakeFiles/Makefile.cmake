@@ -83,7 +83,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/CMakeLists.txt"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gcc.cmake"
   "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake"
-  "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -100,11 +99,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.1.0-rc1/CMakeCCompiler.cmake"
   "CMakeFiles/3.1.0-rc1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/test.o.dir/DependInfo.cmake"
-  "test/CMakeFiles/sample_tests.dir/DependInfo.cmake"
   )
