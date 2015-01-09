@@ -1,2 +1,0 @@
-C:\Arduino\hardware\tools\avr\bin\avr-ar.exe cq libproject_lib.a  CMakeFiles/project_lib.dir/cunitTest.cpp.obj
-C:\Arduino\hardware\tools\avr\bin\avr-ranlib.exe libproject_lib.a

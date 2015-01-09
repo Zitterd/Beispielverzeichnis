@@ -6,7 +6,7 @@ set(CMAKE_CXX_FLAGS "-g -Wall")
 
 add_library(project_lib cunitTest.cpp)
 
-add_subdirectory(lib/gtest-1.6.0)
+#add_subdirectory(lib/gtest-1.6.0)
 enable_testing()
 
 include_directories("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/test/lib/gtest-1.6.0/include")
