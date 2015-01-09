@@ -102,42 +102,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/sample_tests.dir/rule:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/sample_tests.dir/rule
-.PHONY : test/CMakeFiles/sample_tests.dir/rule
+test/CMakeFiles/runUnitTests.dir/rule:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/runUnitTests.dir/rule
+.PHONY : test/CMakeFiles/runUnitTests.dir/rule
 
 # Convenience name for target.
-sample_tests: test/CMakeFiles/sample_tests.dir/rule
-.PHONY : sample_tests
+runUnitTests: test/CMakeFiles/runUnitTests.dir/rule
+.PHONY : runUnitTests
 
 # fast build rule for target.
-sample_tests/fast:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/build
-.PHONY : sample_tests/fast
+runUnitTests/fast:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
+.PHONY : runUnitTests/fast
 
-cunitTest.obj: cunitTest.c.obj
+cunitTest.obj: cunitTest.cpp.obj
 .PHONY : cunitTest.obj
 
 # target to build an object file
-cunitTest.c.obj:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/cunitTest.c.obj
-.PHONY : cunitTest.c.obj
+cunitTest.cpp.obj:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
+.PHONY : cunitTest.cpp.obj
 
-cunitTest.i: cunitTest.c.i
+cunitTest.i: cunitTest.cpp.i
 .PHONY : cunitTest.i
 
 # target to preprocess a source file
-cunitTest.c.i:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/cunitTest.c.i
-.PHONY : cunitTest.c.i
+cunitTest.cpp.i:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.i
+.PHONY : cunitTest.cpp.i
 
-cunitTest.s: cunitTest.c.s
+cunitTest.s: cunitTest.cpp.s
 .PHONY : cunitTest.s
 
 # target to generate assembly for a file
-cunitTest.c.s:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/cunitTest.c.s
-.PHONY : cunitTest.c.s
+cunitTest.cpp.s:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.s
+.PHONY : cunitTest.cpp.s
 
 # Help Target
 help:
@@ -147,7 +147,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... sample_tests
+	@echo ... runUnitTests
 	@echo ... cunitTest.obj
 	@echo ... cunitTest.i
 	@echo ... cunitTest.s

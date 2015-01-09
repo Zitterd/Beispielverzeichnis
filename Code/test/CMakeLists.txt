@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 2.6.0)
-set(_ECLIPSE_VERSION "8.5.0" )
+
 project(basic_test)
 
 set(CMAKE_CXX_FLAGS "-g -Wall")

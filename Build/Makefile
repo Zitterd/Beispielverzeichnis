@@ -20,9 +20,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -45,7 +42,7 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code"
+CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
@@ -72,6 +69,16 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"C:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -105,30 +112,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test.o
+# Target rules for targets named runUnitTests
 
 # Build rule for target.
-test.o: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 test.o
-.PHONY : test.o
+runUnitTests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 runUnitTests
+.PHONY : runUnitTests
 
 # fast build rule for target.
-test.o/fast:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
-.PHONY : test.o/fast
-
-#=============================================================================
-# Target rules for targets named sample_tests
-
-# Build rule for target.
-sample_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 sample_tests
-.PHONY : sample_tests
-
-# fast build rule for target.
-sample_tests/fast:
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/build
-.PHONY : sample_tests/fast
+runUnitTests/fast:
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/build
+.PHONY : runUnitTests/fast
 
 #=============================================================================
 # Target rules for targets named gtest
@@ -140,7 +134,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest.dir/build
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -153,32 +147,32 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest_main.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-test.obj: test.c.obj
-.PHONY : test.obj
+cunitTest.obj: cunitTest.cpp.obj
+.PHONY : cunitTest.obj
 
 # target to build an object file
-test.c.obj:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.obj
-.PHONY : test.c.obj
+cunitTest.cpp.obj:
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
+.PHONY : cunitTest.cpp.obj
 
-test.i: test.c.i
-.PHONY : test.i
+cunitTest.i: cunitTest.cpp.i
+.PHONY : cunitTest.i
 
 # target to preprocess a source file
-test.c.i:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.i
-.PHONY : test.c.i
+cunitTest.cpp.i:
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.i
+.PHONY : cunitTest.cpp.i
 
-test.s: test.c.s
-.PHONY : test.s
+cunitTest.s: cunitTest.cpp.s
+.PHONY : cunitTest.s
 
 # target to generate assembly for a file
-test.c.s:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/test.c.s
-.PHONY : test.c.s
+cunitTest.cpp.s:
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.s
+.PHONY : cunitTest.cpp.s
 
 # Help Target
 help:
@@ -188,13 +182,13 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... test.o
-	@echo ... sample_tests
+	@echo ... runUnitTests
+	@echo ... test
 	@echo ... gtest
 	@echo ... gtest_main
-	@echo ... test.obj
-	@echo ... test.i
-	@echo ... test.s
+	@echo ... cunitTest.obj
+	@echo ... cunitTest.i
+	@echo ... cunitTest.s
 .PHONY : help
 
 

@@ -24,9 +24,6 @@ SUFFIXES =
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -49,184 +46,132 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code"
+CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test"
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.o.dir
+# Target rules for target CMakeFiles/runUnitTests.dir
 
 # All Build rule for target.
-CMakeFiles/test.o.dir/all:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/depend
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  4
-	@echo Built target test.o
-.PHONY : CMakeFiles/test.o.dir/all
-
-# Include target in all.
-all: CMakeFiles/test.o.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test.o.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 1
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/test.o.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
-.PHONY : CMakeFiles/test.o.dir/rule
-
-# Convenience name for target.
-test.o: CMakeFiles/test.o.dir/rule
-.PHONY : test.o
-
-# clean rule for target.
-CMakeFiles/test.o.dir/clean:
-	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/clean
-.PHONY : CMakeFiles/test.o.dir/clean
-
-# clean rule for target.
-clean: CMakeFiles/test.o.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory test
-
-# Convenience name for "all" pass in the directory.
-test/all: test/CMakeFiles/sample_tests.dir/all
-test/all: test/gtest-1.7.0/all
-.PHONY : test/all
-
-# Convenience name for "clean" pass in the directory.
-test/clean: test/CMakeFiles/sample_tests.dir/clean
-test/clean: test/gtest-1.7.0/clean
-.PHONY : test/clean
-
-# Convenience name for "preinstall" pass in the directory.
-test/preinstall: test/gtest-1.7.0/preinstall
-.PHONY : test/preinstall
-
-#=============================================================================
-# Target rules for target test/CMakeFiles/sample_tests.dir
-
-# All Build rule for target.
-test/CMakeFiles/sample_tests.dir/all: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
-test/CMakeFiles/sample_tests.dir/all: test/gtest-1.7.0/CMakeFiles/gtest.dir/all
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/depend
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/build
+CMakeFiles/runUnitTests.dir/all: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
+CMakeFiles/runUnitTests.dir/all: lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/depend
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  3
-	@echo Built target sample_tests
-.PHONY : test/CMakeFiles/sample_tests.dir/all
+	@echo Built target runUnitTests
+.PHONY : CMakeFiles/runUnitTests.dir/all
 
 # Include target in all.
-all: test/CMakeFiles/sample_tests.dir/all
+all: CMakeFiles/runUnitTests.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/sample_tests.dir/rule: cmake_check_build_system
+CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 3
-	$(MAKE) -f CMakeFiles\Makefile2 test/CMakeFiles/sample_tests.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/runUnitTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
-.PHONY : test/CMakeFiles/sample_tests.dir/rule
+.PHONY : CMakeFiles/runUnitTests.dir/rule
 
 # Convenience name for target.
-sample_tests: test/CMakeFiles/sample_tests.dir/rule
-.PHONY : sample_tests
+runUnitTests: CMakeFiles/runUnitTests.dir/rule
+.PHONY : runUnitTests
 
 # clean rule for target.
-test/CMakeFiles/sample_tests.dir/clean:
-	$(MAKE) -f test\CMakeFiles\sample_tests.dir\build.make test/CMakeFiles/sample_tests.dir/clean
-.PHONY : test/CMakeFiles/sample_tests.dir/clean
+CMakeFiles/runUnitTests.dir/clean:
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/clean
+.PHONY : CMakeFiles/runUnitTests.dir/clean
 
 # clean rule for target.
-clean: test/CMakeFiles/sample_tests.dir/clean
+clean: CMakeFiles/runUnitTests.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory test/gtest-1.7.0
+# Directory level rules for directory lib/gtest-1.6.0
 
 # Convenience name for "all" pass in the directory.
-test/gtest-1.7.0/all: test/gtest-1.7.0/CMakeFiles/gtest.dir/all
-test/gtest-1.7.0/all: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
-.PHONY : test/gtest-1.7.0/all
+lib/gtest-1.6.0/all: lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
+lib/gtest-1.6.0/all: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
+.PHONY : lib/gtest-1.6.0/all
 
 # Convenience name for "clean" pass in the directory.
-test/gtest-1.7.0/clean: test/gtest-1.7.0/CMakeFiles/gtest.dir/clean
-test/gtest-1.7.0/clean: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/clean
-.PHONY : test/gtest-1.7.0/clean
+lib/gtest-1.6.0/clean: lib/gtest-1.6.0/CMakeFiles/gtest.dir/clean
+lib/gtest-1.6.0/clean: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/clean
+.PHONY : lib/gtest-1.6.0/clean
 
 # Convenience name for "preinstall" pass in the directory.
-test/gtest-1.7.0/preinstall:
-.PHONY : test/gtest-1.7.0/preinstall
+lib/gtest-1.6.0/preinstall:
+.PHONY : lib/gtest-1.6.0/preinstall
 
 #=============================================================================
-# Target rules for target test/gtest-1.7.0/CMakeFiles/gtest.dir
+# Target rules for target lib/gtest-1.6.0/CMakeFiles/gtest.dir
 
 # All Build rule for target.
-test/gtest-1.7.0/CMakeFiles/gtest.dir/all:
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest.dir/depend
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest.dir/build
+lib/gtest-1.6.0/CMakeFiles/gtest.dir/all:
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/depend
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  1
 	@echo Built target gtest
-.PHONY : test/gtest-1.7.0/CMakeFiles/gtest.dir/all
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
 
 # Include target in all.
-all: test/gtest-1.7.0/CMakeFiles/gtest.dir/all
+all: lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/gtest-1.7.0/CMakeFiles/gtest.dir/rule: cmake_check_build_system
+lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 1
-	$(MAKE) -f CMakeFiles\Makefile2 test/gtest-1.7.0/CMakeFiles/gtest.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
-.PHONY : test/gtest-1.7.0/CMakeFiles/gtest.dir/rule
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
-gtest: test/gtest-1.7.0/CMakeFiles/gtest.dir/rule
+gtest: lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
 .PHONY : gtest
 
 # clean rule for target.
-test/gtest-1.7.0/CMakeFiles/gtest.dir/clean:
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest.dir/clean
-.PHONY : test/gtest-1.7.0/CMakeFiles/gtest.dir/clean
+lib/gtest-1.6.0/CMakeFiles/gtest.dir/clean:
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/clean
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest.dir/clean
 
 # clean rule for target.
-clean: test/gtest-1.7.0/CMakeFiles/gtest.dir/clean
+clean: lib/gtest-1.6.0/CMakeFiles/gtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target test/gtest-1.7.0/CMakeFiles/gtest_main.dir
+# Target rules for target lib/gtest-1.6.0/CMakeFiles/gtest_main.dir
 
 # All Build rule for target.
-test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all: test/gtest-1.7.0/CMakeFiles/gtest.dir/all
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest_main.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest_main.dir/depend
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest_main.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest_main.dir/build
+lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all: lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/depend
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles"  2
 	@echo Built target gtest_main
-.PHONY : test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
-all: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
+all: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-test/gtest-1.7.0/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
+lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 2
-	$(MAKE) -f CMakeFiles\Makefile2 test/gtest-1.7.0/CMakeFiles/gtest_main.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
-.PHONY : test/gtest-1.7.0/CMakeFiles/gtest_main.dir/rule
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
-gtest_main: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/rule
+gtest_main: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
 .PHONY : gtest_main
 
 # clean rule for target.
-test/gtest-1.7.0/CMakeFiles/gtest_main.dir/clean:
-	$(MAKE) -f test\gtest-1.7.0\CMakeFiles\gtest_main.dir\build.make test/gtest-1.7.0/CMakeFiles/gtest_main.dir/clean
-.PHONY : test/gtest-1.7.0/CMakeFiles/gtest_main.dir/clean
+lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/clean:
+	$(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/clean
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/clean
 
 # clean rule for target.
-clean: test/gtest-1.7.0/CMakeFiles/gtest_main.dir/clean
+clean: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/clean
 .PHONY : clean
 
 #=============================================================================

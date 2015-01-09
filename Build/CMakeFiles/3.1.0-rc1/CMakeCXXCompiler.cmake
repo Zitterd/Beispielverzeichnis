@@ -1,24 +1,24 @@
-set(CMAKE_CXX_COMPILER "C:/Arduino/hardware/tools/avr/bin/avr-g++.exe")
+set(CMAKE_CXX_COMPILER "C:/TDM-GCC-64/bin/g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
-set(CMAKE_CXX_COMPILER_VERSION "4.3.2")
+set(CMAKE_CXX_COMPILER_VERSION "4.8.1")
 set(CMAKE_CXX_COMPILE_FEATURES "")
 set(CMAKE_CXX98_COMPILE_FEATURES "")
 set(CMAKE_CXX11_COMPILE_FEATURES "")
 set(CMAKE_CXX14_COMPILE_FEATURES "")
 
-set(CMAKE_CXX_PLATFORM_ID "")
+set(CMAKE_CXX_PLATFORM_ID "MinGW")
 set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
-set(CMAKE_AR "C:/Arduino/hardware/tools/avr/bin/avr-ar.exe")
-set(CMAKE_RANLIB "C:/Arduino/hardware/tools/avr/bin/avr-ranlib.exe")
-set(CMAKE_LINKER "C:/Arduino/hardware/tools/avr/bin/avr-ld.exe")
+set(CMAKE_AR "C:/TDM-GCC-64/bin/ar.exe")
+set(CMAKE_RANLIB "C:/TDM-GCC-64/bin/ranlib.exe")
+set(CMAKE_LINKER "C:/TDM-GCC-64/bin/ld.exe")
 set(CMAKE_COMPILER_IS_GNUCXX 1)
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
 set(CMAKE_CXX_ABI_COMPILED TRUE)
-set(CMAKE_COMPILER_IS_MINGW )
+set(CMAKE_COMPILER_IS_MINGW 1)
 set(CMAKE_COMPILER_IS_CYGWIN )
 if(CMAKE_COMPILER_IS_CYGWIN)
   set(CYGWIN 1)
@@ -37,7 +37,7 @@ set(CMAKE_CXX_LINKER_PREFERENCE 30)
 set(CMAKE_CXX_LINKER_PREFERENCE_PROPAGATES 1)
 
 # Save compiler ABI information.
-set(CMAKE_CXX_SIZEOF_DATA_PTR "2")
+set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
 set(CMAKE_CXX_COMPILER_ABI "")
 set(CMAKE_CXX_LIBRARY_ARCHITECTURE "")
 
@@ -56,8 +56,8 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "m;c")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "c:/Arduino/hardware/tools/avr/lib/gcc/avr/4.3.2;c:/Arduino/hardware/tools/avr/lib/gcc;c:/Arduino/hardware/tools/avr/avr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "mingw32;moldname;mingwex;msvcrt;pthread;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "c:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/4.8.1;c:/TDM-GCC-64/lib/gcc;c:/TDM-GCC-64/x86_64-w64-mingw32/lib;c:/TDM-GCC-64/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 

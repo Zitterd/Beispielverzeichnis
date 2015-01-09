@@ -4,5 +4,5 @@
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-add_test(sample_tests "sample_tests")
-subdirs(gtest-1.7.0)
+add_test(sampleTest "runUnitTests")
+subdirs(lib/gtest-1.6.0)
