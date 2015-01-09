@@ -9,7 +9,7 @@ INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/Toolchain-avr-gc
 INCLUDE("C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Code/macro.cmake")
 
 add_subdirectory(gtest-1.7.0)        						            ##
-add_subdirectory(test)									    ##
+#add_subdirectory(test)									    ##
 
 MESSAGE(STATUS "\n ------------------------------->Creating Projekt...")
 

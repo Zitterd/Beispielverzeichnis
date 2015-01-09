@@ -1,0 +1,23 @@
+Determining if files pthread.h exist failed with the following output:
+Change Dir: C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/TDM-GCC-64/bin/mingw32-make.exe" "cmTryCompileExec2837547821/fast"
+C:/TDM-GCC-64/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2837547821.dir\build.make CMakeFiles/cmTryCompileExec2837547821.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CMakeFiles" 1
+Building C object CMakeFiles/cmTryCompileExec2837547821.dir/CheckIncludeFiles.c.obj
+C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe   -mmcu=atmega32u4 -gstabs -DF_CPU=16000000L -Os -Wall -Wstrict-prototypes -std=gnu99      -o CMakeFiles\cmTryCompileExec2837547821.dir\CheckIncludeFiles.c.obj   -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c"
+C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles\CMakeTmp\CheckIncludeFiles.c:2:21: error: pthread.h: No such file or directory
+CMakeFiles\cmTryCompileExec2837547821.dir\build.make:56: recipe for target 'CMakeFiles/cmTryCompileExec2837547821.dir/CheckIncludeFiles.c.obj' failed
+mingw32-make.exe[1]: *** [CMakeFiles/cmTryCompileExec2837547821.dir/CheckIncludeFiles.c.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/CMakeFiles/CMakeTmp'
+Makefile:117: recipe for target 'cmTryCompileExec2837547821/fast' failed
+mingw32-make.exe: *** [cmTryCompileExec2837547821/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+
+
+int main(void){return 0;}
+

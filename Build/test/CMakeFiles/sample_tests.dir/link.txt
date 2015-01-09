@@ -1,1 +1,1 @@
-C:\Arduino\hardware\tools\avr\bin\avr-gcc.exe  -mmcu=atmega32u4 -gstabs -DF_CPU=16000000L -Os -Wall -Wstrict-prototypes -std=gnu99   -g   CMakeFiles/sample_tests.dir/cunitTest.c.obj  -o sample_tests  -lgtest_main 
+C:\Arduino\hardware\tools\avr\bin\avr-g++.exe   -mmcu=atmega32u4 -std=gnu99 -DF_CPU=16000000L -Os  -g   CMakeFiles/sample_tests.dir/cunitTest.c.obj  -o sample_tests  ..\gtest-1.7.0\libgtest_main.a ..\gtest-1.7.0\libgtest.a 
