@@ -117,58 +117,6 @@ test.o/fast:
 	$(MAKE) -f CMakeFiles\test.o.dir\build.make CMakeFiles/test.o.dir/build
 .PHONY : test.o/fast
 
-#=============================================================================
-# Target rules for targets named project_lib
-
-# Build rule for target.
-project_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 project_lib
-.PHONY : project_lib
-
-# fast build rule for target.
-project_lib/fast:
-	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/build
-.PHONY : project_lib/fast
-
-#=============================================================================
-# Target rules for targets named runUnitTests
-
-# Build rule for target.
-runUnitTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 runUnitTests
-.PHONY : runUnitTests
-
-# fast build rule for target.
-runUnitTests/fast:
-	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/build
-.PHONY : runUnitTests/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
 test.obj: test.c.obj
 .PHONY : test.obj
 
@@ -202,10 +150,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test.o
-	@echo ... runUnitTests
-	@echo ... project_lib
-	@echo ... gtest
-	@echo ... gtest_main
 	@echo ... test.obj
 	@echo ... test.i
 	@echo ... test.s

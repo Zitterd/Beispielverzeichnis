@@ -34,43 +34,43 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code"
+CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
+CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test"
 
 # Include any dependencies generated for this target.
-include test/CMakeFiles/project_lib.dir/depend.make
+include CMakeFiles/project_lib.dir/depend.make
 
 # Include the progress variables for this target.
-include test/CMakeFiles/project_lib.dir/progress.make
+include CMakeFiles/project_lib.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include test/CMakeFiles/project_lib.dir/flags.make
+include CMakeFiles/project_lib.dir/flags.make
 
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj: test/CMakeFiles/project_lib.dir/flags.make
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj: test/CMakeFiles/project_lib.dir/includes_CXX.rsp
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\project_lib.dir\cunitTest.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp"
+CMakeFiles/project_lib.dir/cunitTest.cpp.obj: CMakeFiles/project_lib.dir/flags.make
+CMakeFiles/project_lib.dir/cunitTest.cpp.obj: CMakeFiles/project_lib.dir/includes_CXX.rsp
+CMakeFiles/project_lib.dir/cunitTest.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles" $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/project_lib.dir/cunitTest.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\project_lib.dir\cunitTest.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp"
 
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.i: cmake_force
+CMakeFiles/project_lib.dir/cunitTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_lib.dir/cunitTest.cpp.i"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" > CMakeFiles\project_lib.dir\cunitTest.cpp.i
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" > CMakeFiles\project_lib.dir\cunitTest.cpp.i
 
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.s: cmake_force
+CMakeFiles/project_lib.dir/cunitTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_lib.dir/cunitTest.cpp.s"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" -o CMakeFiles\project_lib.dir\cunitTest.cpp.s
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" -o CMakeFiles\project_lib.dir\cunitTest.cpp.s
 
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires:
-.PHONY : test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
+CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires:
+.PHONY : CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
 
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides: test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
-	$(MAKE) -f test\CMakeFiles\project_lib.dir\build.make test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides.build
-.PHONY : test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides
+CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides: CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\project_lib.dir\build.make CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides.build
+.PHONY : CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides
 
-test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides.build: test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj
+CMakeFiles/project_lib.dir/cunitTest.cpp.obj.provides.build: CMakeFiles/project_lib.dir/cunitTest.cpp.obj
 
 # Object files for target project_lib
 project_lib_OBJECTS = \
@@ -79,25 +79,25 @@ project_lib_OBJECTS = \
 # External object files for target project_lib
 project_lib_EXTERNAL_OBJECTS =
 
-test/libproject_lib.a: test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj
-test/libproject_lib.a: test/CMakeFiles/project_lib.dir/build.make
-test/libproject_lib.a: test/CMakeFiles/project_lib.dir/link.txt
+libproject_lib.a: CMakeFiles/project_lib.dir/cunitTest.cpp.obj
+libproject_lib.a: CMakeFiles/project_lib.dir/build.make
+libproject_lib.a: CMakeFiles/project_lib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX static library libproject_lib.a"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -P CMakeFiles\project_lib.dir\cmake_clean_target.cmake
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_lib.dir\link.txt --verbose=$(VERBOSE)
+	$(CMAKE_COMMAND) -P CMakeFiles\project_lib.dir\cmake_clean_target.cmake
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_lib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-test/CMakeFiles/project_lib.dir/build: test/libproject_lib.a
-.PHONY : test/CMakeFiles/project_lib.dir/build
+CMakeFiles/project_lib.dir/build: libproject_lib.a
+.PHONY : CMakeFiles/project_lib.dir/build
 
-test/CMakeFiles/project_lib.dir/requires: test/CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
-.PHONY : test/CMakeFiles/project_lib.dir/requires
+CMakeFiles/project_lib.dir/requires: CMakeFiles/project_lib.dir/cunitTest.cpp.obj.requires
+.PHONY : CMakeFiles/project_lib.dir/requires
 
-test/CMakeFiles/project_lib.dir/clean:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -P CMakeFiles\project_lib.dir\cmake_clean.cmake
-.PHONY : test/CMakeFiles/project_lib.dir/clean
+CMakeFiles/project_lib.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\project_lib.dir\cmake_clean.cmake
+.PHONY : CMakeFiles/project_lib.dir/clean
 
-test/CMakeFiles/project_lib.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles\project_lib.dir\DependInfo.cmake" --color=$(COLOR)
-.PHONY : test/CMakeFiles/project_lib.dir/depend
+CMakeFiles/project_lib.dir/depend:
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles\project_lib.dir\DependInfo.cmake" --color=$(COLOR)
+.PHONY : CMakeFiles/project_lib.dir/depend
 

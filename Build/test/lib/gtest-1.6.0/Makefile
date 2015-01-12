@@ -42,10 +42,10 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code"
+CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
+CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -70,16 +70,26 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	"C:\Program Files (x86)\CMake\bin\ctest.exe" --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\lib\gtest-1.6.0\CMakeFiles\progress.marks"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/lib/gtest-1.6.0/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" 0
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\lib\gtest-1.6.0\CMakeFiles\progress.marks"
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/lib/gtest-1.6.0/clean
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/clean
 .PHONY : clean
 
 # The main clean target
@@ -88,45 +98,45 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/lib/gtest-1.6.0/preinstall
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/lib/gtest-1.6.0/preinstall
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
-.PHONY : test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
+lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
-gtest: test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
+gtest: lib/gtest-1.6.0/CMakeFiles/gtest.dir/rule
 .PHONY : gtest
 
 # fast build rule for target.
 gtest/fast:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 # Convenience name for target.
-test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f CMakeFiles\Makefile2 test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
-.PHONY : test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
+lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule:
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f CMakeFiles\Makefile2 lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
+.PHONY : lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
-gtest_main: test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
+gtest_main: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/rule
 .PHONY : gtest_main
 
 # fast build rule for target.
 gtest_main/fast:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 src/gtest-all.obj: src/gtest-all.cc.obj
@@ -134,7 +144,7 @@ src/gtest-all.obj: src/gtest-all.cc.obj
 
 # target to build an object file
 src/gtest-all.cc.obj:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.obj
 .PHONY : src/gtest-all.cc.obj
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -142,7 +152,7 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.i
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -150,7 +160,7 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.s
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.obj: src/gtest_main.cc.obj
@@ -158,7 +168,7 @@ src/gtest_main.obj: src/gtest_main.cc.obj
 
 # target to build an object file
 src/gtest_main.cc.obj:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
 .PHONY : src/gtest_main.cc.obj
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -166,7 +176,7 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -174,7 +184,7 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(MAKE) -f test\lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make test/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(MAKE) -f lib\gtest-1.6.0\CMakeFiles\gtest_main.dir\build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -187,6 +197,7 @@ help:
 	@echo ... rebuild_cache
 	@echo ... gtest
 	@echo ... gtest_main
+	@echo ... test
 	@echo ... src/gtest-all.obj
 	@echo ... src/gtest-all.i
 	@echo ... src/gtest-all.s
@@ -204,6 +215,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

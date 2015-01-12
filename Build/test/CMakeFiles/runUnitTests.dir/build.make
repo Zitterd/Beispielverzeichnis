@@ -34,43 +34,43 @@ RM = "C:\Program Files (x86)\CMake\bin\cmake.exe" -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code"
+CMAKE_SOURCE_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build"
+CMAKE_BINARY_DIR = "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test"
 
 # Include any dependencies generated for this target.
-include test/CMakeFiles/runUnitTests.dir/depend.make
+include CMakeFiles/runUnitTests.dir/depend.make
 
 # Include the progress variables for this target.
-include test/CMakeFiles/runUnitTests.dir/progress.make
+include CMakeFiles/runUnitTests.dir/progress.make
 
 # Include the compile flags for this target's objects.
-include test/CMakeFiles/runUnitTests.dir/flags.make
+include CMakeFiles/runUnitTests.dir/flags.make
 
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj: test/CMakeFiles/runUnitTests.dir/flags.make
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj: test/CMakeFiles/runUnitTests.dir/includes_CXX.rsp
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\CMakeFiles" $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\runUnitTests.dir\cunitTest.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp"
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj: CMakeFiles/runUnitTests.dir/flags.make
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj: CMakeFiles/runUnitTests.dir/includes_CXX.rsp
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj: C:/Users/Jonas\ Hamers/Desktop/Beispielverzeichnis/Code/test/cunitTest.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles" $(CMAKE_PROGRESS_1)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj"
+	C:\TDM-GCC-64\bin\g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\runUnitTests.dir\cunitTest.cpp.obj -c "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp"
 
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.i: cmake_force
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/cunitTest.cpp.i"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" > CMakeFiles\runUnitTests.dir\cunitTest.cpp.i
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" > CMakeFiles\runUnitTests.dir\cunitTest.cpp.i
 
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.s: cmake_force
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/cunitTest.cpp.s"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" -o CMakeFiles\runUnitTests.dir\cunitTest.cpp.s
+	C:\TDM-GCC-64\bin\g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test\cunitTest.cpp" -o CMakeFiles\runUnitTests.dir\cunitTest.cpp.s
 
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires:
-.PHONY : test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires:
+.PHONY : CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires
 
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides: test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires
-	$(MAKE) -f test\CMakeFiles\runUnitTests.dir\build.make test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides.build
-.PHONY : test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides: CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\runUnitTests.dir\build.make CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides.build
+.PHONY : CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides
 
-test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides.build: test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
+CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.provides.build: CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
 
 # Object files for target runUnitTests
 runUnitTests_OBJECTS = \
@@ -79,30 +79,30 @@ runUnitTests_OBJECTS = \
 # External object files for target runUnitTests
 runUnitTests_EXTERNAL_OBJECTS =
 
-test/runUnitTests.exe: test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
-test/runUnitTests.exe: test/CMakeFiles/runUnitTests.dir/build.make
-test/runUnitTests.exe: test/lib/gtest-1.6.0/libgtest.a
-test/runUnitTests.exe: test/lib/gtest-1.6.0/libgtest_main.a
-test/runUnitTests.exe: test/libproject_lib.a
-test/runUnitTests.exe: test/lib/gtest-1.6.0/libgtest.a
-test/runUnitTests.exe: test/CMakeFiles/runUnitTests.dir/linklibs.rsp
-test/runUnitTests.exe: test/CMakeFiles/runUnitTests.dir/objects1.rsp
-test/runUnitTests.exe: test/CMakeFiles/runUnitTests.dir/link.txt
+runUnitTests.exe: CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj
+runUnitTests.exe: CMakeFiles/runUnitTests.dir/build.make
+runUnitTests.exe: lib/gtest-1.6.0/libgtest.a
+runUnitTests.exe: lib/gtest-1.6.0/libgtest_main.a
+runUnitTests.exe: libproject_lib.a
+runUnitTests.exe: lib/gtest-1.6.0/libgtest.a
+runUnitTests.exe: CMakeFiles/runUnitTests.dir/linklibs.rsp
+runUnitTests.exe: CMakeFiles/runUnitTests.dir/objects1.rsp
+runUnitTests.exe: CMakeFiles/runUnitTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable runUnitTests.exe"
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\runUnitTests.dir\link.txt --verbose=$(VERBOSE)
+	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\runUnitTests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-test/CMakeFiles/runUnitTests.dir/build: test/runUnitTests.exe
-.PHONY : test/CMakeFiles/runUnitTests.dir/build
+CMakeFiles/runUnitTests.dir/build: runUnitTests.exe
+.PHONY : CMakeFiles/runUnitTests.dir/build
 
-test/CMakeFiles/runUnitTests.dir/requires: test/CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires
-.PHONY : test/CMakeFiles/runUnitTests.dir/requires
+CMakeFiles/runUnitTests.dir/requires: CMakeFiles/runUnitTests.dir/cunitTest.cpp.obj.requires
+.PHONY : CMakeFiles/runUnitTests.dir/requires
 
-test/CMakeFiles/runUnitTests.dir/clean:
-	cd /d C:\Users\JONASH~1\Desktop\BEISPI~1\Build\test && $(CMAKE_COMMAND) -P CMakeFiles\runUnitTests.dir\cmake_clean.cmake
-.PHONY : test/CMakeFiles/runUnitTests.dir/clean
+CMakeFiles/runUnitTests.dir/clean:
+	$(CMAKE_COMMAND) -P CMakeFiles\runUnitTests.dir\cmake_clean.cmake
+.PHONY : CMakeFiles/runUnitTests.dir/clean
 
-test/CMakeFiles/runUnitTests.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles\runUnitTests.dir\DependInfo.cmake" --color=$(COLOR)
-.PHONY : test/CMakeFiles/runUnitTests.dir/depend
+CMakeFiles/runUnitTests.dir/depend:
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Code\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test" "C:\Users\Jonas Hamers\Desktop\Beispielverzeichnis\Build\test\CMakeFiles\runUnitTests.dir\DependInfo.cmake" --color=$(COLOR)
+.PHONY : CMakeFiles/runUnitTests.dir/depend
 

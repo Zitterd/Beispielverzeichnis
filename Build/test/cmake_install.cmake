@@ -33,3 +33,13 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
 
 endif()
 
+if(CMAKE_INSTALL_COMPONENT)
+  set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
+else()
+  set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
+endif()
+
+file(WRITE "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/${CMAKE_INSTALL_MANIFEST}" "")
+foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
+  file(APPEND "C:/Users/Jonas Hamers/Desktop/Beispielverzeichnis/Build/test/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+endforeach()
